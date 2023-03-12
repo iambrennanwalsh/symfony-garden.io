@@ -1,4 +1,5 @@
 .DS_Store
+.garden
 /app/.env.local
 /app/.env.*.local
 /app/config/secrets/prod/prod.decrypt.private.php
