@@ -1,0 +1,575 @@
+
+[2023-03-11T20:22:35.980Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T20:22:36.158Z] Found 1 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T20:22:36.301Z] Getting status...
+
+[2023-03-11T20:22:37.771Z] Using current context: docker-desktop
+
+[2023-03-11T20:22:37.828Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T20:22:37.859Z] Getting status... → Cached
+
+[2023-03-11T20:22:37.861Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T20:22:37.868Z] Resolving 3 modules...
+
+[2023-03-11T20:22:37.952Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T20:22:38.094Z] Found 43 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T20:22:38.116Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T20:22:38.214Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T20:22:38.237Z] Resolving 3 modules... → Done
+
+[2023-03-11T20:22:38.260Z] Processing...
+
+[2023-03-11T20:22:38.287Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T20:22:38.341Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T20:22:38.351Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T20:22:38.353Z] Syncing module sources (43 files)...
+
+[2023-03-11T20:22:38.370Z] Syncing 43 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T20:22:38.381Z] Syncing module sources (43 files)... → Done (took 0 sec)
+
+[2023-03-11T20:22:38.383Z] Getting build status for v-35835f6875...
+
+[2023-03-11T20:22:38.386Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-35835f6875 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T20:22:38.657Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-11T20:22:38.668Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-11T20:22:38.669Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-11T20:22:38.751Z] -> Configuring in dev mode
+
+[2023-03-11T20:22:38.785Z] Getting currently deployed resource statuses...
+
+[2023-03-11T20:22:38.786Z] Getting currently deployed resource statuses...
+
+[2023-03-11T20:22:38.793Z] Image app:v-35835f6875 already exists
+
+[2023-03-11T20:22:38.797Z] Getting build status for v-35835f6875... → Already built
+
+[2023-03-11T20:22:38.801Z] Syncing module sources (3 files)...
+
+[2023-03-11T20:22:38.802Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-11T20:22:38.832Z] Getting currently deployed resource statuses...
+
+[2023-03-11T20:22:38.866Z] Comparing expected and deployed resources...
+
+[2023-03-11T20:22:38.867Z] All resources match.
+
+[2023-03-11T20:22:38.883Z] Deploying version v-d04afbc049...
+
+[2023-03-11T20:22:38.884Z] Deploying version v-d04afbc049... → Already deployed
+
+[2023-03-11T20:22:38.902Z] Comparing expected and deployed resources...
+
+[2023-03-11T20:22:38.904Z] All resources match.
+
+[2023-03-11T20:22:38.915Z] Started proxy to app/app:80 on localhost:50492
+
+[2023-03-11T20:22:38.917Z] Port forward: http://localhost:50492 → app:80 (app)
+
+[2023-03-11T20:22:38.918Z] Deploying in dev mode
+
+[2023-03-11T20:22:38.925Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-11T20:22:38.928Z] Getting build status for v-80564b1122...
+
+[2023-03-11T20:22:38.936Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-80564b1122 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T20:22:39.054Z] Image server:v-80564b1122 already exists
+
+[2023-03-11T20:22:39.057Z] Getting build status for v-80564b1122... → Already built
+
+[2023-03-11T20:22:39.086Z] Deploying version v-892a1eba15...
+
+[2023-03-11T20:22:39.093Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-03-11T20:22:39.093Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T20:22:39.093Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T20:22:39.550Z] Syncing ./app/public to /srv/app/public in Deployment/server (two-way)
+
+[2023-03-11T20:22:39.650Z] Waiting for resources to be ready...
+
+[2023-03-11T20:22:39.651Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T20:22:39.903Z] Syncing ./server/Caddyfile to /etc/caddy/Caddyfile in Deployment/server (one-way)
+
+[2023-03-11T20:22:40.194Z] Deploying version v-8d462778e7...
+
+[2023-03-11T20:22:40.196Z] Deploying version v-8d462778e7... → Already deployed
+
+[2023-03-11T20:22:40.201Z] Ingress: http://todone.garden
+
+[2023-03-11T20:22:40.207Z] Started proxy to server/server:80 on localhost:50523
+
+[2023-03-11T20:22:40.210Z] Port forward: http://localhost:50523 → server:80 (http)
+
+[2023-03-11T20:22:41.648Z] Connected to sync target /srv/app/public in Deployment/server
+
+[2023-03-11T20:22:41.651Z] [sync]: Completed initial sync from ./app/public to /srv/app/public in Deployment/server
+
+[2023-03-11T20:22:41.658Z] [sync]: Watching for changes
+
+[2023-03-11T20:22:41.660Z] Connected to sync target /etc/caddy/Caddyfile in Deployment/server
+
+[2023-03-11T20:22:41.664Z] [sync]: Completed initial sync from ./server/Caddyfile to /etc/caddy/Caddyfile in Deployment/server
+
+[2023-03-11T20:22:41.674Z] [sync]: Watching for changes
+
+[2023-03-11T20:22:41.775Z] Status of Deployment database is "unhealthy"
+
+[2023-03-11T20:22:41.775Z] [kubernetes-plugin]: Status of Deployment database is "unhealthy"
+
+[2023-03-11T20:22:41.775Z] [kubernetes-plugin]: Error deploying database: CreateContainerConfigError - secret "postgres-password" not found
+
+━━━ Events ━━━
+Deployment database: ScalingReplicaSet - Scaled up replica set database-65876f4fd8 to 1
+Deployment database: ScalingReplicaSet - Scaled down replica set database-6f4f54499f to 0 from 1
+Pod database-65876f4fd8-s9sd8: Scheduled - Successfully assigned wagregistry-wagregistry-brennanwalsh/database-65876f4fd8-s9sd8 to docker-desktop
+Pod database-65876f4fd8-s9sd8: Pulled - Container image "postgres:15-alpine" already present on machine
+Pod database-65876f4fd8-s9sd8: Failed - Error: secret "postgres-password" not found
+
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n wagregistry-wagregistry-brennanwalsh --context=docker-desktop logs deployment/database
+
+****** database-65876f4fd8-s9sd8 ******
+------ database ------<no logs>
+
+[2023-03-11T20:22:41.779Z] Deploying version v-892a1eba15...
+
+[2023-03-11T20:22:41.833Z] Error: Error deploying database: CreateContainerConfigError - secret "postgres-password" not found
+
+━━━ Events ━━━
+Deployment database: ScalingReplicaSet - Scaled up replica set database-65876f4fd8 to 1
+Deployment database: ScalingReplicaSet - Scaled down replica set database-6f4f54499f to 0 from 1
+Pod database-65876f4fd8-s9sd8: Scheduled - Successfully assigned wagregistry-wagregistry-brennanwalsh/database-65876f4fd8-s9sd8 to docker-desktop
+Pod database-65876f4fd8-s9sd8: Pulled - Container image "postgres:15-alpine" already present on machine
+Pod database-65876f4fd8-s9sd8: Failed - Error: secret "postgres-password" not found
+
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n wagregistry-wagregistry-brennanwalsh --context=docker-desktop logs deployment/database
+
+****** database-65876f4fd8-s9sd8 ******
+------ database ------<no logs>
+    at waitForResources (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/kubernetes/status/status.ts:239:15)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:442:9)
+    at deployContainerServiceRolling (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/kubernetes/container/deployment.ts:177:3)
+    at AsyncFunction.deployContainerService (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/kubernetes/container/deployment.ts:59:5)
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/actions.ts:1325:24
+    at ActionRouter.callServiceHandler (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/actions.ts:1145:40)
+    at ActionRouter.deployService (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/actions.ts:585:24)
+    at wrapped.process (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/tasks/deploy.ts:183:18)
+    at TaskNode.process (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/task-graph.ts:801:20)
+    at wrapped.processNode (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/task-graph.ts:436:18)
+
+Error Details:
+
+serviceName: database
+status:
+  state: unhealthy
+  lastMessage: CreateContainerConfigError - secret "postgres-password" not found
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment database:\e[39m \e[37mScalingReplicaSet - Scaled up replica set database-65876f4fd8 to 1\e[39m\n\e[94mDeployment database:\e[39m \e[37mScalingReplicaSet - Scaled down replica set database-6f4f54499f to 0 from 1\e[39m\n\e[94mPod database-65876f4fd8-s9sd8:\e[39m \e[37mScheduled - Successfully assigned wagregistry-wagregistry-brennanwalsh/database-65876f4fd8-s9sd8 to docker-desktop\e[39m\n\e[94mPod database-65876f4fd8-s9sd8:\e[39m \e[37mPulled - Container image \"postgres:15-alpine\" already present on machine\e[39m\n\e[94mPod database-65876f4fd8-s9sd8:\e[39m \e[33mFailed - Error: secret \"postgres-password\" not found\e[39m\n\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n wagregistry-wagregistry-brennanwalsh --context=docker-desktop logs deployment/database\e[39m\n\e[94m\e[39m\n\e[94m****** database-65876f4fd8-s9sd8 ******\e[39m\n\e[94m\e[39m\e[90m------ database ------\e[39m<no logs>"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: database
+      namespace: wagregistry-wagregistry-brennanwalsh
+      uid: 0907314b-06e1-4428-8c72-3cd9d9604179
+      resourceVersion: '373417'
+      generation: 2
+      creationTimestamp: '2023-03-11T09:36:20Z'
+      labels:
+        module: database
+        service: database
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: 6da1aa4c0deac676dbcb800300407f83e64a831760f83d9b9396d9d4955430e1
+        garden.io/version: v-892a1eba15
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"6da1aa4c0deac676dbcb800300407f83e64a831760f83d9b9396d9d4955430e1","garden.io/version":"v-892a1eba15"},"labels":{"module":"database","service":"database"},"name":"database","namespace":"wagregistry-wagregistry-brennanwalsh"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"database"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"756098cd79e7b43b6ff9727bf387b4be5f039147fd99f78063533ee58b5578ac","garden.io/version":"v-892a1eba15"},"labels":{"module":"database","service":"database"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-892a1eba15"},{"name":"GARDEN_MODULE_VERSION","value":"v-b8ece8345c"},{"name":"POSTGRES_PASSWORD","valueFrom":{"secretKeyRef":{"key":"root","name":"postgres-password"}}},{"name":"POSTGRES_USERNAME","value":"root"},{"name":"POSTGRES_DATABASE","value":"wagregistry"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"postgres:15-alpine","imagePullPolicy":"IfNotPresent","name":"database","ports":[{"containerPort":5432,"name":"database","protocol":"TCP"}],"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"90Mi"}},"securityContext":{"allowPrivilegeEscalation":false},"volumeMounts":[{"mountPath":"/db-data","name":"database"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5,"volumes":[{"emptyDir":{},"name":"database"}]}}}}
+      managedFields:
+        - manager: kubectl-client-side-apply
+          operation: Update
+          apiVersion: apps/v1
+          time: '2023-03-11T20:19:43Z'
+          fieldsType: FieldsV1
+          fieldsV1:
+            'f:metadata':
+              'f:annotations':
+                .: {}
+                'f:garden.io/configured.replicas': {}
+                'f:garden.io/generated': {}
+                'f:garden.io/manifest-hash': {}
+                'f:garden.io/version': {}
+                'f:kubectl.kubernetes.io/last-applied-configuration': {}
+              'f:labels':
+                .: {}
+                'f:module': {}
+                'f:service': {}
+            'f:spec':
+              'f:progressDeadlineSeconds': {}
+              'f:replicas': {}
+              'f:revisionHistoryLimit': {}
+              'f:selector': {}
+              'f:strategy':
+                'f:rollingUpdate':
+                  .: {}
+                  'f:maxSurge': {}
+                  'f:maxUnavailable': {}
+                'f:type': {}
+              'f:template':
+                'f:metadata':
+                  'f:annotations':
+                    .: {}
+                    'f:garden.io/generated': {}
+                    'f:garden.io/manifest-hash': {}
+                    'f:garden.io/version': {}
+                  'f:labels':
+                    .: {}
+                    'f:module': {}
+                    'f:service': {}
+                'f:spec':
+                  'f:containers':
+                    'k:{"name":"database"}':
+                      .: {}
+                      'f:env':
+                        .: {}
+                        'k:{"name":"GARDEN_MODULE_VERSION"}':
+                          .: {}
+                          'f:name': {}
+                          'f:value': {}
+                        'k:{"name":"GARDEN_VERSION"}':
+                          .: {}
+                          'f:name': {}
+                          'f:value': {}
+                        'k:{"name":"POD_HOST_IP"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:fieldRef': {}
+                        'k:{"name":"POD_IP"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:fieldRef': {}
+                        'k:{"name":"POD_NAME"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:fieldRef': {}
+                        'k:{"name":"POD_NAMESPACE"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:fieldRef': {}
+                        'k:{"name":"POD_NODE_NAME"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:fieldRef': {}
+                        'k:{"name":"POD_SERVICE_ACCOUNT"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:fieldRef': {}
+                        'k:{"name":"POD_UID"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:fieldRef': {}
+                        'k:{"name":"POSTGRES_DATABASE"}':
+                          .: {}
+                          'f:name': {}
+                          'f:value': {}
+                        'k:{"name":"POSTGRES_PASSWORD"}':
+                          .: {}
+                          'f:name': {}
+                          'f:valueFrom':
+                            .: {}
+                            'f:secretKeyRef': {}
+                        'k:{"name":"POSTGRES_USERNAME"}':
+                          .: {}
+                          'f:name': {}
+                          'f:value': {}
+                      'f:image': {}
+                      'f:imagePullPolicy': {}
+                      'f:name': {}
+                      'f:ports':
+                        .: {}
+                        'k:{"containerPort":5432,"protocol":"TCP"}':
+                          .: {}
+                          'f:containerPort': {}
+                          'f:name': {}
+                          'f:protocol': {}
+                      'f:resources':
+                        .: {}
+                        'f:limits':
+                          .: {}
+                          'f:cpu': {}
+                          'f:memory': {}
+                        'f:requests':
+                          .: {}
+                          'f:cpu': {}
+                          'f:memory': {}
+                      'f:securityContext':
+                        .: {}
+                        'f:allowPrivilegeEscalation': {}
+                      'f:terminationMessagePath': {}
+                      'f:terminationMessagePolicy': {}
+                      'f:volumeMounts':
+                        .: {}
+                        'k:{"mountPath":"/db-data"}':
+                          .: {}
+                          'f:mountPath': {}
+                          'f:name': {}
+                  'f:dnsPolicy': {}
+                  'f:restartPolicy': {}
+                  'f:schedulerName': {}
+                  'f:securityContext': {}
+                  'f:terminationGracePeriodSeconds': {}
+                  'f:volumes':
+                    .: {}
+                    'k:{"name":"database"}':
+                      .: {}
+                      'f:emptyDir': {}
+                      'f:name': {}
+        - manager: kube-controller-manager
+          operation: Update
+          apiVersion: apps/v1
+          time: '2023-03-11T20:19:44Z'
+          fieldsType: FieldsV1
+          fieldsV1:
+            'f:metadata':
+              'f:annotations':
+                'f:deployment.kubernetes.io/revision': {}
+            'f:status':
+              'f:conditions':
+                .: {}
+                'k:{"type":"Available"}':
+                  .: {}
+                  'f:lastTransitionTime': {}
+                  'f:lastUpdateTime': {}
+                  'f:message': {}
+                  'f:reason': {}
+                  'f:status': {}
+                  'f:type': {}
+                'k:{"type":"Progressing"}':
+                  .: {}
+                  'f:lastTransitionTime': {}
+                  'f:lastUpdateTime': {}
+                  'f:message': {}
+                  'f:reason': {}
+                  'f:status': {}
+                  'f:type': {}
+              'f:observedGeneration': {}
+              'f:replicas': {}
+              'f:unavailableReplicas': {}
+              'f:updatedReplicas': {}
+          subresource: status
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: database
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: database
+            service: database
+          annotations:
+            garden.io/generated: 'true'
+            garden.io/manifest-hash: 756098cd79e7b43b6ff9727bf387b4be5f039147fd99f78063533ee58b5578ac
+            garden.io/version: v-892a1eba15
+        spec:
+          volumes:
+            - name: database
+              emptyDir: {}
+          containers:
+            - name: database
+              image: 'postgres:15-alpine'
+              ports:
+                - name: database
+                  containerPort: 5432
+                  protocol: TCP
+              env:
+                - name: GARDEN_VERSION
+                  value: v-892a1eba15
+                - name: GARDEN_MODULE_VERSION
+                  value: v-b8ece8345c
+                - name: POSTGRES_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: postgres-password
+                      key: root
+                - name: POSTGRES_USERNAME
+                  value: root
+                - name: POSTGRES_DATABASE
+                  value: wagregistry
+                - name: POD_HOST_IP
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: status.hostIP
+                - name: POD_IP
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: status.podIP
+                - name: POD_NAME
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: metadata.name
+                - name: POD_NAMESPACE
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: metadata.namespace
+                - name: POD_NODE_NAME
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: spec.nodeName
+                - name: POD_SERVICE_ACCOUNT
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: spec.serviceAccountName
+                - name: POD_UID
+                  valueFrom:
+                    fieldRef:
+                      apiVersion: v1
+                      fieldPath: metadata.uid
+              resources:
+                limits:
+                  cpu: '1'
+                  memory: 1Gi
+                requests:
+                  cpu: 10m
+                  memory: 90Mi
+              volumeMounts:
+                - name: database
+                  mountPath: /db-data
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+              imagePullPolicy: IfNotPresent
+              securityContext:
+                allowPrivilegeEscalation: false
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions:
+        - type: Available
+          status: 'True'
+          lastUpdateTime: '2023-03-11T09:36:20Z'
+          lastTransitionTime: '2023-03-11T09:36:20Z'
+          reason: MinimumReplicasAvailable
+          message: Deployment has minimum availability.
+        - type: Progressing
+          status: 'True'
+          lastUpdateTime: '2023-03-11T20:19:44Z'
+          lastTransitionTime: '2023-03-11T09:36:20Z'
+          reason: ReplicaSetUpdated
+          message: ReplicaSet "database-65876f4fd8" is progressing.
+
+
+[2023-03-11T20:22:41.874Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T20:22:41.876Z] Watcher: Starting FSWatcher
+
+[2023-03-11T20:22:41.882Z] Waiting for code changes...
+
+[2023-03-11T20:22:51.727Z] Send event: {"type":"event","name":"serverReady","payload":{}}
+
+[2023-03-11T20:22:51.801Z] Send event: {"type":"event","name":"stackGraph","payload":{"relationships":[{"dependant":{"name":"database","type":"deploy","moduleName":"database","key":"deploy.database","disabled":false},"dependency":{"name":"database","type":"build","moduleName":"database","key":"build.database","disabled":false}},{"dependant":{"name":"app","type":"build","moduleName":"app","key":"build.app","disabled":false},"dependency":{"name":"database","type":"build","moduleName":"database","key":"build.database","disabled":false}},{"dependant":{"name":"app","type":"deploy","moduleName":"app","key":"deploy.app","disabled":false},"dependency":{"name":"app","type":"build","moduleName":"app","key":"build.app","disabled":false}},{"dependant":{"name":"server","type":"build","moduleName":"server","key":"build.server","disabled":false},"dependency":{"name":"app","type":"build","moduleName":"app","key":"build.app","disabled":false}},{"dependant":{"name":"server","type":"deploy","moduleName":"server","key":"deploy.server","disabled":false},"dependency":{"name":"server","type":"build","moduleName":"server","key":"build.server","disabled":false}}],"nodes":[{"name":"database","type":"build","moduleName":"database","key":"build.database","disabled":false},{"name":"app","type":"build","moduleName":"app","key":"build.app","disabled":false},{"name":"server","type":"build","moduleName":"server","key":"build.server","disabled":false},{"name":"server","type":"deploy","moduleName":"server","key":"deploy.server","disabled":false},{"name":"app","type":"deploy","moduleName":"app","key":"deploy.app","disabled":false},{"name":"database","type":"deploy","moduleName":"database","key":"deploy.database","disabled":false}]}}
+
+[2023-03-11T20:22:51.819Z] Send event: {"type":"event","name":"taskGraphProcessing","payload":{"startedAt":"2023-03-11T20:22:51.819Z"}}
+
+[2023-03-11T20:22:51.829Z] Processing...
+
+[2023-03-11T20:22:51.830Z] Send event: {"type":"event","name":"taskPending","payload":{"addedAt":"2023-03-11T20:22:51.830Z","batchId":"9480f5c8-1838-418f-a9e1-8d5aa6554c71","key":"get-service-status.database","name":"database","type":"get-service-status"}}
+
+[2023-03-11T20:22:51.830Z] Send event: {"type":"event","name":"taskPending","payload":{"addedAt":"2023-03-11T20:22:51.830Z","batchId":"aaec5062-5102-4d5f-8451-02979146e44d","key":"get-service-status.app","name":"app","type":"get-service-status"}}
+
+[2023-03-11T20:22:51.831Z] Send event: {"type":"event","name":"taskPending","payload":{"addedAt":"2023-03-11T20:22:51.831Z","batchId":"c31c36d2-ad45-41b8-9275-51e4685900a7","key":"get-service-status.server","name":"server","type":"get-service-status"}}
+
+[2023-03-11T20:22:51.832Z] Send event: {"type":"event","name":"taskProcessing","payload":{"name":"database","type":"get-service-status","key":"get-service-status.database","batchId":"9480f5c8-1838-418f-a9e1-8d5aa6554c71","startedAt":"2023-03-11T20:22:51.832Z","versionString":"v-892a1eba15"}}
+
+[2023-03-11T20:22:51.832Z] Send event: {"type":"event","name":"taskProcessing","payload":{"name":"app","type":"get-service-status","key":"get-service-status.app","batchId":"aaec5062-5102-4d5f-8451-02979146e44d","startedAt":"2023-03-11T20:22:51.832Z","versionString":"v-d04afbc049"}}
+
+[2023-03-11T20:22:51.832Z] Send event: {"type":"event","name":"taskProcessing","payload":{"name":"server","type":"get-service-status","key":"get-service-status.server","batchId":"c31c36d2-ad45-41b8-9275-51e4685900a7","startedAt":"2023-03-11T20:22:51.832Z","versionString":"v-8d462778e7"}}
+
+[2023-03-11T20:22:52.015Z] Send event: {"type":"event","name":"serviceStatus","payload":{"serviceName":"app","moduleVersion":"v-35835f6875","moduleName":"app","serviceVersion":"v-d04afbc049","status":{"forwardablePorts":[{"name":"app","protocol":"TCP","targetPort":80}],"ingresses":[],"state":"ready","namespaceStatuses":[{"pluginName":"local-kubernetes","namespaceName":"wagregistry-wagregistry-brennanwalsh","state":"ready"}],"version":"v-d04afbc049","devMode":false,"localMode":false,"outputs":{}}}}
+
+[2023-03-11T20:22:52.015Z] Send event: {"type":"event","name":"namespaceStatus","payload":{"pluginName":"local-kubernetes","state":"ready","namespaceName":"wagregistry-wagregistry-brennanwalsh"}}
+
+[2023-03-11T20:22:52.017Z] Send event: {"type":"event","name":"taskComplete","payload":{"type":"get-service-status","key":"get-service-status.app","name":"app","description":"getting status for service 'app' (from module 'app')","completedAt":"2023-03-11T20:22:52.016Z","batchId":"aaec5062-5102-4d5f-8451-02979146e44d","output":{"forwardablePorts":[{"name":"app","protocol":"TCP","targetPort":80}],"ingresses":[],"state":"ready","namespaceStatuses":[{"pluginName":"local-kubernetes","namespaceName":"wagregistry-wagregistry-brennanwalsh","state":"ready"}],"version":null,"devMode":false,"localMode":false,"outputs":{}},"version":"v-d04afbc049","startedAt":"2023-03-11T20:22:51.832Z"}}
+
+[2023-03-11T20:22:52.019Z] Send event: {"type":"event","name":"serviceStatus","payload":{"serviceName":"server","moduleVersion":"v-80564b1122","moduleName":"server","serviceVersion":"v-8d462778e7","status":{"forwardablePorts":[{"name":"http","protocol":"TCP","targetPort":80}],"ingresses":[{"hostname":"todone.garden","path":"/","port":80,"protocol":"http"}],"state":"ready","namespaceStatuses":[{"pluginName":"local-kubernetes","namespaceName":"wagregistry-wagregistry-brennanwalsh","state":"ready"}],"version":"v-8d462778e7","devMode":false,"localMode":false,"outputs":{}}}}
+
+[2023-03-11T20:22:52.019Z] Send event: {"type":"event","name":"namespaceStatus","payload":{"pluginName":"local-kubernetes","state":"ready","namespaceName":"wagregistry-wagregistry-brennanwalsh"}}
+
+[2023-03-11T20:22:52.022Z] Send event: {"type":"event","name":"taskComplete","payload":{"type":"get-service-status","key":"get-service-status.server","name":"server","description":"getting status for service 'server' (from module 'server')","completedAt":"2023-03-11T20:22:52.020Z","batchId":"c31c36d2-ad45-41b8-9275-51e4685900a7","output":{"forwardablePorts":[{"name":"http","protocol":"TCP","targetPort":80}],"ingresses":[{"hostname":"todone.garden","path":"/","port":80,"protocol":"http"}],"state":"ready","namespaceStatuses":[{"pluginName":"local-kubernetes","namespaceName":"wagregistry-wagregistry-brennanwalsh","state":"ready"}],"version":null,"devMode":false,"localMode":false,"outputs":{}},"version":"v-8d462778e7","startedAt":"2023-03-11T20:22:51.832Z"}}
+
+[2023-03-11T20:22:52.086Z] Send event: {"type":"event","name":"serviceStatus","payload":{"serviceName":"database","moduleVersion":"v-b8ece8345c","moduleName":"database","serviceVersion":"v-892a1eba15","status":{"forwardablePorts":[{"name":"database","protocol":"TCP","targetPort":5432}],"ingresses":[],"state":"unhealthy","namespaceStatuses":[{"pluginName":"local-kubernetes","namespaceName":"wagregistry-wagregistry-brennanwalsh","state":"ready"}],"devMode":false,"localMode":false,"outputs":{}}}}
+
+[2023-03-11T20:22:52.087Z] Send event: {"type":"event","name":"namespaceStatus","payload":{"pluginName":"local-kubernetes","state":"ready","namespaceName":"wagregistry-wagregistry-brennanwalsh"}}
+
+[2023-03-11T20:22:52.088Z] Send event: {"type":"event","name":"taskComplete","payload":{"type":"get-service-status","key":"get-service-status.database","name":"database","description":"getting status for service 'database' (from module 'database')","completedAt":"2023-03-11T20:22:52.087Z","batchId":"9480f5c8-1838-418f-a9e1-8d5aa6554c71","output":{"forwardablePorts":[{"name":"database","protocol":"TCP","targetPort":5432}],"ingresses":[],"state":"unhealthy","namespaceStatuses":[{"pluginName":"local-kubernetes","namespaceName":"wagregistry-wagregistry-brennanwalsh","state":"ready"}],"devMode":false,"localMode":false,"outputs":{}},"version":"v-892a1eba15","startedAt":"2023-03-11T20:22:51.832Z"}}
+
+[2023-03-11T20:22:52.089Z] Send event: {"type":"event","name":"taskGraphComplete","payload":{"completedAt":"2023-03-11T20:22:52.089Z"}}
+
+[2023-03-11T20:22:52.093Z] Waiting for code changes...
+
+[2023-03-11T20:22:52.093Z] Send event: {"type":"event","name":"watchingForChanges","payload":{}}

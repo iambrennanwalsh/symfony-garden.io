@@ -1,0 +1,254 @@
+
+[2023-03-11T09:36:17.350Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T09:36:17.572Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:36:17.699Z] Getting status...
+
+[2023-03-11T09:36:19.182Z] Using current context: docker-desktop
+
+[2023-03-11T09:36:19.251Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T09:36:19.299Z] Getting status... → Cached
+
+[2023-03-11T09:36:19.301Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T09:36:19.306Z] Resolving 3 modules...
+
+[2023-03-11T09:36:19.380Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T09:36:19.588Z] Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:36:19.609Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T09:36:19.731Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:36:19.746Z] Resolving 3 modules... → Done
+
+[2023-03-11T09:36:19.766Z] Processing...
+
+[2023-03-11T09:36:19.797Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T09:36:19.864Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T09:36:19.873Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T09:36:19.875Z] Syncing module sources (42 files)...
+
+[2023-03-11T09:36:19.894Z] Syncing 42 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T09:36:19.934Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-11T09:36:19.935Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-11T09:36:19.950Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-11T09:36:19.998Z] Creating namespace wagregistry-wagregistry-brennanwalsh
+
+[2023-03-11T09:36:20.023Z] Syncing module sources (42 files)... → Done (took 0.1 sec)
+
+[2023-03-11T09:36:20.026Z] Getting build status for v-e5c060db16...
+
+[2023-03-11T09:36:20.036Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-e5c060db16 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:36:20.120Z] All resources missing from cluster
+
+[2023-03-11T09:36:20.151Z] All resources missing from cluster
+
+[2023-03-11T09:36:20.152Z] All resources missing from cluster
+
+[2023-03-11T09:36:20.157Z] Deploying version v-a957583129...
+
+[2023-03-11T09:36:20.164Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-03-11T09:36:20.165Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T09:36:20.165Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T09:36:20.484Z] Image app:v-e5c060db16 already exists
+
+[2023-03-11T09:36:20.489Z] Getting build status for v-e5c060db16... → Already built
+
+[2023-03-11T09:36:20.495Z] Syncing module sources (3 files)...
+
+[2023-03-11T09:36:20.498Z] Deploying version v-e02a04a73a...
+
+[2023-03-11T09:36:20.504Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-11T09:36:20.504Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T09:36:20.505Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T09:36:20.618Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-11T09:36:20.621Z] Getting build status for v-56c81aa43e...
+
+[2023-03-11T09:36:20.623Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-56c81aa43e -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:36:20.707Z] Image server:v-56c81aa43e already exists
+
+[2023-03-11T09:36:20.710Z] Getting build status for v-56c81aa43e... → Already built
+
+[2023-03-11T09:36:20.713Z] Deploying version v-b938eaedd9...
+
+[2023-03-11T09:36:20.722Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T09:36:20.723Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T09:36:20.891Z] Waiting for resources to be ready...
+
+[2023-03-11T09:36:20.891Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T09:36:20.961Z] Waiting for resources to be ready...
+
+[2023-03-11T09:36:20.962Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T09:36:21.148Z] Waiting for resources to be ready...
+
+[2023-03-11T09:36:21.148Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T09:36:23.216Z] Status of Deployment database is "deploying"
+
+[2023-03-11T09:36:23.216Z] [kubernetes-plugin]: Status of Deployment database is "deploying"
+
+[2023-03-11T09:36:23.224Z] Deployment/database: Started container database
+
+[2023-03-11T09:36:23.225Z] [kubernetes-plugin]: Deployment/database: Started container database
+
+[2023-03-11T09:36:23.225Z] Status of Service database is "ready"
+
+[2023-03-11T09:36:23.226Z] [kubernetes-plugin]: Status of Service database is "ready"
+
+[2023-03-11T09:36:23.232Z] Status of Deployment app is "deploying"
+
+[2023-03-11T09:36:23.232Z] [kubernetes-plugin]: Status of Deployment app is "deploying"
+
+[2023-03-11T09:36:23.235Z] Deployment/app: Started container app
+
+[2023-03-11T09:36:23.235Z] [kubernetes-plugin]: Deployment/app: Started container app
+
+[2023-03-11T09:36:23.235Z] Status of Service app is "ready"
+
+[2023-03-11T09:36:23.235Z] [kubernetes-plugin]: Status of Service app is "ready"
+
+[2023-03-11T09:36:23.296Z] Status of Deployment server is "deploying"
+
+[2023-03-11T09:36:23.297Z] [kubernetes-plugin]: Status of Deployment server is "deploying"
+
+[2023-03-11T09:36:23.299Z] Deployment/server: Started container server
+
+[2023-03-11T09:36:23.300Z] [kubernetes-plugin]: Deployment/server: Started container server
+
+[2023-03-11T09:36:23.300Z] Status of Service server is "ready"
+
+[2023-03-11T09:36:23.300Z] [kubernetes-plugin]: Status of Service server is "ready"
+
+[2023-03-11T09:36:23.300Z] Status of Ingress server-0 is "ready"
+
+[2023-03-11T09:36:23.300Z] [kubernetes-plugin]: Status of Ingress server-0 is "ready"
+
+[2023-03-11T09:36:25.825Z] Status of Deployment database is "ready"
+
+[2023-03-11T09:36:25.826Z] [kubernetes-plugin]: Status of Deployment database is "ready"
+
+[2023-03-11T09:36:25.826Z] Status of Service database is "ready"
+
+[2023-03-11T09:36:25.826Z] [kubernetes-plugin]: Status of Service database is "ready"
+
+[2023-03-11T09:36:25.826Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-11T09:36:25.829Z] Resources ready
+
+[2023-03-11T09:36:25.846Z] Status of Deployment app is "ready"
+
+[2023-03-11T09:36:25.846Z] [kubernetes-plugin]: Status of Deployment app is "ready"
+
+[2023-03-11T09:36:25.847Z] Status of Service app is "ready"
+
+[2023-03-11T09:36:25.847Z] [kubernetes-plugin]: Status of Service app is "ready"
+
+[2023-03-11T09:36:25.847Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-11T09:36:25.849Z] Resources ready
+
+[2023-03-11T09:36:25.866Z] Status of Deployment server is "ready"
+
+[2023-03-11T09:36:25.867Z] [kubernetes-plugin]: Status of Deployment server is "ready"
+
+[2023-03-11T09:36:25.867Z] Status of Service server is "ready"
+
+[2023-03-11T09:36:25.867Z] [kubernetes-plugin]: Status of Service server is "ready"
+
+[2023-03-11T09:36:25.867Z] Status of Ingress server-0 is "ready"
+
+[2023-03-11T09:36:25.867Z] [kubernetes-plugin]: Status of Ingress server-0 is "ready"
+
+[2023-03-11T09:36:25.867Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-11T09:36:25.871Z] Resources ready
+
+[2023-03-11T09:36:25.914Z] Getting currently deployed resource statuses...
+
+[2023-03-11T09:36:25.930Z] Getting currently deployed resource statuses...
+
+[2023-03-11T09:36:25.953Z] Getting currently deployed resource statuses...
+
+[2023-03-11T09:36:25.980Z] Comparing expected and deployed resources...
+
+[2023-03-11T09:36:25.984Z] All resources match.
+
+[2023-03-11T09:36:25.990Z] Deploying version v-a957583129... → Done (took 5.8 sec)
+
+[2023-03-11T09:36:26.017Z] Comparing expected and deployed resources...
+
+[2023-03-11T09:36:26.023Z] All resources match.
+
+[2023-03-11T09:36:26.024Z] Started proxy to database/database:5432 on localhost:5432
+
+[2023-03-11T09:36:26.024Z] Comparing expected and deployed resources...
+
+[2023-03-11T09:36:26.027Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-11T09:36:26.029Z] All resources match.
+
+[2023-03-11T09:36:26.035Z] Deploying version v-e02a04a73a... → Done (took 5.5 sec)
+
+[2023-03-11T09:36:26.053Z] Deploying version v-b938eaedd9... → Done (took 5.3 sec)
+
+[2023-03-11T09:36:26.058Z] Ingress: http://todone.garden
+
+[2023-03-11T09:36:26.067Z] Started proxy to app/app:80 on localhost:60639
+
+[2023-03-11T09:36:26.075Z] Port forward: http://localhost:60639 → app:80 (app)
+
+[2023-03-11T09:36:26.085Z] Started proxy to server/server:80 on localhost:60640
+
+[2023-03-11T09:36:26.088Z] Port forward: http://localhost:60640 → server:80 (http)
+
+[2023-03-11T09:36:26.094Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:36:26.095Z] Watcher: Starting FSWatcher
+
+[2023-03-11T09:36:26.099Z] Waiting for code changes...
+
+[2023-03-11T09:36:34.574Z] Starting port forward to server/server:80
+
+[2023-03-11T09:36:34.610Z] Forwarding local port 60699 to Service/server port 80
+
+[2023-03-11T09:36:35.645Z] Successfully started port forward to server/server:80
+
+[2023-03-11T09:36:35.647Z] Connecting to server/server:80 port forward at localhost:60699
+
+[2023-03-11T09:36:35.651Z] Connecting to server/server:80 port forward at localhost:60699
+
+[2023-03-11T09:36:35.652Z] Connecting to server/server:80 port forward at localhost:60699
+
+[2023-03-11T09:38:22.029Z] Connection from undefined:undefined ended
+
+[2023-03-11T09:38:39.252Z] Connection from undefined:undefined ended

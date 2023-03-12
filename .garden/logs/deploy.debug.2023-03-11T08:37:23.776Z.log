@@ -1,0 +1,422 @@
+
+[2023-03-11T08:37:23.796Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T08:37:23.936Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:37:24.076Z] Getting status...
+
+[2023-03-11T08:37:25.658Z] Using current context: docker-desktop
+
+[2023-03-11T08:37:25.703Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T08:37:25.728Z] Getting status... → Cached
+
+[2023-03-11T08:37:25.730Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T08:37:25.734Z] Resolving 3 modules...
+
+[2023-03-11T08:37:25.796Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T08:37:26.087Z] Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:37:26.143Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T08:37:26.350Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:37:26.368Z] Resolving 3 modules... → Done
+
+[2023-03-11T08:37:26.394Z] Processing...
+
+[2023-03-11T08:37:26.429Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T08:37:26.503Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T08:37:26.510Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T08:37:26.513Z] Syncing module sources (42 files)...
+
+[2023-03-11T08:37:26.531Z] Syncing 42 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T08:37:26.540Z] Syncing module sources (42 files)... → Done (took 0 sec)
+
+[2023-03-11T08:37:26.542Z] Getting build status for v-c684a0c14a...
+
+[2023-03-11T08:37:26.545Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-c684a0c14a -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:37:26.823Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-11T08:37:26.844Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-11T08:37:26.847Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-11T08:37:26.964Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:37:26.964Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:37:26.972Z] Image app:v-c684a0c14a already exists
+
+[2023-03-11T08:37:26.975Z] Getting build status for v-c684a0c14a... → Already built
+
+[2023-03-11T08:37:26.979Z] Syncing module sources (3 files)...
+
+[2023-03-11T08:37:26.981Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-11T08:37:27.022Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:37:27.056Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:37:27.057Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:37:27.058Z] All resources match.
+
+[2023-03-11T08:37:27.058Z] All resources match.
+
+[2023-03-11T08:37:27.068Z] Deploying version v-2106fd84f6...
+
+[2023-03-11T08:37:27.069Z] Deploying version v-2106fd84f6... → Already deployed
+
+[2023-03-11T08:37:27.070Z] Deploying version v-a957583129...
+
+[2023-03-11T08:37:27.072Z] Deploying version v-a957583129... → Already deployed
+
+[2023-03-11T08:37:27.091Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:37:27.092Z] Resource server is not a superset of deployed resource
+
+[2023-03-11T08:37:27.099Z] Started proxy to app/app:9000 on localhost:9000
+
+[2023-03-11T08:37:27.099Z] Started proxy to database/database:5432 on localhost:5432
+
+[2023-03-11T08:37:27.102Z] Port forward: localhost:9000 → app:9000 (app)
+
+[2023-03-11T08:37:27.103Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-11T08:37:27.113Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-11T08:37:27.116Z] Getting build status for v-c4af286ac6...
+
+[2023-03-11T08:37:27.121Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-c4af286ac6 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:37:27.227Z] Building version v-c4af286ac6...
+
+[2023-03-11T08:37:27.510Z] Building server:v-c4af286ac6...
+
+[2023-03-11T08:37:27.512Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker build -t server:v-c4af286ac6 --build-arg GARDEN_MODULE_VERSION=v-c4af286ac6 --target server --file /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/server/Dockerfile /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/server' in /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/server
+
+[2023-03-11T08:37:27.956Z] [local-docker]: #1 [internal] load build definition from Dockerfile
+
+[2023-03-11T08:37:27.956Z] [local-docker]: #1 sha256:20b9d24b6a3580c1309dacbb6df187f26624d283f4af52bcb9491e6578bac2f0
+
+[2023-03-11T08:37:27.957Z] [local-docker]: #1 transferring dockerfile: 37B 0.0s done
+
+[2023-03-11T08:37:27.957Z] [local-docker]: #1 DONE 0.0s
+
+[2023-03-11T08:37:27.957Z] [local-docker]: 
+
+[2023-03-11T08:37:27.957Z] [local-docker]: #2 [internal] load .dockerignore
+
+[2023-03-11T08:37:27.957Z] [local-docker]: #2 sha256:4616aa63a6cb3ab52a54e11d2d5805311e27ab65dbc2869f0ed6d1ef66003188
+
+[2023-03-11T08:37:27.957Z] [local-docker]: #2 transferring context: 2B done
+
+[2023-03-11T08:37:27.957Z] [local-docker]: #2 DONE 0.0s
+
+[2023-03-11T08:37:28.104Z] [local-docker]: 
+
+[2023-03-11T08:37:28.104Z] [local-docker]: #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+[2023-03-11T08:37:28.104Z] [local-docker]: #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+[2023-03-11T08:37:28.992Z] [local-docker]: #3 DONE 1.0s
+
+[2023-03-11T08:37:29.143Z] [local-docker]: 
+
+[2023-03-11T08:37:29.144Z] [local-docker]: #4 docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+[2023-03-11T08:37:29.145Z] [local-docker]: #4 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+[2023-03-11T08:37:29.146Z] [local-docker]: #4 CACHED
+
+[2023-03-11T08:37:29.405Z] [local-docker]: 
+
+[2023-03-11T08:37:29.406Z] [local-docker]: #6 [internal] load build definition from Dockerfile
+
+[2023-03-11T08:37:29.406Z] [local-docker]: #6 sha256:d19f89498932b30cad9c82c35412c522cfd19154a288656e274d1bc6c1f03e15
+
+[2023-03-11T08:37:29.406Z] [local-docker]: #6 DONE 0.0s
+
+[2023-03-11T08:37:29.406Z] [local-docker]: 
+
+[2023-03-11T08:37:29.406Z] [local-docker]: #5 [internal] load .dockerignore
+
+[2023-03-11T08:37:29.406Z] [local-docker]: #5 sha256:bbe2dea58cf14b541b02feea7b62a26908fd11ac7ae510d23e3506c501f34078
+
+[2023-03-11T08:37:29.406Z] [local-docker]: #5 DONE 0.0s
+
+[2023-03-11T08:37:29.407Z] [local-docker]: 
+
+[2023-03-11T08:37:29.408Z] [local-docker]: #7 [internal] load metadata for docker.io/library/caddy:2.6-alpine
+
+[2023-03-11T08:37:29.408Z] [local-docker]: #7 sha256:b5c2bfb54074ace1ac2676cd0cfcdd7bf608114053735ecb316464b673ee88af
+
+[2023-03-11T08:37:29.815Z] [local-docker]: #7 DONE 0.5s
+
+[2023-03-11T08:37:29.899Z] [local-docker]: 
+
+[2023-03-11T08:37:29.901Z] [local-docker]: #8 [server 1/4] FROM docker.io/library/caddy:2.6-alpine@sha256:3f4414616d9141c4fbd9f66641d9b91a3b67833dd4145738c536dee584db5314
+
+[2023-03-11T08:37:29.901Z] [local-docker]: #8 sha256:7512f525f983f4aa77728146b3cf48a3abfc49a3375957ea816cc1eb65fd60fa
+
+[2023-03-11T08:37:29.901Z] [local-docker]: #8 resolve docker.io/library/caddy:2.6-alpine@sha256:3f4414616d9141c4fbd9f66641d9b91a3b67833dd4145738c536dee584db5314 0.0s done
+
+[2023-03-11T08:37:29.901Z] [local-docker]: #8 DONE 0.0s
+
+[2023-03-11T08:37:29.901Z] [local-docker]: 
+
+[2023-03-11T08:37:29.902Z] [local-docker]: #10 [internal] load build context
+
+[2023-03-11T08:37:29.902Z] [local-docker]: #10 sha256:5ed1534526aa74b3c8db661d72ecfe95bd4cb0d40effba34844024baa5f9e2d9
+
+[2023-03-11T08:37:29.902Z] [local-docker]: #10 transferring context: 291B 0.0s done
+
+[2023-03-11T08:37:29.902Z] [local-docker]: #10 DONE 0.0s
+
+[2023-03-11T08:37:29.902Z] [local-docker]: 
+
+[2023-03-11T08:37:29.902Z] [local-docker]: #9 [server 2/4] WORKDIR /srv/app
+
+[2023-03-11T08:37:29.903Z] [local-docker]: #9 sha256:4f4cee17ac54c82763d359b937a28ab3630c941c21b6bf24e4c1ec8c8eecfc5b
+
+[2023-03-11T08:37:29.903Z] [local-docker]: #9 CACHED
+
+[2023-03-11T08:37:29.903Z] [local-docker]: 
+
+[2023-03-11T08:37:29.903Z] [local-docker]: #11 [server 3/4] COPY --link ./server/Caddyfile /etc/caddy/Caddyfile
+
+[2023-03-11T08:37:29.903Z] [local-docker]: #11 sha256:c5b7e70a06a8167776d59a7e778abd98b9716efb0b64df5786a62e9b36f6a3ad
+
+[2023-03-11T08:37:29.903Z] [local-docker]: #11 DONE 0.0s
+
+[2023-03-11T08:37:29.904Z] [local-docker]: 
+
+[2023-03-11T08:37:29.905Z] [local-docker]: #12 [server 4/4] COPY --link ./app/public public
+
+[2023-03-11T08:37:29.905Z] [local-docker]: #12 sha256:66470a093665fc29b5d9062506cadafd8ca5954652ef6697e0244e4b5be4eb11
+
+[2023-03-11T08:37:29.905Z] [local-docker]: #12 DONE 0.0s
+
+[2023-03-11T08:37:29.906Z] [local-docker]: 
+
+[2023-03-11T08:37:29.906Z] [local-docker]: #13 exporting to image
+
+[2023-03-11T08:37:29.906Z] [local-docker]: #13 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+
+[2023-03-11T08:37:29.906Z] [local-docker]: #13 exporting layers 0.0s done
+
+[2023-03-11T08:37:29.906Z] [local-docker]: #13 writing image sha256:e18d00099a9b9d594c73e73c1fe0cd8c993ec0f91a5641e7c9dd6f3c32577253 done
+
+[2023-03-11T08:37:29.906Z] [local-docker]: #13 naming to docker.io/library/server:v-c4af286ac6 done
+
+[2023-03-11T08:37:29.906Z] [local-docker]: #13 DONE 0.0s
+
+[2023-03-11T08:37:29.926Z] Building server:v-c4af286ac6... → Done (took 2.8 sec)
+
+[2023-03-11T08:37:29.935Z] Deploying version v-0459a6cb8a...
+
+[2023-03-11T08:37:29.970Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-03-11T08:37:29.970Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T08:37:29.971Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T08:37:30.807Z] Waiting for resources to be ready...
+
+[2023-03-11T08:37:30.809Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T08:37:32.886Z] Status of Deployment server is "ready"
+
+[2023-03-11T08:37:32.886Z] [kubernetes-plugin]: Status of Deployment server is "ready"
+
+[2023-03-11T08:37:32.886Z] Status of Service server is "ready"
+
+[2023-03-11T08:37:32.886Z] [kubernetes-plugin]: Status of Service server is "ready"
+
+[2023-03-11T08:37:32.887Z] Status of Ingress server-0 is "ready"
+
+[2023-03-11T08:37:32.887Z] [kubernetes-plugin]: Status of Ingress server-0 is "ready"
+
+[2023-03-11T08:37:32.887Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-11T08:37:32.890Z] Resources ready
+
+[2023-03-11T08:37:32.919Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:37:32.963Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:37:32.966Z] All resources match.
+
+[2023-03-11T08:37:32.986Z] Deploying version v-0459a6cb8a... → Done (took 3 sec)
+
+[2023-03-11T08:37:32.998Z] Ingress: http://todone.local
+
+[2023-03-11T08:37:33.021Z] Started proxy to server/server:80 on localhost:59635
+
+[2023-03-11T08:37:33.024Z] Port forward: http://localhost:59635 → server:80 (http)
+
+[2023-03-11T08:37:33.033Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:37:33.036Z] Watcher: Starting FSWatcher
+
+[2023-03-11T08:37:33.040Z] Waiting for code changes...
+
+[2023-03-11T08:39:02.942Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-11T08:39:03.081Z] Getting status...
+
+[2023-03-11T08:39:03.782Z] Using current context: docker-desktop
+
+[2023-03-11T08:39:03.854Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T08:39:03.889Z] Getting status... → Cached
+
+[2023-03-11T08:39:03.892Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T08:39:03.898Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T08:39:04.096Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:39:04.141Z] Resolving 3 modules...
+
+[2023-03-11T08:39:04.236Z] app: Error: Error validating Module 'app': key .services[0][ports][0][containerPort] is required, key "port" is not allowed at path .services[0][ports][0][port]
+    at validateSchema (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/config/validation.ts:134:11)
+    at validateWithPath (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/config/validation.ts:80:13)
+    at ModuleResolver.resolveModuleConfig (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/resolve-module.ts:381:37)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at processNode (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/resolve-module.ts:132:57)
+
+Error Details:
+
+app:
+  detail:
+    value:
+      dockerfile: ./Dockerfile
+      services:
+        - name: app
+          ports:
+            - name: app
+              port: 9000
+      build:
+        dependencies:
+          - name: database
+            copy: []
+        targetImage: app
+    context: Module 'app'
+    errorDescription: "key \e[4m.services[0][ports][0][containerPort]\e[24m is required, key \"port\" is not allowed at path \e[4m.services[0][ports][0][port]\e[24m"
+    errorDetails:
+      - message: "key \e[4m.services[0][ports][0][containerPort]\e[24m is required"
+        path:
+          - services
+          - 0
+          - ports
+          - 0
+          - containerPort
+        type: any.required
+        context:
+          label: 'services[0].ports[0].containerPort'
+          key: containerPort
+      - message: "key \"port\" is not allowed at path \e[4m.services[0][ports][0][port]\e[24m"
+        path:
+          - services
+          - 0
+          - ports
+          - 0
+          - port
+        type: object.unknown
+        context:
+          child: port
+          label: 'services[0].ports[0].port'
+          value: 9000
+          key: port
+  type: configuration
+
+
+[2023-03-11T08:39:07.731Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-11T08:39:07.833Z] Getting status...
+
+[2023-03-11T08:39:08.308Z] Using current context: docker-desktop
+
+[2023-03-11T08:39:08.356Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T08:39:08.367Z] Getting status... → Cached
+
+[2023-03-11T08:39:08.370Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T08:39:08.374Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T08:39:08.531Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:39:08.555Z] Resolving 3 modules...
+
+[2023-03-11T08:39:08.588Z] app: Error: Error validating Module 'app': key .services[0][ports][0][containerPort] is required, key "port" is not allowed at path .services[0][ports][0][port]
+    at validateSchema (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/config/validation.ts:134:11)
+    at validateWithPath (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/config/validation.ts:80:13)
+    at ModuleResolver.resolveModuleConfig (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/resolve-module.ts:381:37)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at processNode (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/resolve-module.ts:132:57)
+
+Error Details:
+
+app:
+  detail:
+    value:
+      dockerfile: ./Dockerfile
+      services:
+        - name: app
+          ports:
+            - name: app
+              port: 9000
+      build:
+        dependencies:
+          - name: database
+            copy: []
+        targetImage: app
+    context: Module 'app'
+    errorDescription: "key \e[4m.services[0][ports][0][containerPort]\e[24m is required, key \"port\" is not allowed at path \e[4m.services[0][ports][0][port]\e[24m"
+    errorDetails:
+      - message: "key \e[4m.services[0][ports][0][containerPort]\e[24m is required"
+        path:
+          - services
+          - 0
+          - ports
+          - 0
+          - containerPort
+        type: any.required
+        context:
+          label: 'services[0].ports[0].containerPort'
+          key: containerPort
+      - message: "key \"port\" is not allowed at path \e[4m.services[0][ports][0][port]\e[24m"
+        path:
+          - services
+          - 0
+          - ports
+          - 0
+          - port
+        type: object.unknown
+        context:
+          child: port
+          label: 'services[0].ports[0].port'
+          value: 9000
+          key: port
+  type: configuration
+

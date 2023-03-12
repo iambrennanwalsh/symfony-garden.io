@@ -1,0 +1,1010 @@
+{"msg":"Scanning for configs","section":"","timestamp":"2023-03-11T08:29:15.503Z","level":"silly","allSections":[]}
+{"msg":"Scanning for configs in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:15.512Z","level":"silly","allSections":[]}
+{"msg":"Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: **/*garden.y*ml\n→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**","section":"","timestamp":"2023-03-11T08:29:15.512Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:15.514Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:15.541Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)**/*garden.y*ml' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:15.586Z","level":"silly","allSections":[]}
+{"msg":"Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:15.658Z","level":"debug","allSections":[]}
+{"msg":"Load module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml","section":"","timestamp":"2023-03-11T08:29:15.661Z","level":"silly","allSections":[]}
+{"msg":"Load module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml","section":"","timestamp":"2023-03-11T08:29:15.664Z","level":"silly","allSections":[]}
+{"msg":"Loaded module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml","section":"","timestamp":"2023-03-11T08:29:15.685Z","level":"silly","allSections":[]}
+{"msg":"Loaded module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml","section":"","timestamp":"2023-03-11T08:29:15.689Z","level":"silly","allSections":[]}
+{"msg":"Adding module server","section":"","timestamp":"2023-03-11T08:29:15.696Z","level":"silly","allSections":[]}
+{"msg":"Adding module database","section":"","timestamp":"2023-03-11T08:29:15.696Z","level":"silly","allSections":[]}
+{"msg":"Adding module app","section":"","timestamp":"2023-03-11T08:29:15.697Z","level":"silly","allSections":[]}
+{"msg":"Scanned and found 3 modules and 0 workflows","section":"","timestamp":"2023-03-11T08:29:15.698Z","level":"silly","allSections":[]}
+{"msg":"Resolving providers","section":"","timestamp":"2023-03-11T08:29:15.795Z","level":"silly","allSections":[]}
+{"msg":"Getting status...","section":"providers","timestamp":"2023-03-11T08:29:15.797Z","level":"info","allSections":["providers"]}
+{"msg":"Loading plugins","section":"","timestamp":"2023-03-11T08:29:15.805Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin container","section":"","timestamp":"2023-03-11T08:29:16.226Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin exec","section":"","timestamp":"2023-03-11T08:29:16.236Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin hadolint","section":"","timestamp":"2023-03-11T08:29:16.240Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin kubernetes","section":"","timestamp":"2023-03-11T08:29:16.321Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.332Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin octant","section":"","timestamp":"2023-03-11T08:29:16.333Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin openfaas","section":"","timestamp":"2023-03-11T08:29:16.338Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin google-app-engine","section":"","timestamp":"2023-03-11T08:29:16.339Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:29:16.340Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:29:16.341Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin npm-package","section":"","timestamp":"2023-03-11T08:29:16.341Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin templated","section":"","timestamp":"2023-03-11T08:29:16.346Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest","section":"","timestamp":"2023-03-11T08:29:16.350Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest-container","section":"","timestamp":"2023-03-11T08:29:16.351Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.352Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin jib","section":"","timestamp":"2023-03-11T08:29:16.372Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin maven-container","section":"","timestamp":"2023-03-11T08:29:16.383Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin terraform","section":"","timestamp":"2023-03-11T08:29:16.403Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin pulumi","section":"","timestamp":"2023-03-11T08:29:16.423Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin container","section":"","timestamp":"2023-03-11T08:29:16.434Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin container","section":"","timestamp":"2023-03-11T08:29:16.672Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin hadolint","section":"","timestamp":"2023-03-11T08:29:16.673Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin hadolint","section":"","timestamp":"2023-03-11T08:29:16.676Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin jib","section":"","timestamp":"2023-03-11T08:29:16.676Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin jib","section":"","timestamp":"2023-03-11T08:29:16.681Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin kubernetes","section":"","timestamp":"2023-03-11T08:29:16.681Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin kubernetes","section":"","timestamp":"2023-03-11T08:29:16.685Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.685Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.687Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin octant","section":"","timestamp":"2023-03-11T08:29:16.687Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin octant","section":"","timestamp":"2023-03-11T08:29:16.688Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin openfaas","section":"","timestamp":"2023-03-11T08:29:16.688Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin openfaas","section":"","timestamp":"2023-03-11T08:29:16.690Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin google-app-engine","section":"","timestamp":"2023-03-11T08:29:16.690Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin google-app-engine","section":"","timestamp":"2023-03-11T08:29:16.691Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:29:16.691Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:29:16.695Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:29:16.695Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:29:16.698Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin exec","section":"","timestamp":"2023-03-11T08:29:16.698Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin exec","section":"","timestamp":"2023-03-11T08:29:16.702Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin npm-package","section":"","timestamp":"2023-03-11T08:29:16.703Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin npm-package","section":"","timestamp":"2023-03-11T08:29:16.704Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin templated","section":"","timestamp":"2023-03-11T08:29:16.705Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin templated","section":"","timestamp":"2023-03-11T08:29:16.707Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest","section":"","timestamp":"2023-03-11T08:29:16.707Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest","section":"","timestamp":"2023-03-11T08:29:16.710Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest-container","section":"","timestamp":"2023-03-11T08:29:16.710Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest-container","section":"","timestamp":"2023-03-11T08:29:16.711Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.711Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.712Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin maven-container","section":"","timestamp":"2023-03-11T08:29:16.712Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin maven-container","section":"","timestamp":"2023-03-11T08:29:16.714Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin terraform","section":"","timestamp":"2023-03-11T08:29:16.714Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin terraform","section":"","timestamp":"2023-03-11T08:29:16.719Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin pulumi","section":"","timestamp":"2023-03-11T08:29:16.720Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin pulumi","section":"","timestamp":"2023-03-11T08:29:16.726Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugins: exec, container, templated, local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.728Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Processing 4 tasks: resolve-provider.exec,resolve-provider.container,resolve-provider.templated,resolve-provider.local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.741Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.exec","section":"","timestamp":"2023-03-11T08:29:16.741Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.container","section":"","timestamp":"2023-03-11T08:29:16.741Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.templated","section":"","timestamp":"2023-03-11T08:29:16.741Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.742Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.exec:","section":"","timestamp":"2023-03-11T08:29:16.743Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.container:","section":"","timestamp":"2023-03-11T08:29:16.743Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.templated:","section":"","timestamp":"2023-03-11T08:29:16.744Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 1 dependencies for node resolve-provider.local-kubernetes: resolve-provider.container","section":"","timestamp":"2023-03-11T08:29:16.745Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Partitioning into batches","section":"","timestamp":"2023-03-11T08:29:16.746Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Split into 3 batches","section":"","timestamp":"2023-03-11T08:29:16.747Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: this.index before processing","section":"","timestamp":"2023-03-11T08:29:16.748Z","level":"silly","allSections":[]}
+{"msg":"---------------------------------------","section":"","timestamp":"2023-03-11T08:29:16.748Z","level":"silly","allSections":[]}
+{"msg":"{}","section":"","timestamp":"2023-03-11T08:29:16.748Z","level":"silly","allSections":[]}
+{"msg":"Processing tasks...","section":"","timestamp":"2023-03-11T08:29:16.749Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 4","section":"","timestamp":"2023-03-11T08:29:16.749Z","level":"silly","allSections":[]}
+{"msg":"Currently in progress [resolve-provider.exec.cfc30040-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.container.cfc32750-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.templated.cfc32751-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:16.750Z","level":"silly","allSections":[]}
+{"msg":"Processing task resolve-provider.exec.cfc30040-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.exec","status":"active","uid":"cfc30040-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:29:16.750Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.cfc30040-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.container.cfc32750-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.templated.cfc32751-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:16.751Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider exec","section":"","timestamp":"2023-03-11T08:29:16.751Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating exec config","section":"","timestamp":"2023-03-11T08:29:16.751Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on exec","section":"","timestamp":"2023-03-11T08:29:16.756Z","level":"silly","allSections":["providers"]}
+{"msg":"Processing task resolve-provider.container.cfc32750-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"active","uid":"cfc32750-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:29:16.756Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.cfc30040-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.container.cfc32750-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.templated.cfc32751-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:16.756Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider container","section":"","timestamp":"2023-03-11T08:29:16.756Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating container config","section":"","timestamp":"2023-03-11T08:29:16.756Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on container","section":"","timestamp":"2023-03-11T08:29:16.757Z","level":"silly","allSections":["providers"]}
+{"msg":"Processing task resolve-provider.templated.cfc32751-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.templated","status":"active","uid":"cfc32751-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:29:16.757Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.cfc30040-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.container.cfc32750-bfe6-11ed-9218-875fe6bb9a14, resolve-provider.templated.cfc32751-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:16.757Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider templated","section":"","timestamp":"2023-03-11T08:29:16.757Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating templated config","section":"","timestamp":"2023-03-11T08:29:16.757Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on templated","section":"","timestamp":"2023-03-11T08:29:16.757Z","level":"silly","allSections":["providers"]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:29:16.758Z","level":"silly","allSections":[]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:29:16.761Z","level":"silly","allSections":[]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:29:16.762Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'exec'","section":"","timestamp":"2023-03-11T08:29:16.850Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'container'","section":"","timestamp":"2023-03-11T08:29:16.854Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'templated'","section":"","timestamp":"2023-03-11T08:29:16.854Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'exec'","section":"","timestamp":"2023-03-11T08:29:16.855Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'container'","section":"","timestamp":"2023-03-11T08:29:16.855Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'templated'","section":"","timestamp":"2023-03-11T08:29:16.855Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'exec'","section":"","timestamp":"2023-03-11T08:29:16.855Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'container'","section":"","timestamp":"2023-03-11T08:29:16.856Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'templated'","section":"","timestamp":"2023-03-11T08:29:16.856Z","level":"silly","allSections":[]}
+{"msg":"Validating exec config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:29:16.856Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring exec provider is ready","section":"","timestamp":"2023-03-11T08:29:16.861Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating container config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:29:16.862Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring container provider is ready","section":"","timestamp":"2023-03-11T08:29:16.862Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating templated config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:29:16.862Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring templated provider is ready","section":"","timestamp":"2023-03-11T08:29:16.862Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for exec","section":"","timestamp":"2023-03-11T08:29:16.870Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for exec at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/exec.json","section":"","timestamp":"2023-03-11T08:29:16.870Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for container","section":"","timestamp":"2023-03-11T08:29:16.870Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for container at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/container.json","section":"","timestamp":"2023-03-11T08:29:16.870Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for templated","section":"","timestamp":"2023-03-11T08:29:16.870Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for templated at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/templated.json","section":"","timestamp":"2023-03-11T08:29:16.870Z","level":"silly","allSections":["providers"]}
+{"msg":"Completed task resolve-provider.exec.cfc30040-bfe6-11ed-9218-875fe6bb9a14 (took 0.138 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.exec","status":"success","uid":"cfc30040-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":138}},"section":"tasks","timestamp":"2023-03-11T08:29:16.888Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 3","section":"","timestamp":"2023-03-11T08:29:16.889Z","level":"silly","allSections":[]}
+{"msg":"Completed task resolve-provider.templated.cfc32751-bfe6-11ed-9218-875fe6bb9a14 (took 0.134 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.templated","status":"success","uid":"cfc32751-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":134}},"section":"tasks","timestamp":"2023-03-11T08:29:16.891Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 2","section":"","timestamp":"2023-03-11T08:29:16.892Z","level":"silly","allSections":[]}
+{"msg":"Completed task resolve-provider.container.cfc32750-bfe6-11ed-9218-875fe6bb9a14 (took 0.136 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"success","uid":"cfc32750-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":136}},"section":"tasks","timestamp":"2023-03-11T08:29:16.892Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 1","section":"","timestamp":"2023-03-11T08:29:16.892Z","level":"silly","allSections":[]}
+{"msg":"Processing task resolve-provider.local-kubernetes.cfc32752-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.local-kubernetes","status":"active","uid":"cfc32752-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:29:16.893Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.local-kubernetes.cfc32752-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:16.893Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.893Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating local-kubernetes config","section":"","timestamp":"2023-03-11T08:29:16.893Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on local-kubernetes","section":"","timestamp":"2023-03-11T08:29:16.895Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:29:16.896Z","level":"silly","allSections":[]}
+{"msg":"Found 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:29:16.896Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:29:16.896Z","level":"silly","allSections":[]}
+{"msg":"Execing '/Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed/kubectl config view --raw' in /Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed","section":"","timestamp":"2023-03-11T08:29:16.898Z","level":"silly","allSections":["providers"]}
+{"msg":"Using current context: docker-desktop","section":"local-kubernetes","timestamp":"2023-03-11T08:29:17.261Z","level":"debug","allSections":["providers","local-kubernetes"]}
+{"msg":"An attempt to get kind version failed with Error: Command \"kind version\" failed with code ENOENT:","section":"","timestamp":"2023-03-11T08:29:17.306Z","level":"debug","allSections":["providers"]}
+{"msg":"Validating local-kubernetes config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:29:17.314Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating 'local-kubernetes' config against 'kubernetes' schema","section":"","timestamp":"2023-03-11T08:29:17.315Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring local-kubernetes provider is ready","section":"","timestamp":"2023-03-11T08:29:17.317Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for local-kubernetes","section":"","timestamp":"2023-03-11T08:29:17.323Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for local-kubernetes at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/local-kubernetes.json","section":"","timestamp":"2023-03-11T08:29:17.323Z","level":"silly","allSections":["providers"]}
+{"msg":"Completed task resolve-provider.local-kubernetes.cfc32752-bfe6-11ed-9218-875fe6bb9a14 (took 0.438 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.local-kubernetes","status":"success","uid":"cfc32752-bfe6-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":438}},"section":"tasks","timestamp":"2023-03-11T08:29:17.331Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:29:17.331Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:29:17.332Z","level":"silly","allSections":[]}
+{"msg":"Getting status... - Cached","section":"providers","timestamp":"2023-03-11T08:29:17.334Z","level":"info","allSections":["providers"]}
+{"msg":"Run with --force-refresh to force a refresh of provider statuses.","section":"","timestamp":"2023-03-11T08:29:17.340Z","level":"info","allSections":["providers"]}
+{"msg":"Resolved providers: exec, container, local-kubernetes, templated","section":"","timestamp":"2023-03-11T08:29:17.342Z","level":"silly","allSections":["providers"]}
+{"msg":"Resolving 3 modules...","section":"graph","timestamp":"2023-03-11T08:29:17.342Z","level":"info","allSections":["graph"]}
+{"msg":"ModuleResolver: Loop 1","section":"","timestamp":"2023-03-11T08:29:17.352Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:29:17.352Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node database","section":"","timestamp":"2023-03-11T08:29:17.353Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config database","section":"","timestamp":"2023-03-11T08:29:17.353Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'database'","section":"","timestamp":"2023-03-11T08:29:17.387Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'database'","section":"","timestamp":"2023-03-11T08:29:17.390Z","level":"silly","allSections":[]}
+{"msg":"Resolving module database","section":"","timestamp":"2023-03-11T08:29:17.391Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"database\"]","section":"","timestamp":"2023-03-11T08:29:17.391Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module database","section":"","timestamp":"2023-03-11T08:29:17.391Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"e3b0c44298\"]","section":"","timestamp":"2023-03-11T08:29:17.392Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"e3b0c44298\"]","section":"","timestamp":"2023-03-11T08:29:17.392Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"database\"]","section":"","timestamp":"2023-03-11T08:29:17.393Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module database resolved","section":"","timestamp":"2023-03-11T08:29:17.395Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:29:17.395Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node app","section":"","timestamp":"2023-03-11T08:29:17.396Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config app","section":"","timestamp":"2023-03-11T08:29:17.396Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'app'","section":"","timestamp":"2023-03-11T08:29:17.401Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'app'","section":"","timestamp":"2023-03-11T08:29:17.402Z","level":"silly","allSections":[]}
+{"msg":"Resolving module app","section":"","timestamp":"2023-03-11T08:29:17.402Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:29:17.403Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module app","section":"","timestamp":"2023-03-11T08:29:17.403Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"f0c121bdb9\"]","section":"","timestamp":"2023-03-11T08:29:17.403Z","level":"silly","allSections":[]}
+{"msg":"Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: ./Dockerfile,./app\n→ Excludes: (none)","section":"","timestamp":"2023-03-11T08:29:17.403Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.404Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.439Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)./Dockerfile :(glob)./app' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.476Z","level":"silly","allSections":[]}
+{"msg":"Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.515Z","level":"debug","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"f0c121bdb9\"]","section":"","timestamp":"2023-03-11T08:29:17.516Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:29:17.519Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module app resolved","section":"","timestamp":"2023-03-11T08:29:17.523Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:29:17.523Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node server","section":"","timestamp":"2023-03-11T08:29:17.523Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config server","section":"","timestamp":"2023-03-11T08:29:17.523Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'server'","section":"","timestamp":"2023-03-11T08:29:17.529Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'server'","section":"","timestamp":"2023-03-11T08:29:17.531Z","level":"silly","allSections":[]}
+{"msg":"Resolving module server","section":"","timestamp":"2023-03-11T08:29:17.532Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"server\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:29:17.532Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module server","section":"","timestamp":"2023-03-11T08:29:17.532Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"a9d7f41ee7\"]","section":"","timestamp":"2023-03-11T08:29:17.533Z","level":"silly","allSections":[]}
+{"msg":"Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: ./Dockerfile,./server,./app/public\n→ Excludes: (none)","section":"","timestamp":"2023-03-11T08:29:17.533Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.533Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.561Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)./Dockerfile :(glob)./server :(glob)./app/public' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.586Z","level":"silly","allSections":[]}
+{"msg":"Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.613Z","level":"debug","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"a9d7f41ee7\"]","section":"","timestamp":"2023-03-11T08:29:17.615Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"server\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:29:17.615Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module server resolved","section":"","timestamp":"2023-03-11T08:29:17.618Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 0 leaves","section":"","timestamp":"2023-03-11T08:29:17.618Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving 3 modules... - Done","section":"graph","timestamp":"2023-03-11T08:29:17.620Z","level":"info","allSections":["graph"]}
+{"msg":"Starting processModules","section":"","timestamp":"2023-03-11T08:29:17.627Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Processing 3 tasks: deploy.database,deploy.app,deploy.server","section":"","timestamp":"2023-03-11T08:29:17.629Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node deploy.database","section":"","timestamp":"2023-03-11T08:29:17.630Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node deploy.app","section":"","timestamp":"2023-03-11T08:29:17.630Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node deploy.server","section":"","timestamp":"2023-03-11T08:29:17.630Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node deploy.database: get-service-status.database,build.database","section":"","timestamp":"2023-03-11T08:29:17.631Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node deploy.app: get-service-status.app,build.app","section":"","timestamp":"2023-03-11T08:29:17.631Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node deploy.server: get-service-status.server,build.server","section":"","timestamp":"2023-03-11T08:29:17.631Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node get-service-status.database","section":"","timestamp":"2023-03-11T08:29:17.631Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node build.database","section":"","timestamp":"2023-03-11T08:29:17.631Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node get-service-status.app","section":"","timestamp":"2023-03-11T08:29:17.632Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node build.app","section":"","timestamp":"2023-03-11T08:29:17.632Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node get-service-status.server","section":"","timestamp":"2023-03-11T08:29:17.632Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node build.server","section":"","timestamp":"2023-03-11T08:29:17.633Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node get-service-status.database:","section":"","timestamp":"2023-03-11T08:29:17.634Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 1 dependencies for node build.database: stage-build.database","section":"","timestamp":"2023-03-11T08:29:17.634Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node get-service-status.app:","section":"","timestamp":"2023-03-11T08:29:17.634Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node get-service-status.server:","section":"","timestamp":"2023-03-11T08:29:17.634Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node build.app: stage-build.app,build.database","section":"","timestamp":"2023-03-11T08:29:17.634Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node build.server: stage-build.server,build.app","section":"","timestamp":"2023-03-11T08:29:17.634Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node stage-build.database","section":"","timestamp":"2023-03-11T08:29:17.635Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node stage-build.app","section":"","timestamp":"2023-03-11T08:29:17.635Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node stage-build.server","section":"","timestamp":"2023-03-11T08:29:17.635Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node stage-build.database:","section":"","timestamp":"2023-03-11T08:29:17.636Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node stage-build.app: stage-build.database,build.database","section":"","timestamp":"2023-03-11T08:29:17.636Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node stage-build.server: stage-build.app,build.app","section":"","timestamp":"2023-03-11T08:29:17.636Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Partitioning into batches","section":"","timestamp":"2023-03-11T08:29:17.637Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Split into 1 batches","section":"","timestamp":"2023-03-11T08:29:17.638Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: this.index before processing","section":"","timestamp":"2023-03-11T08:29:17.638Z","level":"silly","allSections":[]}
+{"msg":"---------------------------------------","section":"","timestamp":"2023-03-11T08:29:17.638Z","level":"silly","allSections":[]}
+{"msg":"{}","section":"","timestamp":"2023-03-11T08:29:17.638Z","level":"silly","allSections":[]}
+{"msg":"Processing...","section":"","timestamp":"2023-03-11T08:29:17.638Z","level":"info","allSections":[]}
+{"msg":"Processing task get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"get-service-status","key":"get-service-status.database","status":"active","uid":"d04acde0-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-a957583129"}},"section":"tasks","timestamp":"2023-03-11T08:29:17.643Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14, stage-build.database.d04b6a20-bfe6-11ed-9218-875fe6bb9a14, get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:17.644Z","level":"silly","allSections":[]}
+{"msg":"Processing task stage-build.database.d04b6a20-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"stage-build","key":"stage-build.database","status":"active","uid":"d04b6a20-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c"}},"section":"tasks","timestamp":"2023-03-11T08:29:17.646Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14, stage-build.database.d04b6a20-bfe6-11ed-9218-875fe6bb9a14, get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:17.646Z","level":"silly","allSections":[]}
+{"msg":"Processing task get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"get-service-status","key":"get-service-status.app","status":"active","uid":"d04acde2-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6"}},"section":"tasks","timestamp":"2023-03-11T08:29:17.646Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14, stage-build.database.d04b6a20-bfe6-11ed-9218-875fe6bb9a14, get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:17.646Z","level":"silly","allSections":[]}
+{"msg":"Processing task get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"get-service-status","key":"get-service-status.server","status":"active","uid":"d04acde4-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-097291880d"}},"section":"tasks","timestamp":"2023-03-11T08:29:17.646Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14, stage-build.database.d04b6a20-bfe6-11ed-9218-875fe6bb9a14, get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:17.646Z","level":"silly","allSections":[]}
+{"msg":"Getting getServiceStatus handler for service database","section":"","timestamp":"2023-03-11T08:29:17.648Z","level":"silly","allSections":[]}
+{"msg":"Getting getServiceStatus handler for service app","section":"","timestamp":"2023-03-11T08:29:17.648Z","level":"silly","allSections":[]}
+{"msg":"Getting getServiceStatus handler for service server","section":"","timestamp":"2023-03-11T08:29:17.648Z","level":"silly","allSections":[]}
+{"msg":"Calling getServiceStatus handler for service database","section":"","timestamp":"2023-03-11T08:29:17.667Z","level":"silly","allSections":[]}
+{"msg":"Calling getServiceStatus handler for service app","section":"","timestamp":"2023-03-11T08:29:17.669Z","level":"silly","allSections":[]}
+{"msg":"Calling getServiceStatus handler for service server","section":"","timestamp":"2023-03-11T08:29:17.669Z","level":"silly","allSections":[]}
+{"msg":"Syncing 0 files from . to .garden/build/database (and removing any extraneous files)","section":"","timestamp":"2023-03-11T08:29:17.670Z","level":"debug","allSections":[]}
+{"msg":"Execing '/Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed/kubectl --context=docker-desktop config view --raw' in /Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed","section":"","timestamp":"2023-03-11T08:29:17.675Z","level":"silly","allSections":[]}
+{"msg":"Execing '/Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed/kubectl --context=docker-desktop config view --raw' in /Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed","section":"","timestamp":"2023-03-11T08:29:17.701Z","level":"silly","allSections":[]}
+{"msg":"Completed task stage-build.database.d04b6a20-bfe6-11ed-9218-875fe6bb9a14 (took 0.083 sec)","metadata":{"task":{"type":"stage-build","key":"stage-build.database","status":"success","uid":"d04b6a20-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c","durationMs":83}},"section":"tasks","timestamp":"2023-03-11T08:29:17.730Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 11","section":"","timestamp":"2023-03-11T08:29:17.730Z","level":"silly","allSections":[]}
+{"msg":"Processing task build.database.d04acde1-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"build","key":"build.database","status":"active","uid":"d04acde1-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c"}},"section":"tasks","timestamp":"2023-03-11T08:29:17.730Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14, get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14, build.database.d04acde1-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:17.731Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-b8ece8345c...","section":"database","timestamp":"2023-03-11T08:29:17.731Z","level":"info","allSections":["database"]}
+{"msg":"Getting 'getBuildStatus' handler for module 'database' (type 'container')","section":"","timestamp":"2023-03-11T08:29:17.733Z","level":"silly","allSections":[]}
+{"msg":"Calling getBuildStatus handler for module database","section":"","timestamp":"2023-03-11T08:29:17.740Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-b8ece8345c... - Already built","section":"database","timestamp":"2023-03-11T08:29:17.741Z","level":"info","allSections":["database"]}
+{"msg":"Completed task build.database.d04acde1-bfe6-11ed-9218-875fe6bb9a14 (took 0.012 sec)","metadata":{"task":{"type":"build","key":"build.database","status":"success","uid":"d04acde1-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c","durationMs":12}},"section":"tasks","timestamp":"2023-03-11T08:29:17.742Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 10","section":"","timestamp":"2023-03-11T08:29:17.742Z","level":"silly","allSections":[]}
+{"msg":"Processing task stage-build.app.d04b6a21-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"stage-build","key":"stage-build.app","status":"active","uid":"d04b6a21-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a"}},"section":"tasks","timestamp":"2023-03-11T08:29:17.742Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14, get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14, stage-build.app.d04b6a21-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:17.742Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (42 files)...","section":"app","timestamp":"2023-03-11T08:29:17.744Z","level":"verbose","allSections":["app"]}
+{"msg":"Execing '/Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed/kubectl --context=docker-desktop config view --raw' in /Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed","section":"","timestamp":"2023-03-11T08:29:17.750Z","level":"silly","allSections":[]}
+{"msg":"Syncing 42 files from . to .garden/build/app (and removing any extraneous files)","section":"","timestamp":"2023-03-11T08:29:17.768Z","level":"debug","allSections":["app"]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/app","section":"","timestamp":"2023-03-11T08:29:17.802Z","level":"silly","allSections":[]}
+{"msg":"Kubernetes: Getting API resource info for group apps/v1","section":"","timestamp":"2023-03-11T08:29:17.802Z","level":"debug","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/app","section":"","timestamp":"2023-03-11T08:29:17.802Z","level":"silly","allSections":[]}
+{"msg":"Kubernetes: Getting API resource info for group v1","section":"","timestamp":"2023-03-11T08:29:17.802Z","level":"debug","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1","section":"","timestamp":"2023-03-11T08:29:17.803Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1","section":"","timestamp":"2023-03-11T08:29:17.804Z","level":"silly","allSections":[]}
+{"msg":"Kubernetes: Getting API resource info for group networking.k8s.io/v1","section":"","timestamp":"2023-03-11T08:29:17.828Z","level":"debug","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/networking.k8s.io/v1","section":"","timestamp":"2023-03-11T08:29:17.829Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/database","section":"","timestamp":"2023-03-11T08:29:17.856Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/database","section":"","timestamp":"2023-03-11T08:29:17.856Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/app","section":"","timestamp":"2023-03-11T08:29:17.862Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/app","section":"","timestamp":"2023-03-11T08:29:17.864Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/database","section":"","timestamp":"2023-03-11T08:29:17.865Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/database","section":"","timestamp":"2023-03-11T08:29:17.866Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (42 files)... - Done (took 0.2 sec)","section":"app","timestamp":"2023-03-11T08:29:17.907Z","level":"verbose","allSections":["app"]}
+{"msg":"Completed task stage-build.app.d04b6a21-bfe6-11ed-9218-875fe6bb9a14 (took 0.166 sec)","metadata":{"task":{"type":"stage-build","key":"stage-build.app","status":"success","uid":"d04b6a21-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a","durationMs":166}},"section":"tasks","timestamp":"2023-03-11T08:29:17.908Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 9","section":"","timestamp":"2023-03-11T08:29:17.908Z","level":"silly","allSections":[]}
+{"msg":"Processing task build.app.d04acde3-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"build","key":"build.app","status":"active","uid":"d04acde3-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a"}},"section":"tasks","timestamp":"2023-03-11T08:29:17.909Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14, get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14, build.app.d04acde3-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:17.909Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-c684a0c14a...","section":"app","timestamp":"2023-03-11T08:29:17.909Z","level":"info","allSections":["app"]}
+{"msg":"Getting 'getBuildStatus' handler for module 'app' (type 'container')","section":"","timestamp":"2023-03-11T08:29:17.910Z","level":"silly","allSections":[]}
+{"msg":"Calling getBuildStatus handler for module app","section":"","timestamp":"2023-03-11T08:29:17.917Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/server","section":"","timestamp":"2023-03-11T08:29:17.920Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/server","section":"","timestamp":"2023-03-11T08:29:17.920Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource networking.k8s.io/v1/Ingress/server-0","section":"","timestamp":"2023-03-11T08:29:17.920Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/server","section":"","timestamp":"2023-03-11T08:29:17.921Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/server","section":"","timestamp":"2023-03-11T08:29:17.921Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/networking.k8s.io/v1/namespaces/wagregistry-wagregistry-brennanwalsh/ingresses/server-0","section":"","timestamp":"2023-03-11T08:29:17.922Z","level":"silly","allSections":[]}
+{"msg":"Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-c684a0c14a -q' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:17.922Z","level":"debug","allSections":[]}
+{"msg":"Tracking Run Command event.\nPayload:\n  {\"anonymousId\":\"ac29494e-20ff-4e67-9dce-d19280a0806d\",\"event\":\"Run Command\",\"properties\":{\"projectId\":\"a6da07c6f3146e899c9fc93a1cba63cdfdf2bdde8fe9ac7f93b1a1bcdb954bd38895aad3ab627459f0f5ed180ea22a7a0132c119e11df98958fad4c1c64f5e23\",\"projectIdV2\":\"sulky-shiny-vegetable_a6da07c6f3146e899c9fc93a1cba63cd\",\"projectName\":\"ec3c04f5e9834e537b3a7c9ee755718a8ce98e720fa2d469ab24f3d78898b9d54efc94dc2a16d2068cb3ab0596bd642d78022e490a2279b5b135e345952c7f78\",\"projectNameV2\":\"tense-naive-winter_ec3c04f5e9834e537b3a7c9ee755718a\",\"enterpriseDomain\":\"85a56e6d38f422a2861b9cc91c5ce67cce4316ac70a99fecff41968d3a7562f4998ac9e24d862633b0b16856a3192978e8ddc711990f285450a498074d57f77d\",\"enterpriseDomainV2\":\"faithful-lively-awareness_85a56e6d38f422a2861b9cc91c5ce67c\",\"isLoggedIn\":false,\"ciName\":null,\"system\":{\"platform\":\"darwin\",\"platformVersion\":\"22.2.0\",\"gardenVersion\":\"0.12.52\"},\"isCI\":false,\"sessionId\":\"c4cf91c9-6cb3-4a67-81b4-64b61e6434f4\",\"projectMetadata\":{\"modulesCount\":3,\"moduleTypes\":[\"container\"],\"tasksCount\":0,\"servicesCount\":3,\"testsCount\":0},\"firstRunAt\":\"Fri, 10 Mar 2023 20:59:00 GMT\",\"latestRunAt\":\"Sat, 11 Mar 2023 08:29:15 GMT\",\"isRecurringUser\":false,\"name\":\"deploy\"}}","section":"","timestamp":"2023-03-11T08:29:17.994Z","level":"silly","allSections":[]}
+{"msg":"Getting currently deployed resource statuses...","section":"","timestamp":"2023-03-11T08:29:17.995Z","level":"debug","allSections":[]}
+{"msg":"Getting currently deployed resource statuses...","section":"","timestamp":"2023-03-11T08:29:17.997Z","level":"debug","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/database","section":"","timestamp":"2023-03-11T08:29:17.999Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/database","section":"","timestamp":"2023-03-11T08:29:17.999Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/app","section":"","timestamp":"2023-03-11T08:29:17.999Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/app","section":"","timestamp":"2023-03-11T08:29:17.999Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/database","section":"","timestamp":"2023-03-11T08:29:18.001Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/database","section":"","timestamp":"2023-03-11T08:29:18.002Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/app","section":"","timestamp":"2023-03-11T08:29:18.003Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/app","section":"","timestamp":"2023-03-11T08:29:18.003Z","level":"silly","allSections":[]}
+{"msg":"Getting currently deployed resource statuses...","section":"","timestamp":"2023-03-11T08:29:18.041Z","level":"debug","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/server","section":"","timestamp":"2023-03-11T08:29:18.043Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/server","section":"","timestamp":"2023-03-11T08:29:18.043Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource networking.k8s.io/v1/Ingress/server-0","section":"","timestamp":"2023-03-11T08:29:18.044Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/server","section":"","timestamp":"2023-03-11T08:29:18.045Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/server","section":"","timestamp":"2023-03-11T08:29:18.046Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/networking.k8s.io/v1/namespaces/wagregistry-wagregistry-brennanwalsh/ingresses/server-0","section":"","timestamp":"2023-03-11T08:29:18.046Z","level":"silly","allSections":[]}
+{"msg":"Comparing expected and deployed resources...","section":"","timestamp":"2023-03-11T08:29:18.073Z","level":"verbose","allSections":[]}
+{"msg":"Comparing expected and deployed resources...","section":"","timestamp":"2023-03-11T08:29:18.074Z","level":"verbose","allSections":[]}
+{"msg":"All resources match.","section":"","timestamp":"2023-03-11T08:29:18.074Z","level":"verbose","allSections":[]}
+{"msg":"All resources match.","section":"","timestamp":"2023-03-11T08:29:18.074Z","level":"verbose","allSections":[]}
+{"msg":"Completed task get-service-status.database.d04acde0-bfe6-11ed-9218-875fe6bb9a14 (took 0.436 sec)","metadata":{"task":{"type":"get-service-status","key":"get-service-status.database","status":"success","uid":"d04acde0-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-a957583129","durationMs":436}},"section":"tasks","timestamp":"2023-03-11T08:29:18.079Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 8","section":"","timestamp":"2023-03-11T08:29:18.079Z","level":"silly","allSections":[]}
+{"msg":"Processing task deploy.database.d04a31a0-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"deploy","key":"deploy.database","status":"active","uid":"d04a31a0-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-a957583129"}},"section":"tasks","timestamp":"2023-03-11T08:29:18.079Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14, get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14, build.app.d04acde3-bfe6-11ed-9218-875fe6bb9a14, deploy.database.d04a31a0-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:18.079Z","level":"silly","allSections":[]}
+{"msg":"Completed task get-service-status.app.d04acde2-bfe6-11ed-9218-875fe6bb9a14 (took 0.435 sec)","metadata":{"task":{"type":"get-service-status","key":"get-service-status.app","status":"success","uid":"d04acde2-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6","durationMs":435}},"section":"tasks","timestamp":"2023-03-11T08:29:18.081Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 7","section":"","timestamp":"2023-03-11T08:29:18.081Z","level":"silly","allSections":[]}
+{"msg":"Deploying version v-a957583129...","section":"database","timestamp":"2023-03-11T08:29:18.081Z","level":"info","allSections":["database"]}
+{"msg":"Deploying version v-a957583129... - Already deployed","section":"database","timestamp":"2023-03-11T08:29:18.083Z","level":"info","allSections":["database"]}
+{"msg":"Comparing expected and deployed resources...","section":"","timestamp":"2023-03-11T08:29:18.096Z","level":"verbose","allSections":[]}
+{"msg":"All resources match.","section":"","timestamp":"2023-03-11T08:29:18.097Z","level":"verbose","allSections":[]}
+{"msg":"Completed task get-service-status.server.d04acde4-bfe6-11ed-9218-875fe6bb9a14 (took 0.454 sec)","metadata":{"task":{"type":"get-service-status","key":"get-service-status.server","status":"success","uid":"d04acde4-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-097291880d","durationMs":454}},"section":"tasks","timestamp":"2023-03-11T08:29:18.100Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 6","section":"","timestamp":"2023-03-11T08:29:18.100Z","level":"silly","allSections":[]}
+{"msg":"Started proxy to database/database:5432 on localhost:5432","section":"","timestamp":"2023-03-11T08:29:18.100Z","level":"debug","allSections":["database"]}
+{"msg":"Port forward: postgres://localhost:5432 → database:5432 (database)","section":"","timestamp":"2023-03-11T08:29:18.103Z","level":"info","allSections":["database"]}
+{"msg":"Completed task deploy.database.d04a31a0-bfe6-11ed-9218-875fe6bb9a14 (took 0.029 sec)","metadata":{"task":{"type":"deploy","key":"deploy.database","status":"success","uid":"d04a31a0-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-a957583129","durationMs":29}},"section":"tasks","timestamp":"2023-03-11T08:29:18.108Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 5","section":"","timestamp":"2023-03-11T08:29:18.108Z","level":"silly","allSections":[]}
+{"msg":"Image app:v-c684a0c14a already exists","section":"app","timestamp":"2023-03-11T08:29:18.414Z","level":"debug","allSections":["app"]}
+{"msg":"Getting build status for v-c684a0c14a... - Already built","section":"app","timestamp":"2023-03-11T08:29:18.415Z","level":"info","allSections":["app"]}
+{"msg":"Completed task build.app.d04acde3-bfe6-11ed-9218-875fe6bb9a14 (took 0.508 sec)","metadata":{"task":{"type":"build","key":"build.app","status":"success","uid":"d04acde3-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a","durationMs":508}},"section":"tasks","timestamp":"2023-03-11T08:29:18.417Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 4","section":"","timestamp":"2023-03-11T08:29:18.417Z","level":"silly","allSections":[]}
+{"msg":"Processing task deploy.app.d04a31a1-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"deploy","key":"deploy.app","status":"active","uid":"d04a31a1-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6"}},"section":"tasks","timestamp":"2023-03-11T08:29:18.417Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [deploy.app.d04a31a1-bfe6-11ed-9218-875fe6bb9a14, stage-build.server.d04b6a22-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:18.418Z","level":"silly","allSections":[]}
+{"msg":"Processing task stage-build.server.d04b6a22-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"stage-build","key":"stage-build.server","status":"active","uid":"d04b6a22-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd"}},"section":"tasks","timestamp":"2023-03-11T08:29:18.418Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [deploy.app.d04a31a1-bfe6-11ed-9218-875fe6bb9a14, stage-build.server.d04b6a22-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:18.418Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (3 files)...","section":"server","timestamp":"2023-03-11T08:29:18.421Z","level":"verbose","allSections":["server"]}
+{"msg":"Deploying version v-2106fd84f6...","section":"app","timestamp":"2023-03-11T08:29:18.422Z","level":"info","allSections":["app"]}
+{"msg":"Deploying version v-2106fd84f6... - Already deployed","section":"app","timestamp":"2023-03-11T08:29:18.424Z","level":"info","allSections":["app"]}
+{"msg":"Syncing 3 files from . to .garden/build/server (and removing any extraneous files)","section":"","timestamp":"2023-03-11T08:29:18.425Z","level":"debug","allSections":["server"]}
+{"msg":"Started proxy to app/app:9000 on localhost:9000","section":"","timestamp":"2023-03-11T08:29:18.430Z","level":"debug","allSections":["app"]}
+{"msg":"Port forward: localhost:9000 → app:9000 (app)","section":"","timestamp":"2023-03-11T08:29:18.431Z","level":"info","allSections":["app"]}
+{"msg":"Completed task deploy.app.d04a31a1-bfe6-11ed-9218-875fe6bb9a14 (took 0.017 sec)","metadata":{"task":{"type":"deploy","key":"deploy.app","status":"success","uid":"d04a31a1-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6","durationMs":17}},"section":"tasks","timestamp":"2023-03-11T08:29:18.434Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 3","section":"","timestamp":"2023-03-11T08:29:18.434Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (3 files)... - Done (took 0 sec)","section":"server","timestamp":"2023-03-11T08:29:18.435Z","level":"verbose","allSections":["server"]}
+{"msg":"Completed task stage-build.server.d04b6a22-bfe6-11ed-9218-875fe6bb9a14 (took 0.018 sec)","metadata":{"task":{"type":"stage-build","key":"stage-build.server","status":"success","uid":"d04b6a22-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd","durationMs":18}},"section":"tasks","timestamp":"2023-03-11T08:29:18.436Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 2","section":"","timestamp":"2023-03-11T08:29:18.436Z","level":"silly","allSections":[]}
+{"msg":"Processing task build.server.d04acde5-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"build","key":"build.server","status":"active","uid":"d04acde5-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd"}},"section":"tasks","timestamp":"2023-03-11T08:29:18.436Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [build.server.d04acde5-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:18.436Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-8e26e662bd...","section":"server","timestamp":"2023-03-11T08:29:18.436Z","level":"info","allSections":["server"]}
+{"msg":"Getting 'getBuildStatus' handler for module 'server' (type 'container')","section":"","timestamp":"2023-03-11T08:29:18.438Z","level":"silly","allSections":[]}
+{"msg":"Calling getBuildStatus handler for module server","section":"","timestamp":"2023-03-11T08:29:18.443Z","level":"silly","allSections":[]}
+{"msg":"Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-8e26e662bd -q' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:18.444Z","level":"debug","allSections":[]}
+{"msg":"Image server:v-8e26e662bd already exists","section":"server","timestamp":"2023-03-11T08:29:18.543Z","level":"debug","allSections":["server"]}
+{"msg":"Getting build status for v-8e26e662bd... - Already built","section":"server","timestamp":"2023-03-11T08:29:18.544Z","level":"info","allSections":["server"]}
+{"msg":"Completed task build.server.d04acde5-bfe6-11ed-9218-875fe6bb9a14 (took 0.111 sec)","metadata":{"task":{"type":"build","key":"build.server","status":"success","uid":"d04acde5-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd","durationMs":111}},"section":"tasks","timestamp":"2023-03-11T08:29:18.547Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 1","section":"","timestamp":"2023-03-11T08:29:18.547Z","level":"silly","allSections":[]}
+{"msg":"Processing task deploy.server.d04a31a2-bfe6-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"deploy","key":"deploy.server","status":"active","uid":"d04a31a2-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-097291880d"}},"section":"tasks","timestamp":"2023-03-11T08:29:18.548Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [deploy.server.d04a31a2-bfe6-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:29:18.548Z","level":"silly","allSections":[]}
+{"msg":"Deploying version v-097291880d...","section":"server","timestamp":"2023-03-11T08:29:18.548Z","level":"info","allSections":["server"]}
+{"msg":"Deploying version v-097291880d... - Already deployed","section":"server","timestamp":"2023-03-11T08:29:18.550Z","level":"info","allSections":["server"]}
+{"msg":"Ingress: http://todone.local","section":"","timestamp":"2023-03-11T08:29:18.553Z","level":"info","allSections":["server"]}
+{"msg":"Started proxy to server/server:80 on localhost:57328","section":"","timestamp":"2023-03-11T08:29:18.562Z","level":"debug","allSections":["server"]}
+{"msg":"Port forward: http://localhost:57328 → server:80 (http)","section":"","timestamp":"2023-03-11T08:29:18.562Z","level":"info","allSections":["server"]}
+{"msg":"Completed task deploy.server.d04a31a2-bfe6-11ed-9218-875fe6bb9a14 (took 0.018 sec)","metadata":{"task":{"type":"deploy","key":"deploy.server","status":"success","uid":"d04a31a2-bfe6-11ed-9218-875fe6bb9a14","versionString":"v-097291880d","durationMs":18}},"section":"tasks","timestamp":"2023-03-11T08:29:18.566Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:29:18.566Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:29:18.566Z","level":"silly","allSections":[]}
+{"msg":"Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:29:18.569Z","level":"debug","allSections":[]}
+{"msg":"Watcher: Starting FSWatcher","section":"","timestamp":"2023-03-11T08:29:18.570Z","level":"debug","allSections":[]}
+{"msg":"Waiting for code changes...","section":"","timestamp":"2023-03-11T08:29:18.570Z","level":"info","allSections":[]}
+{"msg":"API server request failed with status 404: Unauthorized request","section":"","timestamp":"2023-03-11T08:32:56.966Z","level":"debug","allSections":[]}
+{"msg":"API server request failed with status 404: Unauthorized request","section":"","timestamp":"2023-03-11T08:32:56.979Z","level":"debug","allSections":[]}
+{"msg":"401 Unauthorized","section":"","timestamp":"2023-03-11T08:32:56.989Z","level":"debug","allSections":[]}
+{"msg":"Send event: {\"type\":\"error\",\"message\":\"401 Unauthorized\"}","section":"","timestamp":"2023-03-11T08:32:56.990Z","level":"debug","allSections":[]}
+{"msg":"Watcher: File /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml modified","section":"","timestamp":"2023-03-11T08:34:56.159Z","level":"silly","allSections":[]}
+{"msg":"Matched 3 modules","section":"","timestamp":"2023-03-11T08:34:56.172Z","level":"silly","allSections":[]}
+{"msg":"Config file /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml changed","section":"","timestamp":"2023-03-11T08:34:56.173Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Invalidating caches up from context [\"path\",\"\",\"Users\",\"brennanwalsh\",\"Sites\",\"Sandbox\"]","section":"","timestamp":"2023-03-11T08:34:56.174Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Invalidating caches up from context [\"path\",\"\",\"Users\",\"brennanwalsh\",\"Sites\",\"Sandbox\"]","section":"","timestamp":"2023-03-11T08:34:56.174Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Invalidating caches up from context [\"path\",\"\",\"Users\",\"brennanwalsh\",\"Sites\",\"Sandbox\"]","section":"","timestamp":"2023-03-11T08:34:56.175Z","level":"silly","allSections":[]}
+{"msg":"FSWatcher event: change /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml {\"dev\":16777231,\"mode\":33188,\"nlink\":1,\"uid\":501,\"gid\":20,\"rdev\":0,\"blksize\":4096,\"ino\":8301009,\"size\":1113,\"blocks\":8,\"atimeMs\":1678523695787.0698,\"mtimeMs\":1678523695699.9348,\"ctimeMs\":1678523695699.9348,\"birthtimeMs\":1678522499170.214,\"atime\":\"2023-03-11T08:34:55.787Z\",\"mtime\":\"2023-03-11T08:34:55.700Z\",\"ctime\":\"2023-03-11T08:34:55.700Z\",\"birthtime\":\"2023-03-11T08:14:59.170Z\"}","section":"","timestamp":"2023-03-11T08:34:56.183Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'rev-parse --abbrev-ref HEAD' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:56.251Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'rev-parse HEAD' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:56.856Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'config --get remote.origin.url' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:56.910Z","level":"silly","allSections":[]}
+{"msg":"Tried to retrieve git remote.origin.url but encountered an error: Error: Command \"git config --get remote.origin.url\" failed with code 1:","section":"","timestamp":"2023-03-11T08:34:56.951Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'config --get-all safe.directory' in /opt/homebrew/Cellar/garden-cli/0.12.52/libexec/static","section":"","timestamp":"2023-03-11T08:34:57.011Z","level":"silly","allSections":[]}
+{"msg":"Error reading safe directories from the .gitconfig: Error: Command \"git config --get-all safe.directory\" failed with code 1:","section":"","timestamp":"2023-03-11T08:34:57.105Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'status' in /opt/homebrew/Cellar/garden-cli/0.12.52/libexec/static","section":"","timestamp":"2023-03-11T08:34:57.107Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'status' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:57.234Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'rev-parse --show-toplevel' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:57.315Z","level":"silly","allSections":[]}
+{"msg":"Resolving providers","section":"","timestamp":"2023-03-11T08:34:57.366Z","level":"silly","allSections":[]}
+{"msg":"Getting status...","section":"providers","timestamp":"2023-03-11T08:34:57.367Z","level":"info","allSections":["providers"]}
+{"msg":"Loading plugins","section":"","timestamp":"2023-03-11T08:34:57.375Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin container","section":"","timestamp":"2023-03-11T08:34:57.391Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin exec","section":"","timestamp":"2023-03-11T08:34:57.394Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin hadolint","section":"","timestamp":"2023-03-11T08:34:57.395Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin kubernetes","section":"","timestamp":"2023-03-11T08:34:57.412Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.417Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin octant","section":"","timestamp":"2023-03-11T08:34:57.417Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin openfaas","section":"","timestamp":"2023-03-11T08:34:57.419Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin google-app-engine","section":"","timestamp":"2023-03-11T08:34:57.420Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:34:57.420Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:34:57.421Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin npm-package","section":"","timestamp":"2023-03-11T08:34:57.421Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin templated","section":"","timestamp":"2023-03-11T08:34:57.424Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest","section":"","timestamp":"2023-03-11T08:34:57.425Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest-container","section":"","timestamp":"2023-03-11T08:34:57.425Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.425Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin jib","section":"","timestamp":"2023-03-11T08:34:57.431Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin maven-container","section":"","timestamp":"2023-03-11T08:34:57.435Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin terraform","section":"","timestamp":"2023-03-11T08:34:57.436Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin pulumi","section":"","timestamp":"2023-03-11T08:34:57.437Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin container","section":"","timestamp":"2023-03-11T08:34:57.442Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin container","section":"","timestamp":"2023-03-11T08:34:57.459Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin hadolint","section":"","timestamp":"2023-03-11T08:34:57.459Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin hadolint","section":"","timestamp":"2023-03-11T08:34:57.467Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin jib","section":"","timestamp":"2023-03-11T08:34:57.467Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin jib","section":"","timestamp":"2023-03-11T08:34:57.479Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin kubernetes","section":"","timestamp":"2023-03-11T08:34:57.480Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin kubernetes","section":"","timestamp":"2023-03-11T08:34:57.486Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.486Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.492Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin octant","section":"","timestamp":"2023-03-11T08:34:57.492Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin octant","section":"","timestamp":"2023-03-11T08:34:57.495Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin openfaas","section":"","timestamp":"2023-03-11T08:34:57.495Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin openfaas","section":"","timestamp":"2023-03-11T08:34:57.498Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin google-app-engine","section":"","timestamp":"2023-03-11T08:34:57.498Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin google-app-engine","section":"","timestamp":"2023-03-11T08:34:57.501Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:34:57.501Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:34:57.504Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:34:57.504Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:34:57.508Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin exec","section":"","timestamp":"2023-03-11T08:34:57.508Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin exec","section":"","timestamp":"2023-03-11T08:34:57.511Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin npm-package","section":"","timestamp":"2023-03-11T08:34:57.511Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin npm-package","section":"","timestamp":"2023-03-11T08:34:57.513Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin templated","section":"","timestamp":"2023-03-11T08:34:57.513Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin templated","section":"","timestamp":"2023-03-11T08:34:57.515Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest","section":"","timestamp":"2023-03-11T08:34:57.515Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest","section":"","timestamp":"2023-03-11T08:34:57.518Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest-container","section":"","timestamp":"2023-03-11T08:34:57.518Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest-container","section":"","timestamp":"2023-03-11T08:34:57.522Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.522Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.526Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin maven-container","section":"","timestamp":"2023-03-11T08:34:57.526Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin maven-container","section":"","timestamp":"2023-03-11T08:34:57.529Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin terraform","section":"","timestamp":"2023-03-11T08:34:57.529Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin terraform","section":"","timestamp":"2023-03-11T08:34:57.565Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin pulumi","section":"","timestamp":"2023-03-11T08:34:57.569Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin pulumi","section":"","timestamp":"2023-03-11T08:34:57.571Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugins: exec, container, templated, local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.575Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Processing 4 tasks: resolve-provider.exec,resolve-provider.container,resolve-provider.templated,resolve-provider.local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.583Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.exec","section":"","timestamp":"2023-03-11T08:34:57.584Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.container","section":"","timestamp":"2023-03-11T08:34:57.585Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.templated","section":"","timestamp":"2023-03-11T08:34:57.585Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.585Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.exec:","section":"","timestamp":"2023-03-11T08:34:57.586Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.container:","section":"","timestamp":"2023-03-11T08:34:57.586Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.templated:","section":"","timestamp":"2023-03-11T08:34:57.586Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 1 dependencies for node resolve-provider.local-kubernetes: resolve-provider.container","section":"","timestamp":"2023-03-11T08:34:57.588Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Partitioning into batches","section":"","timestamp":"2023-03-11T08:34:57.591Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Split into 3 batches","section":"","timestamp":"2023-03-11T08:34:57.593Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: this.index before processing","section":"","timestamp":"2023-03-11T08:34:57.593Z","level":"silly","allSections":[]}
+{"msg":"---------------------------------------","section":"","timestamp":"2023-03-11T08:34:57.593Z","level":"silly","allSections":[]}
+{"msg":"{}","section":"","timestamp":"2023-03-11T08:34:57.594Z","level":"silly","allSections":[]}
+{"msg":"Processing tasks...","section":"","timestamp":"2023-03-11T08:34:57.596Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 4","section":"","timestamp":"2023-03-11T08:34:57.596Z","level":"silly","allSections":[]}
+{"msg":"Currently in progress [resolve-provider.exec.9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9aeb83f0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9aeb83f1-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:57.596Z","level":"silly","allSections":[]}
+{"msg":"Processing task resolve-provider.exec.9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.exec","status":"active","uid":"9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:57.597Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9aeb83f0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9aeb83f1-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:57.598Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider exec","section":"","timestamp":"2023-03-11T08:34:57.598Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating exec config","section":"","timestamp":"2023-03-11T08:34:57.599Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on exec","section":"","timestamp":"2023-03-11T08:34:57.602Z","level":"silly","allSections":["providers"]}
+{"msg":"Processing task resolve-provider.container.9aeb83f0-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"active","uid":"9aeb83f0-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:57.602Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9aeb83f0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9aeb83f1-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider container","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating container config","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on container","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":["providers"]}
+{"msg":"Processing task resolve-provider.templated.9aeb83f1-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.templated","status":"active","uid":"9aeb83f1-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9aeb83f0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9aeb83f1-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider templated","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating templated config","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on templated","section":"","timestamp":"2023-03-11T08:34:57.603Z","level":"silly","allSections":["providers"]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:34:57.604Z","level":"silly","allSections":[]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:34:57.605Z","level":"silly","allSections":[]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:34:57.605Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'exec'","section":"","timestamp":"2023-03-11T08:34:57.617Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'container'","section":"","timestamp":"2023-03-11T08:34:57.617Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'templated'","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'exec'","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'container'","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'templated'","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'exec'","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'container'","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'templated'","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":[]}
+{"msg":"Validating exec config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring exec provider is ready","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating container config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring container provider is ready","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating templated config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:57.618Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring templated provider is ready","section":"","timestamp":"2023-03-11T08:34:57.619Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for exec","section":"","timestamp":"2023-03-11T08:34:57.620Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for exec at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/exec.json","section":"","timestamp":"2023-03-11T08:34:57.620Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for container","section":"","timestamp":"2023-03-11T08:34:57.621Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for container at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/container.json","section":"","timestamp":"2023-03-11T08:34:57.621Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for templated","section":"","timestamp":"2023-03-11T08:34:57.621Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for templated at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/templated.json","section":"","timestamp":"2023-03-11T08:34:57.621Z","level":"silly","allSections":["providers"]}
+{"msg":"Completed task resolve-provider.templated.9aeb83f1-bfe7-11ed-9218-875fe6bb9a14 (took 0.027 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.templated","status":"success","uid":"9aeb83f1-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":27}},"section":"tasks","timestamp":"2023-03-11T08:34:57.631Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 3","section":"","timestamp":"2023-03-11T08:34:57.631Z","level":"silly","allSections":[]}
+{"msg":"Completed task resolve-provider.container.9aeb83f0-bfe7-11ed-9218-875fe6bb9a14 (took 0.031 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"success","uid":"9aeb83f0-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":31}},"section":"tasks","timestamp":"2023-03-11T08:34:57.633Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 2","section":"","timestamp":"2023-03-11T08:34:57.633Z","level":"silly","allSections":[]}
+{"msg":"Processing task resolve-provider.local-kubernetes.9aeb83f2-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.local-kubernetes","status":"active","uid":"9aeb83f2-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:57.633Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.local-kubernetes.9aeb83f2-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:57.633Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.633Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating local-kubernetes config","section":"","timestamp":"2023-03-11T08:34:57.634Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on local-kubernetes","section":"","timestamp":"2023-03-11T08:34:57.635Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:34:57.637Z","level":"silly","allSections":[]}
+{"msg":"Found 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:34:57.637Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:34:57.637Z","level":"silly","allSections":[]}
+{"msg":"Completed task resolve-provider.exec.9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14 (took 0.041 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.exec","status":"success","uid":"9aeb5ce0-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":41}},"section":"tasks","timestamp":"2023-03-11T08:34:57.638Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 1","section":"","timestamp":"2023-03-11T08:34:57.638Z","level":"silly","allSections":[]}
+{"msg":"Execing '/Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed/kubectl config view --raw' in /Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed","section":"","timestamp":"2023-03-11T08:34:57.643Z","level":"silly","allSections":["providers"]}
+{"msg":"Using current context: docker-desktop","section":"local-kubernetes","timestamp":"2023-03-11T08:34:58.159Z","level":"debug","allSections":["providers","local-kubernetes"]}
+{"msg":"An attempt to get kind version failed with Error: Command \"kind version\" failed with code ENOENT:","section":"","timestamp":"2023-03-11T08:34:58.261Z","level":"debug","allSections":["providers"]}
+{"msg":"Validating local-kubernetes config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:58.265Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating 'local-kubernetes' config against 'kubernetes' schema","section":"","timestamp":"2023-03-11T08:34:58.267Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring local-kubernetes provider is ready","section":"","timestamp":"2023-03-11T08:34:58.268Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for local-kubernetes","section":"","timestamp":"2023-03-11T08:34:58.271Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for local-kubernetes at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/local-kubernetes.json","section":"","timestamp":"2023-03-11T08:34:58.271Z","level":"silly","allSections":["providers"]}
+{"msg":"Completed task resolve-provider.local-kubernetes.9aeb83f2-bfe7-11ed-9218-875fe6bb9a14 (took 0.652 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.local-kubernetes","status":"success","uid":"9aeb83f2-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":652}},"section":"tasks","timestamp":"2023-03-11T08:34:58.285Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:34:58.286Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:34:58.286Z","level":"silly","allSections":[]}
+{"msg":"Getting status... - Cached","section":"providers","timestamp":"2023-03-11T08:34:58.287Z","level":"info","allSections":["providers"]}
+{"msg":"Run with --force-refresh to force a refresh of provider statuses.","section":"","timestamp":"2023-03-11T08:34:58.294Z","level":"info","allSections":["providers"]}
+{"msg":"Resolved providers: exec, container, local-kubernetes, templated","section":"","timestamp":"2023-03-11T08:34:58.296Z","level":"silly","allSections":["providers"]}
+{"msg":"Scanning for configs","section":"","timestamp":"2023-03-11T08:34:58.296Z","level":"silly","allSections":[]}
+{"msg":"Scanning for configs in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.299Z","level":"silly","allSections":[]}
+{"msg":"Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: **/*garden.y*ml\n→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**","section":"","timestamp":"2023-03-11T08:34:58.299Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.299Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.350Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)**/*garden.y*ml' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.394Z","level":"silly","allSections":[]}
+{"msg":"Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.483Z","level":"debug","allSections":[]}
+{"msg":"Load module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml","section":"","timestamp":"2023-03-11T08:34:58.484Z","level":"silly","allSections":[]}
+{"msg":"Load module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml","section":"","timestamp":"2023-03-11T08:34:58.484Z","level":"silly","allSections":[]}
+{"msg":"Loaded module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml","section":"","timestamp":"2023-03-11T08:34:58.504Z","level":"silly","allSections":[]}
+{"msg":"Loaded module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml","section":"","timestamp":"2023-03-11T08:34:58.504Z","level":"silly","allSections":[]}
+{"msg":"Adding module server","section":"","timestamp":"2023-03-11T08:34:58.512Z","level":"silly","allSections":[]}
+{"msg":"Adding module database","section":"","timestamp":"2023-03-11T08:34:58.512Z","level":"silly","allSections":[]}
+{"msg":"Adding module app","section":"","timestamp":"2023-03-11T08:34:58.512Z","level":"silly","allSections":[]}
+{"msg":"Scanned and found 3 modules and 0 workflows","section":"","timestamp":"2023-03-11T08:34:58.512Z","level":"silly","allSections":[]}
+{"msg":"Resolving 3 modules...","section":"graph","timestamp":"2023-03-11T08:34:58.512Z","level":"info","allSections":["graph"]}
+{"msg":"ModuleResolver: Loop 1","section":"","timestamp":"2023-03-11T08:34:58.517Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:34:58.517Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node database","section":"","timestamp":"2023-03-11T08:34:58.517Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config database","section":"","timestamp":"2023-03-11T08:34:58.517Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'database'","section":"","timestamp":"2023-03-11T08:34:58.527Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'database'","section":"","timestamp":"2023-03-11T08:34:58.530Z","level":"silly","allSections":[]}
+{"msg":"Resolving module database","section":"","timestamp":"2023-03-11T08:34:58.530Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:58.530Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module database","section":"","timestamp":"2023-03-11T08:34:58.531Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"e3b0c44298\"]","section":"","timestamp":"2023-03-11T08:34:58.531Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"e3b0c44298\"]","section":"","timestamp":"2023-03-11T08:34:58.531Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:58.532Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module database resolved","section":"","timestamp":"2023-03-11T08:34:58.534Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:34:58.534Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node app","section":"","timestamp":"2023-03-11T08:34:58.534Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config app","section":"","timestamp":"2023-03-11T08:34:58.535Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'app'","section":"","timestamp":"2023-03-11T08:34:58.539Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'app'","section":"","timestamp":"2023-03-11T08:34:58.542Z","level":"silly","allSections":[]}
+{"msg":"Resolving module app","section":"","timestamp":"2023-03-11T08:34:58.542Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:58.543Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module app","section":"","timestamp":"2023-03-11T08:34:58.543Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"f0c121bdb9\"]","section":"","timestamp":"2023-03-11T08:34:58.544Z","level":"silly","allSections":[]}
+{"msg":"Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: ./Dockerfile,./app\n→ Excludes: (none)","section":"","timestamp":"2023-03-11T08:34:58.544Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.544Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.599Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)./Dockerfile :(glob)./app' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.637Z","level":"silly","allSections":[]}
+{"msg":"Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.676Z","level":"debug","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"f0c121bdb9\"]","section":"","timestamp":"2023-03-11T08:34:58.677Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:58.678Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module app resolved","section":"","timestamp":"2023-03-11T08:34:58.682Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:34:58.682Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node server","section":"","timestamp":"2023-03-11T08:34:58.682Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config server","section":"","timestamp":"2023-03-11T08:34:58.682Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'server'","section":"","timestamp":"2023-03-11T08:34:58.688Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'server'","section":"","timestamp":"2023-03-11T08:34:58.690Z","level":"silly","allSections":[]}
+{"msg":"Resolving module server","section":"","timestamp":"2023-03-11T08:34:58.690Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"server\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:58.690Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module server","section":"","timestamp":"2023-03-11T08:34:58.690Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"a9d7f41ee7\"]","section":"","timestamp":"2023-03-11T08:34:58.691Z","level":"silly","allSections":[]}
+{"msg":"Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: ./Dockerfile,./server,./app/public\n→ Excludes: (none)","section":"","timestamp":"2023-03-11T08:34:58.691Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.691Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.745Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)./Dockerfile :(glob)./server :(glob)./app/public' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.777Z","level":"silly","allSections":[]}
+{"msg":"Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.807Z","level":"debug","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"a9d7f41ee7\"]","section":"","timestamp":"2023-03-11T08:34:58.808Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"server\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:58.809Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module server resolved","section":"","timestamp":"2023-03-11T08:34:58.812Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 0 leaves","section":"","timestamp":"2023-03-11T08:34:58.812Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving 3 modules... - Done","section":"graph","timestamp":"2023-03-11T08:34:58.814Z","level":"info","allSections":["graph"]}
+{"msg":"Module configuration changed, reloading...","section":"","timestamp":"2023-03-11T08:34:58.816Z","level":"info","allSections":[]}
+{"msg":"Watcher: Clearing handlers","section":"","timestamp":"2023-03-11T08:34:58.819Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'rev-parse --abbrev-ref HEAD' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.837Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'rev-parse HEAD' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.872Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'config --get remote.origin.url' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:58.906Z","level":"silly","allSections":[]}
+{"msg":"Tried to retrieve git remote.origin.url but encountered an error: Error: Command \"git config --get remote.origin.url\" failed with code 1:","section":"","timestamp":"2023-03-11T08:34:58.938Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'config --get-all safe.directory' in /opt/homebrew/Cellar/garden-cli/0.12.52/libexec/static","section":"","timestamp":"2023-03-11T08:34:58.950Z","level":"silly","allSections":[]}
+{"msg":"Error reading safe directories from the .gitconfig: Error: Command \"git config --get-all safe.directory\" failed with code 1:","section":"","timestamp":"2023-03-11T08:34:58.982Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'status' in /opt/homebrew/Cellar/garden-cli/0.12.52/libexec/static","section":"","timestamp":"2023-03-11T08:34:58.982Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'status' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.024Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'rev-parse --show-toplevel' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.058Z","level":"silly","allSections":[]}
+{"msg":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌍  Running in namespace wagregistry-brennanwalsh in environment local\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","section":"","timestamp":"2023-03-11T08:34:59.106Z","level":"info","allSections":[]}
+{"msg":"BufferedEventStream: Connected","section":"","timestamp":"2023-03-11T08:34:59.120Z","level":"silly","allSections":[]}
+{"msg":"Garden dashboard running at http://localhost:9777?key=zyj4k6axoq3w7gmp50izmf64","section":"","timestamp":"2023-03-11T08:34:59.123Z","level":"info","allSections":[]}
+{"msg":"Resolving providers","section":"","timestamp":"2023-03-11T08:34:59.134Z","level":"silly","allSections":[]}
+{"msg":"Getting status...","section":"providers","timestamp":"2023-03-11T08:34:59.134Z","level":"info","allSections":["providers"]}
+{"msg":"Loading plugins","section":"","timestamp":"2023-03-11T08:34:59.137Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin container","section":"","timestamp":"2023-03-11T08:34:59.148Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin exec","section":"","timestamp":"2023-03-11T08:34:59.150Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin hadolint","section":"","timestamp":"2023-03-11T08:34:59.151Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin kubernetes","section":"","timestamp":"2023-03-11T08:34:59.169Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.173Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin octant","section":"","timestamp":"2023-03-11T08:34:59.173Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin openfaas","section":"","timestamp":"2023-03-11T08:34:59.174Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin google-app-engine","section":"","timestamp":"2023-03-11T08:34:59.174Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:34:59.175Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:34:59.175Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin npm-package","section":"","timestamp":"2023-03-11T08:34:59.175Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin templated","section":"","timestamp":"2023-03-11T08:34:59.182Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest","section":"","timestamp":"2023-03-11T08:34:59.184Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest-container","section":"","timestamp":"2023-03-11T08:34:59.184Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.184Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin jib","section":"","timestamp":"2023-03-11T08:34:59.194Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin maven-container","section":"","timestamp":"2023-03-11T08:34:59.199Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin terraform","section":"","timestamp":"2023-03-11T08:34:59.200Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugin pulumi","section":"","timestamp":"2023-03-11T08:34:59.200Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin container","section":"","timestamp":"2023-03-11T08:34:59.204Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin container","section":"","timestamp":"2023-03-11T08:34:59.210Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin hadolint","section":"","timestamp":"2023-03-11T08:34:59.210Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin hadolint","section":"","timestamp":"2023-03-11T08:34:59.211Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin jib","section":"","timestamp":"2023-03-11T08:34:59.211Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin jib","section":"","timestamp":"2023-03-11T08:34:59.214Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin kubernetes","section":"","timestamp":"2023-03-11T08:34:59.214Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin kubernetes","section":"","timestamp":"2023-03-11T08:34:59.220Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.220Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.221Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin octant","section":"","timestamp":"2023-03-11T08:34:59.221Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin octant","section":"","timestamp":"2023-03-11T08:34:59.222Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin openfaas","section":"","timestamp":"2023-03-11T08:34:59.223Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin openfaas","section":"","timestamp":"2023-03-11T08:34:59.224Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin google-app-engine","section":"","timestamp":"2023-03-11T08:34:59.224Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin google-app-engine","section":"","timestamp":"2023-03-11T08:34:59.225Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:34:59.225Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin google-cloud-function","section":"","timestamp":"2023-03-11T08:34:59.228Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:34:59.228Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin local-google-cloud-functions","section":"","timestamp":"2023-03-11T08:34:59.229Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin exec","section":"","timestamp":"2023-03-11T08:34:59.229Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin exec","section":"","timestamp":"2023-03-11T08:34:59.233Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin npm-package","section":"","timestamp":"2023-03-11T08:34:59.233Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin npm-package","section":"","timestamp":"2023-03-11T08:34:59.235Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin templated","section":"","timestamp":"2023-03-11T08:34:59.235Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin templated","section":"","timestamp":"2023-03-11T08:34:59.237Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest","section":"","timestamp":"2023-03-11T08:34:59.237Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest","section":"","timestamp":"2023-03-11T08:34:59.240Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest-container","section":"","timestamp":"2023-03-11T08:34:59.240Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest-container","section":"","timestamp":"2023-03-11T08:34:59.241Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.241Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin conftest-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.242Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin maven-container","section":"","timestamp":"2023-03-11T08:34:59.242Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin maven-container","section":"","timestamp":"2023-03-11T08:34:59.244Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin terraform","section":"","timestamp":"2023-03-11T08:34:59.244Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin terraform","section":"","timestamp":"2023-03-11T08:34:59.245Z","level":"silly","allSections":[]}
+{"msg":"Validating plugin pulumi","section":"","timestamp":"2023-03-11T08:34:59.246Z","level":"silly","allSections":[]}
+{"msg":"Done loading plugin pulumi","section":"","timestamp":"2023-03-11T08:34:59.247Z","level":"silly","allSections":[]}
+{"msg":"Loaded plugins: exec, container, templated, local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.249Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Processing 4 tasks: resolve-provider.exec,resolve-provider.container,resolve-provider.templated,resolve-provider.local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.251Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.exec","section":"","timestamp":"2023-03-11T08:34:59.251Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.container","section":"","timestamp":"2023-03-11T08:34:59.251Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.templated","section":"","timestamp":"2023-03-11T08:34:59.251Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node resolve-provider.local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.251Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.exec:","section":"","timestamp":"2023-03-11T08:34:59.285Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.container:","section":"","timestamp":"2023-03-11T08:34:59.285Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node resolve-provider.templated:","section":"","timestamp":"2023-03-11T08:34:59.285Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 1 dependencies for node resolve-provider.local-kubernetes: resolve-provider.container","section":"","timestamp":"2023-03-11T08:34:59.285Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Partitioning into batches","section":"","timestamp":"2023-03-11T08:34:59.285Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Split into 3 batches","section":"","timestamp":"2023-03-11T08:34:59.286Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: this.index before processing","section":"","timestamp":"2023-03-11T08:34:59.286Z","level":"silly","allSections":[]}
+{"msg":"---------------------------------------","section":"","timestamp":"2023-03-11T08:34:59.286Z","level":"silly","allSections":[]}
+{"msg":"{}","section":"","timestamp":"2023-03-11T08:34:59.286Z","level":"silly","allSections":[]}
+{"msg":"Processing tasks...","section":"","timestamp":"2023-03-11T08:34:59.288Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 4","section":"","timestamp":"2023-03-11T08:34:59.288Z","level":"silly","allSections":[]}
+{"msg":"Currently in progress [resolve-provider.exec.9be9e120-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9be9e121-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9be9e122-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:59.288Z","level":"silly","allSections":[]}
+{"msg":"Processing task resolve-provider.exec.9be9e120-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.exec","status":"active","uid":"9be9e120-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:59.288Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.9be9e120-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9be9e121-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9be9e122-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:59.289Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider exec","section":"","timestamp":"2023-03-11T08:34:59.289Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating exec config","section":"","timestamp":"2023-03-11T08:34:59.289Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on exec","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["providers"]}
+{"msg":"Processing task resolve-provider.container.9be9e121-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"active","uid":"9be9e121-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.9be9e120-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9be9e121-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9be9e122-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider container","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating container config","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on container","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["providers"]}
+{"msg":"Processing task resolve-provider.templated.9be9e122-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.templated","status":"active","uid":"9be9e122-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.exec.9be9e120-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.container.9be9e121-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.templated.9be9e122-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider templated","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating templated config","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on templated","section":"","timestamp":"2023-03-11T08:34:59.290Z","level":"silly","allSections":["providers"]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:34:59.291Z","level":"silly","allSections":[]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:34:59.291Z","level":"silly","allSections":[]}
+{"msg":"Creating ActionRouter with 4 configured providers","section":"","timestamp":"2023-03-11T08:34:59.292Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'exec'","section":"","timestamp":"2023-03-11T08:34:59.295Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'container'","section":"","timestamp":"2023-03-11T08:34:59.295Z","level":"silly","allSections":[]}
+{"msg":"Calling 'configureProvider' handler on 'templated'","section":"","timestamp":"2023-03-11T08:34:59.295Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'exec'","section":"","timestamp":"2023-03-11T08:34:59.295Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'container'","section":"","timestamp":"2023-03-11T08:34:59.295Z","level":"silly","allSections":[]}
+{"msg":"Returned default 'configureProvider' handler for 'templated'","section":"","timestamp":"2023-03-11T08:34:59.295Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'exec'","section":"","timestamp":"2023-03-11T08:34:59.296Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'container'","section":"","timestamp":"2023-03-11T08:34:59.296Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'templated'","section":"","timestamp":"2023-03-11T08:34:59.296Z","level":"silly","allSections":[]}
+{"msg":"Validating exec config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:59.296Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring exec provider is ready","section":"","timestamp":"2023-03-11T08:34:59.297Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating container config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:59.297Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring container provider is ready","section":"","timestamp":"2023-03-11T08:34:59.297Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating templated config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:59.297Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring templated provider is ready","section":"","timestamp":"2023-03-11T08:34:59.297Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for exec","section":"","timestamp":"2023-03-11T08:34:59.298Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for exec at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/exec.json","section":"","timestamp":"2023-03-11T08:34:59.298Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for container","section":"","timestamp":"2023-03-11T08:34:59.299Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for container at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/container.json","section":"","timestamp":"2023-03-11T08:34:59.299Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for templated","section":"","timestamp":"2023-03-11T08:34:59.299Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for templated at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/templated.json","section":"","timestamp":"2023-03-11T08:34:59.299Z","level":"silly","allSections":["providers"]}
+{"msg":"Completed task resolve-provider.exec.9be9e120-bfe7-11ed-9218-875fe6bb9a14 (took 0.013 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.exec","status":"success","uid":"9be9e120-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":13}},"section":"tasks","timestamp":"2023-03-11T08:34:59.301Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 3","section":"","timestamp":"2023-03-11T08:34:59.301Z","level":"silly","allSections":[]}
+{"msg":"Completed task resolve-provider.container.9be9e121-bfe7-11ed-9218-875fe6bb9a14 (took 0.012 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.container","status":"success","uid":"9be9e121-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":12}},"section":"tasks","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 2","section":"","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":[]}
+{"msg":"Processing task resolve-provider.local-kubernetes.9be9e123-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.local-kubernetes","status":"active","uid":"9be9e123-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52"}},"section":"tasks","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [resolve-provider.templated.9be9e122-bfe7-11ed-9218-875fe6bb9a14, resolve-provider.local-kubernetes.9be9e123-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":[]}
+{"msg":"Resolving template strings for provider local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating local-kubernetes config","section":"","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling configureProvider on local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":["providers"]}
+{"msg":"Calling 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":[]}
+{"msg":"Found 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:34:59.302Z","level":"silly","allSections":[]}
+{"msg":"Called 'configureProvider' handler on 'local-kubernetes'","section":"","timestamp":"2023-03-11T08:34:59.303Z","level":"silly","allSections":[]}
+{"msg":"Completed task resolve-provider.templated.9be9e122-bfe7-11ed-9218-875fe6bb9a14 (took 0.013 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.templated","status":"success","uid":"9be9e122-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":13}},"section":"tasks","timestamp":"2023-03-11T08:34:59.303Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 1","section":"","timestamp":"2023-03-11T08:34:59.303Z","level":"silly","allSections":[]}
+{"msg":"Execing '/Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed/kubectl config view --raw' in /Users/brennanwalsh/.garden/tools/kubectl/f8a39834529cd1ed","section":"","timestamp":"2023-03-11T08:34:59.303Z","level":"silly","allSections":["providers"]}
+{"msg":"Tracking Run Command event.\nPayload:\n  {\"anonymousId\":\"ac29494e-20ff-4e67-9dce-d19280a0806d\",\"event\":\"Run Command\",\"properties\":{\"projectId\":\"a6da07c6f3146e899c9fc93a1cba63cdfdf2bdde8fe9ac7f93b1a1bcdb954bd38895aad3ab627459f0f5ed180ea22a7a0132c119e11df98958fad4c1c64f5e23\",\"projectIdV2\":\"sulky-shiny-vegetable_a6da07c6f3146e899c9fc93a1cba63cd\",\"projectName\":\"ec3c04f5e9834e537b3a7c9ee755718a8ce98e720fa2d469ab24f3d78898b9d54efc94dc2a16d2068cb3ab0596bd642d78022e490a2279b5b135e345952c7f78\",\"projectNameV2\":\"tense-naive-winter_ec3c04f5e9834e537b3a7c9ee755718a\",\"enterpriseDomain\":\"85a56e6d38f422a2861b9cc91c5ce67cce4316ac70a99fecff41968d3a7562f4998ac9e24d862633b0b16856a3192978e8ddc711990f285450a498074d57f77d\",\"enterpriseDomainV2\":\"faithful-lively-awareness_85a56e6d38f422a2861b9cc91c5ce67c\",\"isLoggedIn\":false,\"ciName\":null,\"system\":{\"platform\":\"darwin\",\"platformVersion\":\"22.2.0\",\"gardenVersion\":\"0.12.52\"},\"isCI\":false,\"sessionId\":\"c4cf91c9-6cb3-4a67-81b4-64b61e6434f4\",\"projectMetadata\":{\"modulesCount\":3,\"moduleTypes\":[\"container\"],\"tasksCount\":0,\"servicesCount\":3,\"testsCount\":0},\"firstRunAt\":\"Fri, 10 Mar 2023 20:59:00 GMT\",\"latestRunAt\":\"Sat, 11 Mar 2023 08:29:15 GMT\",\"isRecurringUser\":false,\"name\":\"deploy\"}}","section":"","timestamp":"2023-03-11T08:34:59.647Z","level":"silly","allSections":[]}
+{"msg":"Using current context: docker-desktop","section":"local-kubernetes","timestamp":"2023-03-11T08:34:59.678Z","level":"debug","allSections":["providers","local-kubernetes"]}
+{"msg":"An attempt to get kind version failed with Error: Command \"kind version\" failed with code ENOENT:","section":"","timestamp":"2023-03-11T08:34:59.748Z","level":"debug","allSections":["providers"]}
+{"msg":"Validating local-kubernetes config returned from configureProvider handler","section":"","timestamp":"2023-03-11T08:34:59.749Z","level":"silly","allSections":["providers"]}
+{"msg":"Validating 'local-kubernetes' config against 'kubernetes' schema","section":"","timestamp":"2023-03-11T08:34:59.750Z","level":"silly","allSections":["providers"]}
+{"msg":"Ensuring local-kubernetes provider is ready","section":"","timestamp":"2023-03-11T08:34:59.750Z","level":"silly","allSections":["providers"]}
+{"msg":"Getting status for local-kubernetes","section":"","timestamp":"2023-03-11T08:34:59.751Z","level":"silly","allSections":["providers"]}
+{"msg":"Checking provider status cache for local-kubernetes at /Users/brennanwalsh/Sites/Sandbox/proj/.garden/cache/provider-statuses/local-kubernetes.json","section":"","timestamp":"2023-03-11T08:34:59.751Z","level":"silly","allSections":["providers"]}
+{"msg":"Completed task resolve-provider.local-kubernetes.9be9e123-bfe7-11ed-9218-875fe6bb9a14 (took 0.452 sec)","metadata":{"task":{"type":"resolve-provider","key":"resolve-provider.local-kubernetes","status":"success","uid":"9be9e123-bfe7-11ed-9218-875fe6bb9a14","versionString":"0.12.52","durationMs":452}},"section":"tasks","timestamp":"2023-03-11T08:34:59.754Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:34:59.754Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:34:59.754Z","level":"silly","allSections":[]}
+{"msg":"Getting status... - Cached","section":"providers","timestamp":"2023-03-11T08:34:59.754Z","level":"info","allSections":["providers"]}
+{"msg":"Run with --force-refresh to force a refresh of provider statuses.","section":"","timestamp":"2023-03-11T08:34:59.757Z","level":"info","allSections":["providers"]}
+{"msg":"Resolved providers: exec, container, local-kubernetes, templated","section":"","timestamp":"2023-03-11T08:34:59.760Z","level":"silly","allSections":["providers"]}
+{"msg":"Scanning for configs","section":"","timestamp":"2023-03-11T08:34:59.760Z","level":"silly","allSections":[]}
+{"msg":"Scanning for configs in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.761Z","level":"silly","allSections":[]}
+{"msg":"Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: **/*garden.y*ml\n→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**","section":"","timestamp":"2023-03-11T08:34:59.761Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.762Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.798Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)**/*garden.y*ml' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.830Z","level":"silly","allSections":[]}
+{"msg":"Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.905Z","level":"debug","allSections":[]}
+{"msg":"Load module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml","section":"","timestamp":"2023-03-11T08:34:59.906Z","level":"silly","allSections":[]}
+{"msg":"Load module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml","section":"","timestamp":"2023-03-11T08:34:59.906Z","level":"silly","allSections":[]}
+{"msg":"Loaded module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/garden.yaml","section":"","timestamp":"2023-03-11T08:34:59.919Z","level":"silly","allSections":[]}
+{"msg":"Loaded module and workflow configs from /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml","section":"","timestamp":"2023-03-11T08:34:59.920Z","level":"silly","allSections":[]}
+{"msg":"Adding module server","section":"","timestamp":"2023-03-11T08:34:59.927Z","level":"silly","allSections":[]}
+{"msg":"Adding module database","section":"","timestamp":"2023-03-11T08:34:59.928Z","level":"silly","allSections":[]}
+{"msg":"Adding module app","section":"","timestamp":"2023-03-11T08:34:59.928Z","level":"silly","allSections":[]}
+{"msg":"Scanned and found 3 modules and 0 workflows","section":"","timestamp":"2023-03-11T08:34:59.928Z","level":"silly","allSections":[]}
+{"msg":"Resolving 3 modules...","section":"graph","timestamp":"2023-03-11T08:34:59.928Z","level":"info","allSections":["graph"]}
+{"msg":"ModuleResolver: Loop 1","section":"","timestamp":"2023-03-11T08:34:59.932Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:34:59.932Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node database","section":"","timestamp":"2023-03-11T08:34:59.932Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config database","section":"","timestamp":"2023-03-11T08:34:59.932Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'database'","section":"","timestamp":"2023-03-11T08:34:59.937Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'database'","section":"","timestamp":"2023-03-11T08:34:59.939Z","level":"silly","allSections":[]}
+{"msg":"Resolving module database","section":"","timestamp":"2023-03-11T08:34:59.939Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:59.939Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module database","section":"","timestamp":"2023-03-11T08:34:59.939Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"e3b0c44298\"]","section":"","timestamp":"2023-03-11T08:34:59.940Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"e3b0c44298\"]","section":"","timestamp":"2023-03-11T08:34:59.940Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:59.940Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module database resolved","section":"","timestamp":"2023-03-11T08:34:59.941Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:34:59.942Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node app","section":"","timestamp":"2023-03-11T08:34:59.942Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config app","section":"","timestamp":"2023-03-11T08:34:59.942Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'app'","section":"","timestamp":"2023-03-11T08:34:59.945Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'app'","section":"","timestamp":"2023-03-11T08:34:59.946Z","level":"silly","allSections":[]}
+{"msg":"Resolving module app","section":"","timestamp":"2023-03-11T08:34:59.946Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:34:59.946Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module app","section":"","timestamp":"2023-03-11T08:34:59.946Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"f0c121bdb9\"]","section":"","timestamp":"2023-03-11T08:34:59.947Z","level":"silly","allSections":[]}
+{"msg":"Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: ./Dockerfile,./app\n→ Excludes: (none)","section":"","timestamp":"2023-03-11T08:34:59.947Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:34:59.947Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.005Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)./Dockerfile :(glob)./app' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.043Z","level":"silly","allSections":[]}
+{"msg":"Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.079Z","level":"debug","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"f0c121bdb9\"]","section":"","timestamp":"2023-03-11T08:35:00.080Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:35:00.081Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module app resolved","section":"","timestamp":"2023-03-11T08:35:00.084Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 1 leaves","section":"","timestamp":"2023-03-11T08:35:00.084Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process node server","section":"","timestamp":"2023-03-11T08:35:00.084Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Resolve config server","section":"","timestamp":"2023-03-11T08:35:00.084Z","level":"silly","allSections":["graph"]}
+{"msg":"Calling configure handler for container module 'server'","section":"","timestamp":"2023-03-11T08:35:00.089Z","level":"silly","allSections":[]}
+{"msg":"Called configure handler for container module 'server'","section":"","timestamp":"2023-03-11T08:35:00.090Z","level":"silly","allSections":[]}
+{"msg":"Resolving module server","section":"","timestamp":"2023-03-11T08:35:00.090Z","level":"silly","allSections":["graph"]}
+{"msg":"TreeCache: No cached value for key [\"moduleVersions\",\"server\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:35:00.092Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving version for module server","section":"","timestamp":"2023-03-11T08:35:00.092Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: No cached value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"a9d7f41ee7\"]","section":"","timestamp":"2023-03-11T08:35:00.092Z","level":"silly","allSections":[]}
+{"msg":"Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj\n→ Includes: ./Dockerfile,./server,./app/public\n→ Excludes: (none)","section":"","timestamp":"2023-03-11T08:35:00.093Z","level":"debug","allSections":[]}
+{"msg":"Calling git with args 'diff-index --name-only HEAD /Users/brennanwalsh/Sites/Sandbox/proj' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.093Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files --ignored --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.126Z","level":"silly","allSections":[]}
+{"msg":"Calling git with args 'ls-files -s --others --cached --exclude /Users/brennanwalsh/Sites/Sandbox/proj/.garden --exclude-per-directory .gitignore :(glob)./Dockerfile :(glob)./server :(glob)./app/public' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.157Z","level":"silly","allSections":[]}
+{"msg":"Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.195Z","level":"debug","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"/Users/brennanwalsh/Sites/Sandbox/proj\",\"include\",\"a9d7f41ee7\"]","section":"","timestamp":"2023-03-11T08:35:00.195Z","level":"silly","allSections":[]}
+{"msg":"TreeCache: Setting value for key [\"moduleVersions\",\"server\",\"app\",\"database\"]","section":"","timestamp":"2023-03-11T08:35:00.197Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Module server resolved","section":"","timestamp":"2023-03-11T08:35:00.200Z","level":"silly","allSections":["graph"]}
+{"msg":"ModuleResolver: Process 0 leaves","section":"","timestamp":"2023-03-11T08:35:00.200Z","level":"silly","allSections":["graph"]}
+{"msg":"Resolving 3 modules... - Done","section":"graph","timestamp":"2023-03-11T08:35:00.202Z","level":"info","allSections":["graph"]}
+{"msg":"Starting processModules","section":"","timestamp":"2023-03-11T08:35:00.207Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Processing 3 tasks: deploy.database,deploy.app,deploy.server","section":"","timestamp":"2023-03-11T08:35:00.207Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node deploy.database","section":"","timestamp":"2023-03-11T08:35:00.207Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node deploy.app","section":"","timestamp":"2023-03-11T08:35:00.208Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node deploy.server","section":"","timestamp":"2023-03-11T08:35:00.208Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node deploy.database: get-service-status.database,build.database","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node deploy.app: get-service-status.app,build.app","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node deploy.server: get-service-status.server,build.server","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node get-service-status.database","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node build.database","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node get-service-status.app","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node build.app","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node get-service-status.server","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node build.server","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node get-service-status.database:","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 1 dependencies for node build.database: stage-build.database","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node get-service-status.app:","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node get-service-status.server:","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node build.app: stage-build.app,build.database","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node build.server: stage-build.server,build.app","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node stage-build.database","section":"","timestamp":"2023-03-11T08:35:00.209Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node stage-build.app","section":"","timestamp":"2023-03-11T08:35:00.210Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Resolving dependencies for node stage-build.server","section":"","timestamp":"2023-03-11T08:35:00.210Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 0 dependencies for node stage-build.database:","section":"","timestamp":"2023-03-11T08:35:00.210Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node stage-build.app: stage-build.database,build.database","section":"","timestamp":"2023-03-11T08:35:00.210Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Got 2 dependencies for node stage-build.server: stage-build.app,build.app","section":"","timestamp":"2023-03-11T08:35:00.210Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Partitioning into batches","section":"","timestamp":"2023-03-11T08:35:00.211Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: Split into 1 batches","section":"","timestamp":"2023-03-11T08:35:00.211Z","level":"silly","allSections":[]}
+{"msg":"TaskGraph: this.index before processing","section":"","timestamp":"2023-03-11T08:35:00.211Z","level":"silly","allSections":[]}
+{"msg":"---------------------------------------","section":"","timestamp":"2023-03-11T08:35:00.211Z","level":"silly","allSections":[]}
+{"msg":"{}","section":"","timestamp":"2023-03-11T08:35:00.211Z","level":"silly","allSections":[]}
+{"msg":"Processing...","section":"","timestamp":"2023-03-11T08:35:00.211Z","level":"info","allSections":[]}
+{"msg":"Processing task get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"get-service-status","key":"get-service-status.database","status":"active","uid":"9c7c0f00-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-a957583129"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.214Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14, stage-build.database.9c7c3612-bfe7-11ed-9218-875fe6bb9a14, get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14, get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.214Z","level":"silly","allSections":[]}
+{"msg":"Processing task stage-build.database.9c7c3612-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"stage-build","key":"stage-build.database","status":"active","uid":"9c7c3612-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.217Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14, stage-build.database.9c7c3612-bfe7-11ed-9218-875fe6bb9a14, get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14, get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.217Z","level":"silly","allSections":[]}
+{"msg":"Processing task get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"get-service-status","key":"get-service-status.app","status":"active","uid":"9c7c0f02-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.217Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14, stage-build.database.9c7c3612-bfe7-11ed-9218-875fe6bb9a14, get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14, get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.217Z","level":"silly","allSections":[]}
+{"msg":"Processing task get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"get-service-status","key":"get-service-status.server","status":"active","uid":"9c7c0f04-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-097291880d"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.220Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14, stage-build.database.9c7c3612-bfe7-11ed-9218-875fe6bb9a14, get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14, get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.220Z","level":"silly","allSections":[]}
+{"msg":"Getting getServiceStatus handler for service database","section":"","timestamp":"2023-03-11T08:35:00.222Z","level":"silly","allSections":[]}
+{"msg":"Getting getServiceStatus handler for service app","section":"","timestamp":"2023-03-11T08:35:00.223Z","level":"silly","allSections":[]}
+{"msg":"Getting getServiceStatus handler for service server","section":"","timestamp":"2023-03-11T08:35:00.223Z","level":"silly","allSections":[]}
+{"msg":"Calling getServiceStatus handler for service database","section":"","timestamp":"2023-03-11T08:35:00.228Z","level":"silly","allSections":[]}
+{"msg":"Calling getServiceStatus handler for service app","section":"","timestamp":"2023-03-11T08:35:00.230Z","level":"silly","allSections":[]}
+{"msg":"Calling getServiceStatus handler for service server","section":"","timestamp":"2023-03-11T08:35:00.230Z","level":"silly","allSections":[]}
+{"msg":"Syncing 0 files from . to .garden/build/database (and removing any extraneous files)","section":"","timestamp":"2023-03-11T08:35:00.233Z","level":"debug","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/database","section":"","timestamp":"2023-03-11T08:35:00.234Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/database","section":"","timestamp":"2023-03-11T08:35:00.234Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/app","section":"","timestamp":"2023-03-11T08:35:00.234Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/app","section":"","timestamp":"2023-03-11T08:35:00.234Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/database","section":"","timestamp":"2023-03-11T08:35:00.236Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/database","section":"","timestamp":"2023-03-11T08:35:00.239Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/app","section":"","timestamp":"2023-03-11T08:35:00.239Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/app","section":"","timestamp":"2023-03-11T08:35:00.240Z","level":"silly","allSections":[]}
+{"msg":"Completed task stage-build.database.9c7c3612-bfe7-11ed-9218-875fe6bb9a14 (took 0.053 sec)","metadata":{"task":{"type":"stage-build","key":"stage-build.database","status":"success","uid":"9c7c3612-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c","durationMs":53}},"section":"tasks","timestamp":"2023-03-11T08:35:00.270Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 11","section":"","timestamp":"2023-03-11T08:35:00.270Z","level":"silly","allSections":[]}
+{"msg":"Processing task build.database.9c7c0f01-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"build","key":"build.database","status":"active","uid":"9c7c0f01-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.270Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14, get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14, get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14, build.database.9c7c0f01-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.270Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-b8ece8345c...","section":"database","timestamp":"2023-03-11T08:35:00.270Z","level":"info","allSections":["database"]}
+{"msg":"Getting 'getBuildStatus' handler for module 'database' (type 'container')","section":"","timestamp":"2023-03-11T08:35:00.273Z","level":"silly","allSections":[]}
+{"msg":"Calling getBuildStatus handler for module database","section":"","timestamp":"2023-03-11T08:35:00.275Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-b8ece8345c... - Already built","section":"database","timestamp":"2023-03-11T08:35:00.276Z","level":"info","allSections":["database"]}
+{"msg":"Completed task build.database.9c7c0f01-bfe7-11ed-9218-875fe6bb9a14 (took 0.008 sec)","metadata":{"task":{"type":"build","key":"build.database","status":"success","uid":"9c7c0f01-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-b8ece8345c","durationMs":8}},"section":"tasks","timestamp":"2023-03-11T08:35:00.278Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 10","section":"","timestamp":"2023-03-11T08:35:00.279Z","level":"silly","allSections":[]}
+{"msg":"Processing task stage-build.app.9c7c3613-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"stage-build","key":"stage-build.app","status":"active","uid":"9c7c3613-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.279Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14, get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14, get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14, stage-build.app.9c7c3613-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.279Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (42 files)...","section":"app","timestamp":"2023-03-11T08:35:00.281Z","level":"verbose","allSections":["app"]}
+{"msg":"Syncing 42 files from . to .garden/build/app (and removing any extraneous files)","section":"","timestamp":"2023-03-11T08:35:00.283Z","level":"debug","allSections":["app"]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/server","section":"","timestamp":"2023-03-11T08:35:00.285Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/server","section":"","timestamp":"2023-03-11T08:35:00.286Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource networking.k8s.io/v1/Ingress/server-0","section":"","timestamp":"2023-03-11T08:35:00.286Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/server","section":"","timestamp":"2023-03-11T08:35:00.286Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/server","section":"","timestamp":"2023-03-11T08:35:00.286Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/networking.k8s.io/v1/namespaces/wagregistry-wagregistry-brennanwalsh/ingresses/server-0","section":"","timestamp":"2023-03-11T08:35:00.286Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (42 files)... - Done (took 0 sec)","section":"app","timestamp":"2023-03-11T08:35:00.308Z","level":"verbose","allSections":["app"]}
+{"msg":"Completed task stage-build.app.9c7c3613-bfe7-11ed-9218-875fe6bb9a14 (took 0.029 sec)","metadata":{"task":{"type":"stage-build","key":"stage-build.app","status":"success","uid":"9c7c3613-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a","durationMs":29}},"section":"tasks","timestamp":"2023-03-11T08:35:00.308Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 9","section":"","timestamp":"2023-03-11T08:35:00.308Z","level":"silly","allSections":[]}
+{"msg":"Processing task build.app.9c7c0f03-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"build","key":"build.app","status":"active","uid":"9c7c0f03-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.309Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14, get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14, get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14, build.app.9c7c0f03-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.309Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-c684a0c14a...","section":"app","timestamp":"2023-03-11T08:35:00.309Z","level":"info","allSections":["app"]}
+{"msg":"Getting 'getBuildStatus' handler for module 'app' (type 'container')","section":"","timestamp":"2023-03-11T08:35:00.312Z","level":"silly","allSections":[]}
+{"msg":"Calling getBuildStatus handler for module app","section":"","timestamp":"2023-03-11T08:35:00.315Z","level":"silly","allSections":[]}
+{"msg":"Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-c684a0c14a -q' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.320Z","level":"debug","allSections":[]}
+{"msg":"Getting currently deployed resource statuses...","section":"","timestamp":"2023-03-11T08:35:00.385Z","level":"debug","allSections":[]}
+{"msg":"Getting currently deployed resource statuses...","section":"","timestamp":"2023-03-11T08:35:00.386Z","level":"debug","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/app","section":"","timestamp":"2023-03-11T08:35:00.387Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/app","section":"","timestamp":"2023-03-11T08:35:00.387Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/database","section":"","timestamp":"2023-03-11T08:35:00.387Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/database","section":"","timestamp":"2023-03-11T08:35:00.387Z","level":"silly","allSections":[]}
+{"msg":"Getting currently deployed resource statuses...","section":"","timestamp":"2023-03-11T08:35:00.387Z","level":"debug","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/app","section":"","timestamp":"2023-03-11T08:35:00.387Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/app","section":"","timestamp":"2023-03-11T08:35:00.388Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/database","section":"","timestamp":"2023-03-11T08:35:00.388Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/database","section":"","timestamp":"2023-03-11T08:35:00.388Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource apps/v1/Deployment/server","section":"","timestamp":"2023-03-11T08:35:00.389Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource v1/Service/server","section":"","timestamp":"2023-03-11T08:35:00.389Z","level":"silly","allSections":[]}
+{"msg":"Fetching Kubernetes resource networking.k8s.io/v1/Ingress/server-0","section":"","timestamp":"2023-03-11T08:35:00.389Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/apps/v1/namespaces/wagregistry-wagregistry-brennanwalsh/deployments/server","section":"","timestamp":"2023-03-11T08:35:00.389Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/api/v1/namespaces/wagregistry-wagregistry-brennanwalsh/services/server","section":"","timestamp":"2023-03-11T08:35:00.389Z","level":"silly","allSections":[]}
+{"msg":"GET https://kubernetes.docker.internal:6443/apis/networking.k8s.io/v1/namespaces/wagregistry-wagregistry-brennanwalsh/ingresses/server-0","section":"","timestamp":"2023-03-11T08:35:00.389Z","level":"silly","allSections":[]}
+{"msg":"Comparing expected and deployed resources...","section":"","timestamp":"2023-03-11T08:35:00.438Z","level":"verbose","allSections":[]}
+{"msg":"Comparing expected and deployed resources...","section":"","timestamp":"2023-03-11T08:35:00.439Z","level":"verbose","allSections":[]}
+{"msg":"All resources match.","section":"","timestamp":"2023-03-11T08:35:00.439Z","level":"verbose","allSections":[]}
+{"msg":"All resources match.","section":"","timestamp":"2023-03-11T08:35:00.439Z","level":"verbose","allSections":[]}
+{"msg":"Comparing expected and deployed resources...","section":"","timestamp":"2023-03-11T08:35:00.440Z","level":"verbose","allSections":[]}
+{"msg":"All resources match.","section":"","timestamp":"2023-03-11T08:35:00.440Z","level":"verbose","allSections":[]}
+{"msg":"Completed task get-service-status.app.9c7c0f02-bfe7-11ed-9218-875fe6bb9a14 (took 0.227 sec)","metadata":{"task":{"type":"get-service-status","key":"get-service-status.app","status":"success","uid":"9c7c0f02-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6","durationMs":227}},"section":"tasks","timestamp":"2023-03-11T08:35:00.444Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 8","section":"","timestamp":"2023-03-11T08:35:00.444Z","level":"silly","allSections":[]}
+{"msg":"Completed task get-service-status.database.9c7c0f00-bfe7-11ed-9218-875fe6bb9a14 (took 0.231 sec)","metadata":{"task":{"type":"get-service-status","key":"get-service-status.database","status":"success","uid":"9c7c0f00-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-a957583129","durationMs":231}},"section":"tasks","timestamp":"2023-03-11T08:35:00.445Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 7","section":"","timestamp":"2023-03-11T08:35:00.445Z","level":"silly","allSections":[]}
+{"msg":"Processing task deploy.database.9c7be7f0-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"deploy","key":"deploy.database","status":"active","uid":"9c7be7f0-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-a957583129"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.445Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14, build.app.9c7c0f03-bfe7-11ed-9218-875fe6bb9a14, deploy.database.9c7be7f0-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.445Z","level":"silly","allSections":[]}
+{"msg":"Deploying version v-a957583129...","section":"database","timestamp":"2023-03-11T08:35:00.446Z","level":"info","allSections":["database"]}
+{"msg":"Deploying version v-a957583129... - Already deployed","section":"database","timestamp":"2023-03-11T08:35:00.449Z","level":"info","allSections":["database"]}
+{"msg":"Port forward: postgres://localhost:5432 → database:5432 (database)","section":"","timestamp":"2023-03-11T08:35:00.455Z","level":"info","allSections":["database"]}
+{"msg":"Completed task deploy.database.9c7be7f0-bfe7-11ed-9218-875fe6bb9a14 (took 0.016 sec)","metadata":{"task":{"type":"deploy","key":"deploy.database","status":"success","uid":"9c7be7f0-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-a957583129","durationMs":16}},"section":"tasks","timestamp":"2023-03-11T08:35:00.461Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 6","section":"","timestamp":"2023-03-11T08:35:00.461Z","level":"silly","allSections":[]}
+{"msg":"Completed task get-service-status.server.9c7c0f04-bfe7-11ed-9218-875fe6bb9a14 (took 0.243 sec)","metadata":{"task":{"type":"get-service-status","key":"get-service-status.server","status":"success","uid":"9c7c0f04-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-097291880d","durationMs":243}},"section":"tasks","timestamp":"2023-03-11T08:35:00.463Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 5","section":"","timestamp":"2023-03-11T08:35:00.463Z","level":"silly","allSections":[]}
+{"msg":"Image app:v-c684a0c14a already exists","section":"app","timestamp":"2023-03-11T08:35:00.821Z","level":"debug","allSections":["app"]}
+{"msg":"Getting build status for v-c684a0c14a... - Already built","section":"app","timestamp":"2023-03-11T08:35:00.823Z","level":"info","allSections":["app"]}
+{"msg":"Completed task build.app.9c7c0f03-bfe7-11ed-9218-875fe6bb9a14 (took 0.518 sec)","metadata":{"task":{"type":"build","key":"build.app","status":"success","uid":"9c7c0f03-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-c684a0c14a","durationMs":518}},"section":"tasks","timestamp":"2023-03-11T08:35:00.827Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 4","section":"","timestamp":"2023-03-11T08:35:00.827Z","level":"silly","allSections":[]}
+{"msg":"Processing task deploy.app.9c7be7f1-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"deploy","key":"deploy.app","status":"active","uid":"9c7be7f1-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.827Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [deploy.app.9c7be7f1-bfe7-11ed-9218-875fe6bb9a14, stage-build.server.9c7c3614-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.827Z","level":"silly","allSections":[]}
+{"msg":"Processing task stage-build.server.9c7c3614-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"stage-build","key":"stage-build.server","status":"active","uid":"9c7c3614-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.827Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [deploy.app.9c7be7f1-bfe7-11ed-9218-875fe6bb9a14, stage-build.server.9c7c3614-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.827Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (3 files)...","section":"server","timestamp":"2023-03-11T08:35:00.828Z","level":"verbose","allSections":["server"]}
+{"msg":"Deploying version v-2106fd84f6...","section":"app","timestamp":"2023-03-11T08:35:00.828Z","level":"info","allSections":["app"]}
+{"msg":"Deploying version v-2106fd84f6... - Already deployed","section":"app","timestamp":"2023-03-11T08:35:00.833Z","level":"info","allSections":["app"]}
+{"msg":"Syncing 3 files from . to .garden/build/server (and removing any extraneous files)","section":"","timestamp":"2023-03-11T08:35:00.838Z","level":"debug","allSections":["server"]}
+{"msg":"Port forward: localhost:9000 → app:9000 (app)","section":"","timestamp":"2023-03-11T08:35:00.838Z","level":"info","allSections":["app"]}
+{"msg":"Completed task deploy.app.9c7be7f1-bfe7-11ed-9218-875fe6bb9a14 (took 0.018 sec)","metadata":{"task":{"type":"deploy","key":"deploy.app","status":"success","uid":"9c7be7f1-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-2106fd84f6","durationMs":18}},"section":"tasks","timestamp":"2023-03-11T08:35:00.845Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 3","section":"","timestamp":"2023-03-11T08:35:00.845Z","level":"silly","allSections":[]}
+{"msg":"Syncing module sources (3 files)... - Done (took 0 sec)","section":"server","timestamp":"2023-03-11T08:35:00.846Z","level":"verbose","allSections":["server"]}
+{"msg":"Completed task stage-build.server.9c7c3614-bfe7-11ed-9218-875fe6bb9a14 (took 0.019 sec)","metadata":{"task":{"type":"stage-build","key":"stage-build.server","status":"success","uid":"9c7c3614-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd","durationMs":19}},"section":"tasks","timestamp":"2023-03-11T08:35:00.846Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 2","section":"","timestamp":"2023-03-11T08:35:00.847Z","level":"silly","allSections":[]}
+{"msg":"Processing task build.server.9c7c0f05-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"build","key":"build.server","status":"active","uid":"9c7c0f05-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.847Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [build.server.9c7c0f05-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.847Z","level":"silly","allSections":[]}
+{"msg":"Getting build status for v-8e26e662bd...","section":"server","timestamp":"2023-03-11T08:35:00.847Z","level":"info","allSections":["server"]}
+{"msg":"Getting 'getBuildStatus' handler for module 'server' (type 'container')","section":"","timestamp":"2023-03-11T08:35:00.851Z","level":"silly","allSections":[]}
+{"msg":"Calling getBuildStatus handler for module server","section":"","timestamp":"2023-03-11T08:35:00.856Z","level":"silly","allSections":[]}
+{"msg":"Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-8e26e662bd -q' in /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.856Z","level":"debug","allSections":[]}
+{"msg":"Image server:v-8e26e662bd already exists","section":"server","timestamp":"2023-03-11T08:35:00.964Z","level":"debug","allSections":["server"]}
+{"msg":"Getting build status for v-8e26e662bd... - Already built","section":"server","timestamp":"2023-03-11T08:35:00.965Z","level":"info","allSections":["server"]}
+{"msg":"Completed task build.server.9c7c0f05-bfe7-11ed-9218-875fe6bb9a14 (took 0.123 sec)","metadata":{"task":{"type":"build","key":"build.server","status":"success","uid":"9c7c0f05-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-8e26e662bd","durationMs":123}},"section":"tasks","timestamp":"2023-03-11T08:35:00.970Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 1","section":"","timestamp":"2023-03-11T08:35:00.970Z","level":"silly","allSections":[]}
+{"msg":"Processing task deploy.server.9c7be7f2-bfe7-11ed-9218-875fe6bb9a14","metadata":{"task":{"type":"deploy","key":"deploy.server","status":"active","uid":"9c7be7f2-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-097291880d"}},"section":"tasks","timestamp":"2023-03-11T08:35:00.970Z","level":"silly","allSections":["tasks"]}
+{"msg":"Currently in progress [deploy.server.9c7be7f2-bfe7-11ed-9218-875fe6bb9a14]","section":"","timestamp":"2023-03-11T08:35:00.970Z","level":"silly","allSections":[]}
+{"msg":"Deploying version v-097291880d...","section":"server","timestamp":"2023-03-11T08:35:00.970Z","level":"info","allSections":["server"]}
+{"msg":"Deploying version v-097291880d... - Already deployed","section":"server","timestamp":"2023-03-11T08:35:00.974Z","level":"info","allSections":["server"]}
+{"msg":"Ingress: http://todone.local","section":"","timestamp":"2023-03-11T08:35:00.982Z","level":"info","allSections":["server"]}
+{"msg":"Port forward: http://localhost:57328 → server:80 (http)","section":"","timestamp":"2023-03-11T08:35:00.988Z","level":"info","allSections":["server"]}
+{"msg":"Completed task deploy.server.9c7be7f2-bfe7-11ed-9218-875fe6bb9a14 (took 0.023 sec)","metadata":{"task":{"type":"deploy","key":"deploy.server","status":"success","uid":"9c7be7f2-bfe7-11ed-9218-875fe6bb9a14","versionString":"v-097291880d","durationMs":23}},"section":"tasks","timestamp":"2023-03-11T08:35:00.993Z","level":"silly","allSections":["tasks"]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:35:00.993Z","level":"silly","allSections":[]}
+{"msg":"Remaining tasks 0","section":"","timestamp":"2023-03-11T08:35:00.993Z","level":"silly","allSections":[]}
+{"msg":"Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.995Z","level":"debug","allSections":[]}
+{"msg":"Watcher: Using existing FSWatcher","section":"","timestamp":"2023-03-11T08:35:00.995Z","level":"debug","allSections":[]}
+{"msg":"Watcher: Ignoring paths /Users/brennanwalsh/Sites/Sandbox/proj/.garden/**/*, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitmodules, /Users/brennanwalsh/Sites/Sandbox/proj/.garden/**/*, /Users/brennanwalsh/Sites/Sandbox/proj/debug-info*/**, /Users/brennanwalsh/Sites/Sandbox/proj/.DS_Store, /Users/brennanwalsh/Sites/Sandbox/proj/.garden, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitignore, /Users/brennanwalsh/Sites/Sandbox/proj/Dockerfile, /Users/brennanwalsh/Sites/Sandbox/proj/app, /Users/brennanwalsh/Sites/Sandbox/proj/composer.lock, /Users/brennanwalsh/Sites/Sandbox/proj/env.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/phpunit.xml, /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/server, /Users/brennanwalsh/Sites/Sandbox/proj/symfony.lock, /Users/brennanwalsh/Sites/Sandbox/proj/var, /Users/brennanwalsh/Sites/Sandbox/proj/vendor, /Users/brennanwalsh/Sites/Sandbox/proj/.DS_Store, /Users/brennanwalsh/Sites/Sandbox/proj/.garden, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitignore, /Users/brennanwalsh/Sites/Sandbox/proj/Dockerfile, /Users/brennanwalsh/Sites/Sandbox/proj/app, /Users/brennanwalsh/Sites/Sandbox/proj/composer.lock, /Users/brennanwalsh/Sites/Sandbox/proj/env.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/phpunit.xml, /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/server, /Users/brennanwalsh/Sites/Sandbox/proj/symfony.lock, /Users/brennanwalsh/Sites/Sandbox/proj/var, /Users/brennanwalsh/Sites/Sandbox/proj/vendor, /Users/brennanwalsh/Sites/Sandbox/proj/.DS_Store, /Users/brennanwalsh/Sites/Sandbox/proj/.garden, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitignore, /Users/brennanwalsh/Sites/Sandbox/proj/Dockerfile, /Users/brennanwalsh/Sites/Sandbox/proj/app, /Users/brennanwalsh/Sites/Sandbox/proj/composer.lock, /Users/brennanwalsh/Sites/Sandbox/proj/env.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/phpunit.xml, /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/server, /Users/brennanwalsh/Sites/Sandbox/proj/symfony.lock, /Users/brennanwalsh/Sites/Sandbox/proj/var, /Users/brennanwalsh/Sites/Sandbox/proj/vendor","section":"","timestamp":"2023-03-11T08:35:00.995Z","level":"debug","allSections":[]}
+{"msg":"Watcher: Watch /Users/brennanwalsh/Sites/Sandbox/proj","section":"","timestamp":"2023-03-11T08:35:00.996Z","level":"debug","allSections":[]}
+{"msg":"Waiting for code changes...","section":"","timestamp":"2023-03-11T08:35:00.998Z","level":"info","allSections":[]}
+{"msg":"Starting port forward to server/server:80","section":"","timestamp":"2023-03-11T08:35:03.245Z","level":"debug","allSections":["server"]}
+{"msg":"Getting getPortForward handler for service server","section":"","timestamp":"2023-03-11T08:35:03.252Z","level":"silly","allSections":["server"]}
+{"msg":"Calling getPortForward handler for service server","section":"","timestamp":"2023-03-11T08:35:03.286Z","level":"silly","allSections":["server"]}
+{"msg":"Forwarding local port 58865 to Service/server port 80","section":"","timestamp":"2023-03-11T08:35:03.290Z","level":"debug","allSections":["server"]}
+{"msg":"Running 'kubectl --context=docker-desktop --namespace=wagregistry-wagregistry-brennanwalsh port-forward Service/server 58865:80'","section":"","timestamp":"2023-03-11T08:35:03.290Z","level":"silly","allSections":["server"]}
+{"msg":"[Service/server port forwarder] Forwarding from 127.0.0.1:58865 -> 80","section":"","timestamp":"2023-03-11T08:35:04.041Z","level":"silly","allSections":["server"]}
+{"msg":"Successfully started port forward to server/server:80","section":"","timestamp":"2023-03-11T08:35:04.303Z","level":"debug","allSections":["server"]}
+{"msg":"Connecting to server/server:80 port forward at localhost:58865","section":"","timestamp":"2023-03-11T08:35:04.308Z","level":"debug","allSections":["server"]}
+{"msg":"Connecting to server/server:80 port forward at localhost:58865","section":"","timestamp":"2023-03-11T08:35:04.310Z","level":"debug","allSections":["server"]}
+{"msg":"Connecting to server/server:80 port forward at localhost:58865","section":"","timestamp":"2023-03-11T08:35:04.311Z","level":"debug","allSections":["server"]}

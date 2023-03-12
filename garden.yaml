@@ -1,0 +1,105 @@
+kind: Project
+name: symfony-garden
+defaultEnvironment: local
+dotIgnoreFiles: [.gitignore]
+
+varfile: env.yaml
+
+environments:
+  - name: local
+
+providers:
+  - name: local-kubernetes
+    environments: [local]
+    namespace: symfony-garden
+    defaultHostname: symfony.local
+
+---
+kind: Module
+description: Caddy container.
+type: container
+name: server
+dockerfile: ./Dockerfile
+include:
+  - ./Dockerfile
+  - ./server
+  - ./app/public
+build:
+  dependencies:
+    - name: app
+  targetImage: server
+services:
+  - name: server
+    devMode:
+      sync:
+        - source: ./server/Caddyfile
+          target: /etc/caddy/Caddyfile
+          mode: one-way
+    volumes:
+      - name: caddy-data
+        containerPath: /data
+      - name: caddy-config
+        containerPath: /config
+    ports:
+      - name: http
+        containerPort: 80
+        servicePort: 80
+    ingresses:
+      - path: /
+        port: http
+        hostname: todone.garden
+
+---
+kind: Module
+description: Postgres container.
+type: container
+name: database
+image: postgres:15-alpine
+include: []
+services:
+  - name: database
+    volumes:
+      - name: database
+        containerPath: /db-data
+    ports:
+      - name: database
+        containerPort: 5432
+    env:
+      POSTGRES_PASSWORD:
+        secretRef:
+          name: postgres-password
+          key: root
+      POSTGRES_USERNAME: ${var.database.username}
+      POSTGRES_DATABASE: ${var.database.database}
+
+---
+kind: Module
+description: The app.
+type: container
+dockerfile: ./Dockerfile
+name: app
+include:
+  - ./Dockerfile
+  - ./app
+build:
+  dependencies:
+    - name: database
+  targetImage: app
+services:
+  - name: app
+    devMode:
+      sync:
+        - source: ./app
+          target: /srv/app
+          mode: two-way
+    ports:
+      - name: app
+        containerPort: 9000
+        servicePort: 80
+    env:
+      POSTGRES_PASSWORD:
+        secretRef:
+          name: postgres-password
+          key: root
+      POSTGRES_USERNAME: ${var.database.username}
+      POSTGRES_DATABASE: ${var.database.database}

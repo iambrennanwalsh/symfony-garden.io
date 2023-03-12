@@ -1,0 +1,8 @@
+:80
+
+route {
+  root * /srv/app/public
+  php_fastcgi app
+  encode gzip
+  file_server
+}

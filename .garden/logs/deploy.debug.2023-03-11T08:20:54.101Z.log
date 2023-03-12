@@ -1,0 +1,1943 @@
+
+[2023-03-11T08:20:54.116Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T08:20:54.244Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:20:54.380Z] Getting status...
+
+[2023-03-11T08:20:55.898Z] Using current context: docker-desktop
+
+[2023-03-11T08:20:55.949Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T08:20:55.974Z] Getting status... → Cached
+
+[2023-03-11T08:20:55.976Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T08:20:55.979Z] Resolving 3 modules...
+
+[2023-03-11T08:20:56.054Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T08:20:56.175Z] Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:20:56.208Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T08:20:56.322Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:20:56.347Z] Resolving 3 modules... → Done
+
+[2023-03-11T08:20:56.366Z] Processing...
+
+[2023-03-11T08:20:56.393Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T08:20:56.494Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T08:20:56.503Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T08:20:56.505Z] Syncing module sources (42 files)...
+
+[2023-03-11T08:20:56.531Z] Syncing 42 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T08:20:56.541Z] Syncing module sources (42 files)... → Done (took 0 sec)
+
+[2023-03-11T08:20:56.545Z] Getting build status for v-c8f3fa6ae2...
+
+[2023-03-11T08:20:56.549Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-c8f3fa6ae2 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:20:56.796Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-11T08:20:56.811Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-11T08:20:56.812Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-11T08:20:56.951Z] All resources missing from cluster
+
+[2023-03-11T08:20:56.951Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:20:56.986Z] All resources missing from cluster
+
+[2023-03-11T08:20:56.989Z] Building version v-c8f3fa6ae2...
+
+[2023-03-11T08:20:57.119Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:20:57.120Z] All resources match.
+
+[2023-03-11T08:20:57.132Z] Deploying version v-a957583129...
+
+[2023-03-11T08:20:57.134Z] Deploying version v-a957583129... → Already deployed
+
+[2023-03-11T08:20:57.225Z] Started proxy to database/database:5432 on localhost:5432
+
+[2023-03-11T08:20:57.228Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-11T08:20:57.290Z] Building app:v-c8f3fa6ae2...
+
+[2023-03-11T08:20:57.292Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker build -t app:v-c8f3fa6ae2 --build-arg GARDEN_MODULE_VERSION=v-c8f3fa6ae2 --target app --file /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app/Dockerfile /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app' in /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app
+
+[2023-03-11T08:20:57.665Z] [local-docker]: #1 [internal] load build definition from Dockerfile
+
+[2023-03-11T08:20:57.666Z] [local-docker]: #1 sha256:0aec6590f4a9a9bd81037b3c8051d80c0fcaaca724539b10922daa73782c70dc
+
+[2023-03-11T08:20:57.666Z] [local-docker]: #1 transferring dockerfile: 2.24kB done
+
+[2023-03-11T08:20:57.666Z] [local-docker]: #1 DONE 0.0s
+
+[2023-03-11T08:20:57.666Z] [local-docker]: 
+
+[2023-03-11T08:20:57.667Z] [local-docker]: #2 [internal] load .dockerignore
+
+[2023-03-11T08:20:57.667Z] [local-docker]: #2 sha256:6cf8f102695c6b38b20f456b5d372eece6e0a8bb3160106a392937d8a39c6235
+
+[2023-03-11T08:20:57.667Z] [local-docker]: #2 transferring context: 2B done
+
+[2023-03-11T08:20:57.667Z] [local-docker]: #2 DONE 0.0s
+
+[2023-03-11T08:20:57.814Z] [local-docker]: 
+
+[2023-03-11T08:20:57.815Z] [local-docker]: #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+[2023-03-11T08:20:57.815Z] [local-docker]: #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+[2023-03-11T08:20:59.018Z] [local-docker]: #3 ...
+
+[2023-03-11T08:20:59.019Z] [local-docker]: 
+
+[2023-03-11T08:20:59.019Z] [local-docker]: #4 [auth] docker/dockerfile:pull token for registry-1.docker.io
+
+[2023-03-11T08:20:59.019Z] [local-docker]: #4 sha256:62ddf518d63329e855a5cf75b9c24abbd67850422d63c8d85caf59a4058ec065
+
+[2023-03-11T08:20:59.019Z] [local-docker]: #4 DONE 0.0s
+
+[2023-03-11T08:20:59.168Z] [local-docker]: 
+
+[2023-03-11T08:20:59.169Z] [local-docker]: #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+[2023-03-11T08:20:59.169Z] [local-docker]: #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+[2023-03-11T08:20:59.444Z] [local-docker]: #3 DONE 1.8s
+
+[2023-03-11T08:20:59.595Z] [local-docker]: 
+
+[2023-03-11T08:20:59.596Z] [local-docker]: #5 docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+[2023-03-11T08:20:59.596Z] [local-docker]: #5 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+[2023-03-11T08:20:59.596Z] [local-docker]: #5 CACHED
+
+[2023-03-11T08:20:59.896Z] [local-docker]: 
+
+[2023-03-11T08:20:59.897Z] [local-docker]: #6 [internal] load build definition from Dockerfile
+
+[2023-03-11T08:20:59.897Z] [local-docker]: #6 sha256:7cf29994e29091d932085beb9591f40459aadb4b6f7bd6d30d1866e1789eb766
+
+[2023-03-11T08:20:59.898Z] [local-docker]: #6 DONE 0.0s
+
+[2023-03-11T08:20:59.898Z] [local-docker]: 
+
+[2023-03-11T08:20:59.899Z] [local-docker]: #7 [internal] load .dockerignore
+
+[2023-03-11T08:20:59.899Z] [local-docker]: #7 sha256:06b3a6dd64984d56b2e18edc86a88ee44099880499075bf74769a336c241a779
+
+[2023-03-11T08:20:59.899Z] [local-docker]: #7 DONE 0.0s
+
+[2023-03-11T08:20:59.899Z] [local-docker]: 
+
+[2023-03-11T08:20:59.899Z] [local-docker]: #11 [internal] load metadata for docker.io/mlocati/php-extension-installer:latest
+
+[2023-03-11T08:20:59.899Z] [local-docker]: #11 sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+[2023-03-11T08:21:00.951Z] [local-docker]: #11 ...
+
+[2023-03-11T08:21:00.951Z] [local-docker]: 
+
+[2023-03-11T08:21:00.952Z] [local-docker]: #12 [auth] library/node:pull token for registry-1.docker.io
+
+[2023-03-11T08:21:00.952Z] [local-docker]: #12 sha256:ce18d7c67d327aa5d0dbc583b33c8dccec3e77a7c093c6a6c16a50fbef65d447
+
+[2023-03-11T08:21:00.952Z] [local-docker]: #12 DONE 0.0s
+
+[2023-03-11T08:21:01.102Z] [local-docker]: 
+
+[2023-03-11T08:21:01.102Z] [local-docker]: #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+[2023-03-11T08:21:01.102Z] [local-docker]: #10 sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+[2023-03-11T08:21:01.253Z] [local-docker]: #10 ...
+
+[2023-03-11T08:21:01.253Z] [local-docker]: 
+
+[2023-03-11T08:21:01.253Z] [local-docker]: #9 [internal] load metadata for docker.io/library/node:18-alpine
+
+[2023-03-11T08:21:01.254Z] [local-docker]: #9 sha256:5ee8ea8626137e4a4e007f934eed3f693a5155be1152f5d3acaa7750c4ab9271
+
+[2023-03-11T08:21:01.254Z] [local-docker]: #9 DONE 1.3s
+
+[2023-03-11T08:21:01.404Z] [local-docker]: 
+
+[2023-03-11T08:21:01.404Z] [local-docker]: #13 [auth] composer/composer:pull token for registry-1.docker.io
+
+[2023-03-11T08:21:01.404Z] [local-docker]: #13 sha256:6da3d3ff1a4a2ee7133e2794c8433994eb823ca44f8855fa36e22891ded09f21
+
+[2023-03-11T08:21:01.404Z] [local-docker]: #13 DONE 0.0s
+
+[2023-03-11T08:21:01.404Z] [local-docker]: 
+
+[2023-03-11T08:21:01.404Z] [local-docker]: #14 [auth] library/php:pull token for registry-1.docker.io
+
+[2023-03-11T08:21:01.404Z] [local-docker]: #14 sha256:119f10e8d1572cc5ff35a8d485ea3c526ef443ad846317e36d281bfdf124d722
+
+[2023-03-11T08:21:01.405Z] [local-docker]: #14 DONE 0.0s
+
+[2023-03-11T08:21:01.405Z] [local-docker]: 
+
+[2023-03-11T08:21:01.405Z] [local-docker]: #15 [auth] mlocati/php-extension-installer:pull token for registry-1.docker.io
+
+[2023-03-11T08:21:01.405Z] [local-docker]: #15 sha256:c48794bdb881de3dfd2ae255f17e915c0fd122ad5cc58163ef708e12c4107b02
+
+[2023-03-11T08:21:01.405Z] [local-docker]: #15 DONE 0.0s
+
+[2023-03-11T08:21:01.405Z] [local-docker]: 
+
+[2023-03-11T08:21:01.405Z] [local-docker]: #8 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+
+[2023-03-11T08:21:01.405Z] [local-docker]: #8 sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+
+[2023-03-11T08:21:01.677Z] [local-docker]: #8 DONE 1.9s
+
+[2023-03-11T08:21:01.678Z] [local-docker]: 
+
+[2023-03-11T08:21:01.678Z] [local-docker]: #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+[2023-03-11T08:21:01.678Z] [local-docker]: #10 sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+[2023-03-11T08:21:01.678Z] [local-docker]: #10 DONE 1.8s
+
+[2023-03-11T08:21:01.678Z] [local-docker]: 
+
+[2023-03-11T08:21:01.678Z] [local-docker]: #11 [internal] load metadata for docker.io/mlocati/php-extension-installer:latest
+
+[2023-03-11T08:21:01.678Z] [local-docker]: #11 sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+[2023-03-11T08:21:01.793Z] [local-docker]: #11 DONE 2.0s
+
+[2023-03-11T08:21:01.944Z] [local-docker]: 
+
+[2023-03-11T08:21:01.944Z] [local-docker]: #16 [app  1/17] FROM docker.io/library/php:8.2-fpm-alpine@sha256:dae174052d1e0b75ad37594c14ae24dd0dd27041162c1a0f3153cc5fbd8114dd
+
+[2023-03-11T08:21:01.944Z] [local-docker]: #16 sha256:c8b8abe9ffa9ace47b1dd437fe1e5b6c4c3c29f3b2a36206077be3e1bebdfacf
+
+[2023-03-11T08:21:01.944Z] [local-docker]: #16 DONE 0.0s
+
+[2023-03-11T08:21:01.944Z] [local-docker]: 
+
+[2023-03-11T08:21:01.944Z] [local-docker]: #22 [nodejs 1/1] FROM docker.io/library/node:18-alpine@sha256:f605fcd5254d0e398e04d93c7b11e2aec2a6e1aeb7da1f99bc40cd101dd8cde4
+
+[2023-03-11T08:21:01.944Z] [local-docker]: #22 sha256:77827acad3ab054ff93ffd715ab8f0981aade8229dcaeded9e58cbe516c4faa8
+
+[2023-03-11T08:21:01.944Z] [local-docker]: #22 DONE 0.0s
+
+[2023-03-11T08:21:01.945Z] [local-docker]: 
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #18 [php_extension_installer 1/1] FROM docker.io/mlocati/php-extension-installer:latest@sha256:87b296530ee351d9a0978b8ed851446157cf866f9a81f542c5be542bc014b9b9
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #18 sha256:c492f9007d3fd2e49ff18d44af67bebfef5055e05fbe4c609f91b7eafa5fc987
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #18 DONE 0.0s
+
+[2023-03-11T08:21:01.945Z] [local-docker]: 
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #20 [composer 1/1] FROM docker.io/composer/composer:2-bin@sha256:6a8b987cd68b8c38863bf05cba6a5776ddd2f6753a20b83e12a1d6ae4827d4a5
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #20 sha256:8c34a4d8dc3e231d106045a6ef0ea462d0bdc4458c87e80455b2b46bb3b21851
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #20 DONE 0.0s
+
+[2023-03-11T08:21:01.945Z] [local-docker]: 
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #28 [internal] load build context
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #28 sha256:6b59dbfbae8ae2c59f8d2cdf59dff2ddd454b0f65687c28a9ccb61d5f9a2b58e
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #28 transferring context: 29.25kB 0.0s done
+
+[2023-03-11T08:21:01.945Z] [local-docker]: #28 DONE 0.0s
+
+[2023-03-11T08:21:01.946Z] [local-docker]: 
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #19 [app  3/17] COPY --from=php_extension_installer --link /usr/bin/install-php-extensions /usr/bin/
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #19 sha256:0d903561b793c7c94444be6cb0c4827a74de697e4283aa54cb1163945e160cc3
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #19 CACHED
+
+[2023-03-11T08:21:01.946Z] [local-docker]: 
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #23 [app  5/17] COPY --from=nodejs --link /usr/local/bin/node /usr/local/bin/
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #23 sha256:4b4b8beb4324af52aef95d0d0e697dce54e15cb631d0466c1ab135833aeb62f5
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #23 CACHED
+
+[2023-03-11T08:21:01.946Z] [local-docker]: 
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #25 [app  7/17] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #25 sha256:76be8c7fb6bdd7647fe4c8b0823a4758ecdeff890997354560f614c046b2296c
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #25 CACHED
+
+[2023-03-11T08:21:01.946Z] [local-docker]: 
+
+[2023-03-11T08:21:01.946Z] [local-docker]: #29 [app 10/17] COPY --link ./app/etc/conf.d/app.ini /usr/local/etc/php/conf.d/
+
+[2023-03-11T08:21:01.947Z] [local-docker]: #29 sha256:4e97cc6971abe6940c55a13d2db67432e5a316c5cfa4d7fc4cddfbbb873c6d87
+
+[2023-03-11T08:21:01.947Z] [local-docker]: #29 CACHED
+
+[2023-03-11T08:21:01.947Z] [local-docker]: 
+
+[2023-03-11T08:21:01.947Z] [local-docker]: #30 [app 11/17] COPY --link ./app/etc/php-fpm.d/zz-docker.conf /usr/local/etc/php-fpm.d/zz-docker.conf
+
+[2023-03-11T08:21:01.947Z] [local-docker]: #30 sha256:85942a6769d07d842b9d95fc684c36b60aaeffa36a64bb732311fc652319902c
+
+[2023-03-11T08:21:01.947Z] [local-docker]: #30 CACHED
+
+[2023-03-11T08:21:01.947Z] [local-docker]: 
+
+[2023-03-11T08:21:01.947Z] [local-docker]: #27 [app  9/17] RUN install-php-extensions intl zip apcu opcache pdo_pgsql;
+
+[2023-03-11T08:21:01.947Z] [local-docker]: #27 sha256:7787ca72319e5b7fa2d0adfc641c2f5c9a2086cf944649aa74be2d8b172f2391
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #27 CACHED
+
+[2023-03-11T08:21:01.948Z] [local-docker]: 
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #17 [app  2/17] WORKDIR /srv/app
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #17 sha256:3200e88b4ae95031bc133099fb5786f7fe13b65a2abce90f7e2b9cd2ae4e8a0c
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #17 CACHED
+
+[2023-03-11T08:21:01.948Z] [local-docker]: 
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #26 [app  8/17] RUN apk add --no-cache bash make;
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #26 sha256:b5cfbc4cecc95f7dd77e510cfcecc3a1482cf9b0ca93601c0e42cac9e7928caa
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #26 CACHED
+
+[2023-03-11T08:21:01.948Z] [local-docker]: 
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #21 [app  4/17] COPY --from=composer --link /composer /usr/bin/
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #21 sha256:a01b7a374a2de9af02942b85832dc40d504bd00ef2bb79184bf5eca09c5652e3
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #21 CACHED
+
+[2023-03-11T08:21:01.948Z] [local-docker]: 
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #24 [app  6/17] COPY --from=nodejs --link /usr/local/lib/node_modules /usr/local/lib/node_modules
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #24 sha256:5d04446ebf5c26d43d583fde8a941e8090fc97606134a709aef0ffb153d226f4
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #24 CACHED
+
+[2023-03-11T08:21:01.948Z] [local-docker]: 
+
+[2023-03-11T08:21:01.948Z] [local-docker]: #31 [app 12/17] RUN mv "/usr/local/etc/php/php.ini-development" "/usr/local/etc/php/php.ini"
+
+[2023-03-11T08:21:01.949Z] [local-docker]: #31 sha256:1da58657c95c9d80eb05aae7f83cac172d8dd0d2da22f9763cb88c51c84465bd
+
+[2023-03-11T08:21:01.949Z] [local-docker]: #31 CACHED
+
+[2023-03-11T08:21:01.949Z] [local-docker]: 
+
+[2023-03-11T08:21:01.949Z] [local-docker]: #32 [app 13/17] COPY --link ./app/bin ./app/bin
+
+[2023-03-11T08:21:01.949Z] [local-docker]: #32 sha256:cf34673d6e2f11dc5266546442600eaf1fa2c3aaea618b94272e23c12c050207
+
+[2023-03-11T08:21:01.949Z] [local-docker]: #32 DONE 0.0s
+
+[2023-03-11T08:21:01.949Z] [local-docker]: 
+
+[2023-03-11T08:21:01.949Z] [local-docker]: #33 [app 14/17] RUN chmod +x ./bin/console;
+
+[2023-03-11T08:21:01.949Z] [local-docker]: #33 sha256:544b1fe803cbac6a31a0133dc4333421eae5b78de6f7bb1ea88b55e03d756d61
+
+[2023-03-11T08:21:02.200Z] [local-docker]: #33 0.324 chmod: ./bin/console: No such file or directory
+
+[2023-03-11T08:21:02.201Z] [local-docker]: #33 ERROR: executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code: 1
+
+[2023-03-11T08:21:02.201Z] [local-docker]: ------
+
+[2023-03-11T08:21:02.202Z] [local-docker]:  > [app 14/17] RUN chmod +x ./bin/console;:
+
+[2023-03-11T08:21:02.202Z] [local-docker]: ------
+
+[2023-03-11T08:21:02.202Z] [local-docker]: executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code: 1
+
+[2023-03-11T08:21:02.214Z] Building app:v-c8f3fa6ae2...
+
+[2023-03-11T08:21:02.319Z] Error: Unable to run docker command: Command "/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker build -t app:v-c8f3fa6ae2 --build-arg GARDEN_MODULE_VERSION=v-c8f3fa6ae2 --target app --file /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app/Dockerfile /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app" failed with code 1:
+
+   #1 [internal] load build definition from Dockerfile
+#1 sha256:0aec6590f4a9a9bd81037b3c8051d80c0fcaaca724539b10922daa73782c70dc
+#1 transferring dockerfile: 2.24kB done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:6cf8f102695c6b38b20f456b5d372eece6e0a8bb3160106a392937d8a39c6235
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 resolve image config for docker.io/docker/dockerfile:1.4
+#3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+#3 ...
+
+#4 [auth] docker/dockerfile:pull token for registry-1.docker.io
+#4 sha256:62ddf518d63329e855a5cf75b9c24abbd67850422d63c8d85caf59a4058ec065
+#4 DONE 0.0s
+
+#3 resolve image config for docker.io/docker/dockerfile:1.4
+#3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+#3 DONE 1.8s
+
+#5 docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+#5 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+#5 CACHED
+
+#6 [internal] load build definition from Dockerfile
+#6 sha256:7cf29994e29091d932085beb9591f40459aadb4b6f7bd6d30d1866e1789eb766
+#6 DONE 0.0s
+
+#7 [internal] load .dockerignore
+#7 sha256:06b3a6dd64984d56b2e18edc86a88ee44099880499075bf74769a336c241a779
+#7 DONE 0.0s
+
+#11 [internal] load metadata for docker.io/mlocati/php-extension-installer:latest
+#11 sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+#11 ...
+
+#12 [auth] library/node:pull token for registry-1.docker.io
+#12 sha256:ce18d7c67d327aa5d0dbc583b33c8dccec3e77a7c093c6a6c16a50fbef65d447
+#12 DONE 0.0s
+
+#10 [internal] load metadata for docker.io/composer/composer:2-bin
+#10 sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+#10 ...
+
+#9 [internal] load metadata for docker.io/library/node:18-alpine
+#9 sha256:5ee8ea8626137e4a4e007f934eed3f693a5155be1152f5d3acaa7750c4ab9271
+#9 DONE 1.3s
+
+#13 [auth] composer/composer:pull token for registry-1.docker.io
+#13 sha256:6da3d3ff1a4a2ee7133e2794c8433994eb823ca44f8855fa36e22891ded09f21
+#13 DONE 0.0s
+
+#14 [auth] library/php:pull token for registry-1.docker.io
+#14 sha256:119f10e8d1572cc5ff35a8d485ea3c526ef443ad846317e36d281bfdf124d722
+#14 DONE 0.0s
+
+#15 [auth] mlocati/php-extension-installer:pull token for registry-1.docker.io
+#15 sha256:c48794bdb881de3dfd2ae255f17e915c0fd122ad5cc58163ef708e12c4107b02
+#15 DONE 0.0s
+
+#8 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+#8 sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+#8 DONE 1.9s
+
+#10 [internal] load metadata for docker.io/composer/composer:2-bin
+#10 sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+#10 DONE 1.8s
+
+#11 [internal] load metadata for docker.io/mlocati/php-extension-installer:latest
+#11 sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+#11 DONE 2.0s
+
+#16 [app  1/17] FROM docker.io/library/php:8.2-fpm-alpine@sha256:dae174052d1e0b75ad37594c14ae24dd0dd27041162c1a0f3153cc5fbd8114dd
+#16 sha256:c8b8abe9ffa9ace47b1dd437fe1e5b6c4c3c29f3b2a36206077be3e1bebdfacf
+#16 DONE 0.0s
+
+#22 [nodejs 1/1] FROM docker.io/library/node:18-alpine@sha256:f605fcd5254d0e398e04d93c7b11e2aec2a6e1aeb7da1f99bc40cd101dd8cde4
+#22 sha256:77827acad3ab054ff93ffd715ab8f0981aade8229dcaeded9e58cbe516c4faa8
+#22 DONE 0.0s
+
+#18 [php_extension_installer 1/1] FROM docker.io/mlocati/php-extension-installer:latest@sha256:87b296530ee351d9a0978b8ed851446157cf866f9a81f542c5be542bc014b9b9
+#18 sha256:c492f9007d3fd2e49ff18d44af67bebfef5055e05fbe4c609f91b7eafa5fc987
+#18 DONE 0.0s
+
+#20 [composer 1/1] FROM docker.io/composer/composer:2-bin@sha256:6a8b987cd68b8c38863bf05cba6a5776ddd2f6753a20b83e12a1d6ae4827d4a5
+#20 sha256:8c34a4d8dc3e231d106045a6ef0ea462d0bdc4458c87e80455b2b46bb3b21851
+#20 DONE 0.0s
+
+#28 [internal] load build context
+#28 sha256:6b59dbfbae8ae2c59f8d2cdf59dff2ddd454b0f65687c28a9ccb61d5f9a2b58e
+#28 transferring context: 29.25kB 0.0s done
+#28 DONE 0.0s
+
+#19 [app  3/17] COPY --from=php_extension_installer --link /usr/bin/install-php-extensions /usr/bin/
+#19 sha256:0d903561b793c7c94444be6cb0c4827a74de697e4283aa54cb1163945e160cc3
+#19 CACHED
+
+#23 [app  5/17] COPY --from=nodejs --link /usr/local/bin/node /usr/local/bin/
+#23 sha256:4b4b8beb4324af52aef95d0d0e697dce54e15cb631d0466c1ab135833aeb62f5
+#23 CACHED
+
+#25 [app  7/17] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+#25 sha256:76be8c7fb6bdd7647fe4c8b0823a4758ecdeff890997354560f614c046b2296c
+#25 CACHED
+
+#29 [app 10/17] COPY --link ./app/etc/conf.d/app.ini /usr/local/etc/php/conf.d/
+#29 sha256:4e97cc6971abe6940c55a13d2db67432e5a316c5cfa4d7fc4cddfbbb873c6d87
+#29 CACHED
+
+#30 [app 11/17] COPY --link ./app/etc/php-fpm.d/zz-docker.conf /usr/local/etc/php-fpm.d/zz-docker.conf
+#30 sha256:85942a6769d07d842b9d95fc684c36b60aaeffa36a64bb732311fc652319902c
+#30 CACHED
+
+#27 [app  9/17] RUN install-php-extensions intl zip apcu opcache pdo_pgsql;
+#27 sha256:7787ca72319e5b7fa2d0adfc641c2f5c9a2086cf944649aa74be2d8b172f2391
+#27 CACHED
+
+#17 [app  2/17] WORKDIR /srv/app
+#17 sha256:3200e88b4ae95031bc133099fb5786f7fe13b65a2abce90f7e2b9cd2ae4e8a0c
+#17 CACHED
+
+#26 [app  8/17] RUN apk add --no-cache bash make;
+#26 sha256:b5cfbc4cecc95f7dd77e510cfcecc3a1482cf9b0ca93601c0e42cac9e7928caa
+#26 CACHED
+
+#21 [app  4/17] COPY --from=composer --link /composer /usr/bin/
+#21 sha256:a01b7a374a2de9af02942b85832dc40d504bd00ef2bb79184bf5eca09c5652e3
+#21 CACHED
+
+#24 [app  6/17] COPY --from=nodejs --link /usr/local/lib/node_modules /usr/local/lib/node_modules
+#24 sha256:5d04446ebf5c26d43d583fde8a941e8090fc97606134a709aef0ffb153d226f4
+#24 CACHED
+
+#31 [app 12/17] RUN mv "/usr/local/etc/php/php.ini-development" "/usr/local/etc/php/php.ini"
+#31 sha256:1da58657c95c9d80eb05aae7f83cac172d8dd0d2da22f9763cb88c51c84465bd
+#31 CACHED
+
+#32 [app 13/17] COPY --link ./app/bin ./app/bin
+#32 sha256:cf34673d6e2f11dc5266546442600eaf1fa2c3aaea618b94272e23c12c050207
+#32 DONE 0.0s
+
+#33 [app 14/17] RUN chmod +x ./bin/console;
+#33 sha256:544b1fe803cbac6a31a0133dc4333421eae5b78de6f7bb1ea88b55e03d756d61
+#33 0.324 chmod: ./bin/console: No such file or directory
+#33 ERROR: executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code: 1
+------
+> [app 14/17] RUN chmod +x ./bin/console;:
+------
+executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code: 1
+    at Object.dockerCli (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/container/helpers.ts:318:13)
+    at AsyncFunction.buildContainerModule (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/container/build.ts:78:15)
+    at localBuild (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/kubernetes/container/build/local.ts:60:23)
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/actions.ts:1325:24
+    at ActionRouter.build (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/actions.ts:419:16)
+    at wrapped.process (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/tasks/build.ts:149:16)
+    at TaskNode.process (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/task-graph.ts:801:20)
+    at wrapped.processNode (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/task-graph.ts:436:18)
+
+Error Details:
+
+err:
+  detail:
+    cmd: /Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker
+    args:
+      - build
+      - '-t'
+      - 'app:v-c8f3fa6ae2'
+      - '--build-arg'
+      - GARDEN_MODULE_VERSION=v-c8f3fa6ae2
+      - '--target'
+      - app
+      - '--file'
+      - /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app/Dockerfile
+      - /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app
+    opts:
+      cwd: /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app
+      timeoutSec: 1200
+      ignoreError: false
+      env:
+        PWD: /Users/brennanwalsh/Sites/Sandbox/proj
+        MANPATH: >-
+          /opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man::
+        USER: brennanwalsh
+        HOMEBREW_PREFIX: /opt/homebrew
+        SECURITYSESSIONID: 186b2
+        INFOPATH: '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+        MallocNanoZone: '0'
+        LANG: en_US.UTF-8
+        COMMAND_MODE: unix2003
+        ASDF_DIR: /opt/homebrew/opt/asdf/libexec
+        PATH: >-
+          /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/Users/brennanwalsh/.asdf/shims:/opt/homebrew/opt/asdf/libexec/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware
+          Fusion Tech
+          Preview.app/Contents/Public:/usr/local/share/dotnet:\x7e/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/brennanwalsh/.asdf/installs/golang/1.20.1/packages/bin:/Users/brennanwalsh/.asdf/installs/golang/1.20.1/packages/bin
+        TERM: xterm-256color
+        LOGNAME: brennanwalsh
+        TERM_SESSION_ID: 8DD805D0-8C93-4BF1-BBFC-A0A542A8EDFD
+        SSH_AUTH_SOCK: /private/tmp/com.apple.launchd.8hIdxjmxb3/Listeners
+        TERM_PROGRAM_VERSION: 1.76.1
+        SHLVL: '3'
+        HOMEBREW_REPOSITORY: /opt/homebrew
+        HOMEBREW_CELLAR: /opt/homebrew/Cellar
+        SHELL: /bin/zsh
+        HOME: /Users/brennanwalsh
+        TERM_PROGRAM: vscode
+        TMPDIR: /var/folders/9_/j0fd62z93k5fg6mz5ckj9kch0000gn/T/
+        LaunchInstanceID: DC7E9EB6-C2E6-453D-8736-BF8123A19ABD
+        XPC_SERVICE_NAME: '0'
+        XPC_FLAGS: '0x0'
+        ORIGINAL_XDG_CURRENT_DESKTOP: undefined
+        COLORTERM: truecolor
+        NODE_OPTIONS: >-
+          --require "/Users/brennanwalsh/Library/Application
+          Support/Code/User/workspaceStorage/ac26558f9c1e7222399ba0a12b7f6375/ms-vscode.js-debug/bootloader.js" 
+        VSCODE_INSPECTOR_OPTIONS: >-
+          :::{"inspectorIpc":"/var/folders/9_/j0fd62z93k5fg6mz5ckj9kch0000gn/T/node-cdp.30121-0.sock.deferred","deferredMode":true,"waitForDebugger":"","execPath":"/Users/brennanwalsh/.asdf/shims/node","onlyEntrypoint":false,"autoAttachMode":"smart","aaPatterns":["/Users/brennanwalsh/Sites/Sandbox/proj/**","!**/node_modules/**","**/$KNOWN_TOOLS$/**"]}
+        GIT_ASKPASS: >-
+          /Applications/Visual Studio
+          Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
+        VSCODE_GIT_ASKPASS_NODE: >-
+          /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper
+          (Plugin).app/Contents/MacOS/Code Helper (Plugin)
+        VSCODE_GIT_ASKPASS_EXTRA_ARGS: '--ms-enable-electron-run-as-node'
+        VSCODE_GIT_ASKPASS_MAIN: >-
+          /Applications/Visual Studio
+          Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
+        VSCODE_GIT_IPC_HANDLE: >-
+          /var/folders/9_/j0fd62z93k5fg6mz5ckj9kch0000gn/T/vscode-git-c67cc6168a.sock
+        DOCKER_CLI_EXPERIMENTAL: enabled
+        PKG_EXECPATH: /opt/homebrew/Cellar/garden-cli/0.12.52/libexec/garden
+      stdout:
+        readable: false
+        writable: false
+        allowHalfOpen: true
+        matcher: {}
+        overflow: false
+      stderr: ~err~detail~opts~stdout
+    result:
+      code: 1
+      all: >
+        #1 [internal] load build definition from Dockerfile
+
+        #1
+        sha256:0aec6590f4a9a9bd81037b3c8051d80c0fcaaca724539b10922daa73782c70dc
+
+        #1 transferring dockerfile: 2.24kB done
+
+        #1 DONE 0.0s
+
+
+        #2 [internal] load .dockerignore
+
+        #2
+        sha256:6cf8f102695c6b38b20f456b5d372eece6e0a8bb3160106a392937d8a39c6235
+
+        #2 transferring context: 2B done
+
+        #2 DONE 0.0s
+
+
+        #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+        #3
+        sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+        #3 ...
+
+
+        #4 [auth] docker/dockerfile:pull token for registry-1.docker.io
+
+        #4
+        sha256:62ddf518d63329e855a5cf75b9c24abbd67850422d63c8d85caf59a4058ec065
+
+        #4 DONE 0.0s
+
+
+        #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+        #3
+        sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+        #3 DONE 1.8s
+
+
+        #5
+        docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+        #5
+        sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+        #5 CACHED
+
+
+        #6 [internal] load build definition from Dockerfile
+
+        #6
+        sha256:7cf29994e29091d932085beb9591f40459aadb4b6f7bd6d30d1866e1789eb766
+
+        #6 DONE 0.0s
+
+
+        #7 [internal] load .dockerignore
+
+        #7
+        sha256:06b3a6dd64984d56b2e18edc86a88ee44099880499075bf74769a336c241a779
+
+        #7 DONE 0.0s
+
+
+        #11 [internal] load metadata for
+        docker.io/mlocati/php-extension-installer:latest
+
+        #11
+        sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+        #11 ...
+
+
+        #12 [auth] library/node:pull token for registry-1.docker.io
+
+        #12
+        sha256:ce18d7c67d327aa5d0dbc583b33c8dccec3e77a7c093c6a6c16a50fbef65d447
+
+        #12 DONE 0.0s
+
+
+        #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+        #10
+        sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+        #10 ...
+
+
+        #9 [internal] load metadata for docker.io/library/node:18-alpine
+
+        #9
+        sha256:5ee8ea8626137e4a4e007f934eed3f693a5155be1152f5d3acaa7750c4ab9271
+
+        #9 DONE 1.3s
+
+
+        #13 [auth] composer/composer:pull token for registry-1.docker.io
+
+        #13
+        sha256:6da3d3ff1a4a2ee7133e2794c8433994eb823ca44f8855fa36e22891ded09f21
+
+        #13 DONE 0.0s
+
+
+        #14 [auth] library/php:pull token for registry-1.docker.io
+
+        #14
+        sha256:119f10e8d1572cc5ff35a8d485ea3c526ef443ad846317e36d281bfdf124d722
+
+        #14 DONE 0.0s
+
+
+        #15 [auth] mlocati/php-extension-installer:pull token for
+        registry-1.docker.io
+
+        #15
+        sha256:c48794bdb881de3dfd2ae255f17e915c0fd122ad5cc58163ef708e12c4107b02
+
+        #15 DONE 0.0s
+
+
+        #8 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+
+        #8
+        sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+
+        #8 DONE 1.9s
+
+
+        #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+        #10
+        sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+        #10 DONE 1.8s
+
+
+        #11 [internal] load metadata for
+        docker.io/mlocati/php-extension-installer:latest
+
+        #11
+        sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+        #11 DONE 2.0s
+
+
+        #16 [app  1/17] FROM
+        docker.io/library/php:8.2-fpm-alpine@sha256:dae174052d1e0b75ad37594c14ae24dd0dd27041162c1a0f3153cc5fbd8114dd
+
+        #16
+        sha256:c8b8abe9ffa9ace47b1dd437fe1e5b6c4c3c29f3b2a36206077be3e1bebdfacf
+
+        #16 DONE 0.0s
+
+
+        #22 [nodejs 1/1] FROM
+        docker.io/library/node:18-alpine@sha256:f605fcd5254d0e398e04d93c7b11e2aec2a6e1aeb7da1f99bc40cd101dd8cde4
+
+        #22
+        sha256:77827acad3ab054ff93ffd715ab8f0981aade8229dcaeded9e58cbe516c4faa8
+
+        #22 DONE 0.0s
+
+
+        #18 [php_extension_installer 1/1] FROM
+        docker.io/mlocati/php-extension-installer:latest@sha256:87b296530ee351d9a0978b8ed851446157cf866f9a81f542c5be542bc014b9b9
+
+        #18
+        sha256:c492f9007d3fd2e49ff18d44af67bebfef5055e05fbe4c609f91b7eafa5fc987
+
+        #18 DONE 0.0s
+
+
+        #20 [composer 1/1] FROM
+        docker.io/composer/composer:2-bin@sha256:6a8b987cd68b8c38863bf05cba6a5776ddd2f6753a20b83e12a1d6ae4827d4a5
+
+        #20
+        sha256:8c34a4d8dc3e231d106045a6ef0ea462d0bdc4458c87e80455b2b46bb3b21851
+
+        #20 DONE 0.0s
+
+
+        #28 [internal] load build context
+
+        #28
+        sha256:6b59dbfbae8ae2c59f8d2cdf59dff2ddd454b0f65687c28a9ccb61d5f9a2b58e
+
+        #28 transferring context: 29.25kB 0.0s done
+
+        #28 DONE 0.0s
+
+
+        #19 [app  3/17] COPY --from=php_extension_installer --link
+        /usr/bin/install-php-extensions /usr/bin/
+
+        #19
+        sha256:0d903561b793c7c94444be6cb0c4827a74de697e4283aa54cb1163945e160cc3
+
+        #19 CACHED
+
+
+        #23 [app  5/17] COPY --from=nodejs --link /usr/local/bin/node
+        /usr/local/bin/
+
+        #23
+        sha256:4b4b8beb4324af52aef95d0d0e697dce54e15cb631d0466c1ab135833aeb62f5
+
+        #23 CACHED
+
+
+        #25 [app  7/17] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js
+        /usr/local/bin/npm
+
+        #25
+        sha256:76be8c7fb6bdd7647fe4c8b0823a4758ecdeff890997354560f614c046b2296c
+
+        #25 CACHED
+
+
+        #29 [app 10/17] COPY --link ./app/etc/conf.d/app.ini
+        /usr/local/etc/php/conf.d/
+
+        #29
+        sha256:4e97cc6971abe6940c55a13d2db67432e5a316c5cfa4d7fc4cddfbbb873c6d87
+
+        #29 CACHED
+
+
+        #30 [app 11/17] COPY --link ./app/etc/php-fpm.d/zz-docker.conf
+        /usr/local/etc/php-fpm.d/zz-docker.conf
+
+        #30
+        sha256:85942a6769d07d842b9d95fc684c36b60aaeffa36a64bb732311fc652319902c
+
+        #30 CACHED
+
+
+        #27 [app  9/17] RUN install-php-extensions intl zip apcu opcache
+        pdo_pgsql;
+
+        #27
+        sha256:7787ca72319e5b7fa2d0adfc641c2f5c9a2086cf944649aa74be2d8b172f2391
+
+        #27 CACHED
+
+
+        #17 [app  2/17] WORKDIR /srv/app
+
+        #17
+        sha256:3200e88b4ae95031bc133099fb5786f7fe13b65a2abce90f7e2b9cd2ae4e8a0c
+
+        #17 CACHED
+
+
+        #26 [app  8/17] RUN apk add --no-cache bash make;
+
+        #26
+        sha256:b5cfbc4cecc95f7dd77e510cfcecc3a1482cf9b0ca93601c0e42cac9e7928caa
+
+        #26 CACHED
+
+
+        #21 [app  4/17] COPY --from=composer --link /composer /usr/bin/
+
+        #21
+        sha256:a01b7a374a2de9af02942b85832dc40d504bd00ef2bb79184bf5eca09c5652e3
+
+        #21 CACHED
+
+
+        #24 [app  6/17] COPY --from=nodejs --link /usr/local/lib/node_modules
+        /usr/local/lib/node_modules
+
+        #24
+        sha256:5d04446ebf5c26d43d583fde8a941e8090fc97606134a709aef0ffb153d226f4
+
+        #24 CACHED
+
+
+        #31 [app 12/17] RUN mv "/usr/local/etc/php/php.ini-development"
+        "/usr/local/etc/php/php.ini"
+
+        #31
+        sha256:1da58657c95c9d80eb05aae7f83cac172d8dd0d2da22f9763cb88c51c84465bd
+
+        #31 CACHED
+
+
+        #32 [app 13/17] COPY --link ./app/bin ./app/bin
+
+        #32
+        sha256:cf34673d6e2f11dc5266546442600eaf1fa2c3aaea618b94272e23c12c050207
+
+        #32 DONE 0.0s
+
+
+        #33 [app 14/17] RUN chmod +x ./bin/console;
+
+        #33
+        sha256:544b1fe803cbac6a31a0133dc4333421eae5b78de6f7bb1ea88b55e03d756d61
+
+        #33 0.324 chmod: ./bin/console: No such file or directory
+
+        #33 ERROR: executor failed running [/bin/sh -c chmod +x ./bin/console;]:
+        exit code: 1
+
+        ------
+         > [app 14/17] RUN chmod +x ./bin/console;:
+        ------
+
+        executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code:
+        1
+      stdout: ''
+      stderr: >
+        #1 [internal] load build definition from Dockerfile
+
+        #1
+        sha256:0aec6590f4a9a9bd81037b3c8051d80c0fcaaca724539b10922daa73782c70dc
+
+        #1 transferring dockerfile: 2.24kB done
+
+        #1 DONE 0.0s
+
+
+        #2 [internal] load .dockerignore
+
+        #2
+        sha256:6cf8f102695c6b38b20f456b5d372eece6e0a8bb3160106a392937d8a39c6235
+
+        #2 transferring context: 2B done
+
+        #2 DONE 0.0s
+
+
+        #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+        #3
+        sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+        #3 ...
+
+
+        #4 [auth] docker/dockerfile:pull token for registry-1.docker.io
+
+        #4
+        sha256:62ddf518d63329e855a5cf75b9c24abbd67850422d63c8d85caf59a4058ec065
+
+        #4 DONE 0.0s
+
+
+        #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+        #3
+        sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+        #3 DONE 1.8s
+
+
+        #5
+        docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+        #5
+        sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+        #5 CACHED
+
+
+        #6 [internal] load build definition from Dockerfile
+
+        #6
+        sha256:7cf29994e29091d932085beb9591f40459aadb4b6f7bd6d30d1866e1789eb766
+
+        #6 DONE 0.0s
+
+
+        #7 [internal] load .dockerignore
+
+        #7
+        sha256:06b3a6dd64984d56b2e18edc86a88ee44099880499075bf74769a336c241a779
+
+        #7 DONE 0.0s
+
+
+        #11 [internal] load metadata for
+        docker.io/mlocati/php-extension-installer:latest
+
+        #11
+        sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+        #11 ...
+
+
+        #12 [auth] library/node:pull token for registry-1.docker.io
+
+        #12
+        sha256:ce18d7c67d327aa5d0dbc583b33c8dccec3e77a7c093c6a6c16a50fbef65d447
+
+        #12 DONE 0.0s
+
+
+        #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+        #10
+        sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+        #10 ...
+
+
+        #9 [internal] load metadata for docker.io/library/node:18-alpine
+
+        #9
+        sha256:5ee8ea8626137e4a4e007f934eed3f693a5155be1152f5d3acaa7750c4ab9271
+
+        #9 DONE 1.3s
+
+
+        #13 [auth] composer/composer:pull token for registry-1.docker.io
+
+        #13
+        sha256:6da3d3ff1a4a2ee7133e2794c8433994eb823ca44f8855fa36e22891ded09f21
+
+        #13 DONE 0.0s
+
+
+        #14 [auth] library/php:pull token for registry-1.docker.io
+
+        #14
+        sha256:119f10e8d1572cc5ff35a8d485ea3c526ef443ad846317e36d281bfdf124d722
+
+        #14 DONE 0.0s
+
+
+        #15 [auth] mlocati/php-extension-installer:pull token for
+        registry-1.docker.io
+
+        #15
+        sha256:c48794bdb881de3dfd2ae255f17e915c0fd122ad5cc58163ef708e12c4107b02
+
+        #15 DONE 0.0s
+
+
+        #8 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+
+        #8
+        sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+
+        #8 DONE 1.9s
+
+
+        #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+        #10
+        sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+        #10 DONE 1.8s
+
+
+        #11 [internal] load metadata for
+        docker.io/mlocati/php-extension-installer:latest
+
+        #11
+        sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+        #11 DONE 2.0s
+
+
+        #16 [app  1/17] FROM
+        docker.io/library/php:8.2-fpm-alpine@sha256:dae174052d1e0b75ad37594c14ae24dd0dd27041162c1a0f3153cc5fbd8114dd
+
+        #16
+        sha256:c8b8abe9ffa9ace47b1dd437fe1e5b6c4c3c29f3b2a36206077be3e1bebdfacf
+
+        #16 DONE 0.0s
+
+
+        #22 [nodejs 1/1] FROM
+        docker.io/library/node:18-alpine@sha256:f605fcd5254d0e398e04d93c7b11e2aec2a6e1aeb7da1f99bc40cd101dd8cde4
+
+        #22
+        sha256:77827acad3ab054ff93ffd715ab8f0981aade8229dcaeded9e58cbe516c4faa8
+
+        #22 DONE 0.0s
+
+
+        #18 [php_extension_installer 1/1] FROM
+        docker.io/mlocati/php-extension-installer:latest@sha256:87b296530ee351d9a0978b8ed851446157cf866f9a81f542c5be542bc014b9b9
+
+        #18
+        sha256:c492f9007d3fd2e49ff18d44af67bebfef5055e05fbe4c609f91b7eafa5fc987
+
+        #18 DONE 0.0s
+
+
+        #20 [composer 1/1] FROM
+        docker.io/composer/composer:2-bin@sha256:6a8b987cd68b8c38863bf05cba6a5776ddd2f6753a20b83e12a1d6ae4827d4a5
+
+        #20
+        sha256:8c34a4d8dc3e231d106045a6ef0ea462d0bdc4458c87e80455b2b46bb3b21851
+
+        #20 DONE 0.0s
+
+
+        #28 [internal] load build context
+
+        #28
+        sha256:6b59dbfbae8ae2c59f8d2cdf59dff2ddd454b0f65687c28a9ccb61d5f9a2b58e
+
+        #28 transferring context: 29.25kB 0.0s done
+
+        #28 DONE 0.0s
+
+
+        #19 [app  3/17] COPY --from=php_extension_installer --link
+        /usr/bin/install-php-extensions /usr/bin/
+
+        #19
+        sha256:0d903561b793c7c94444be6cb0c4827a74de697e4283aa54cb1163945e160cc3
+
+        #19 CACHED
+
+
+        #23 [app  5/17] COPY --from=nodejs --link /usr/local/bin/node
+        /usr/local/bin/
+
+        #23
+        sha256:4b4b8beb4324af52aef95d0d0e697dce54e15cb631d0466c1ab135833aeb62f5
+
+        #23 CACHED
+
+
+        #25 [app  7/17] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js
+        /usr/local/bin/npm
+
+        #25
+        sha256:76be8c7fb6bdd7647fe4c8b0823a4758ecdeff890997354560f614c046b2296c
+
+        #25 CACHED
+
+
+        #29 [app 10/17] COPY --link ./app/etc/conf.d/app.ini
+        /usr/local/etc/php/conf.d/
+
+        #29
+        sha256:4e97cc6971abe6940c55a13d2db67432e5a316c5cfa4d7fc4cddfbbb873c6d87
+
+        #29 CACHED
+
+
+        #30 [app 11/17] COPY --link ./app/etc/php-fpm.d/zz-docker.conf
+        /usr/local/etc/php-fpm.d/zz-docker.conf
+
+        #30
+        sha256:85942a6769d07d842b9d95fc684c36b60aaeffa36a64bb732311fc652319902c
+
+        #30 CACHED
+
+
+        #27 [app  9/17] RUN install-php-extensions intl zip apcu opcache
+        pdo_pgsql;
+
+        #27
+        sha256:7787ca72319e5b7fa2d0adfc641c2f5c9a2086cf944649aa74be2d8b172f2391
+
+        #27 CACHED
+
+
+        #17 [app  2/17] WORKDIR /srv/app
+
+        #17
+        sha256:3200e88b4ae95031bc133099fb5786f7fe13b65a2abce90f7e2b9cd2ae4e8a0c
+
+        #17 CACHED
+
+
+        #26 [app  8/17] RUN apk add --no-cache bash make;
+
+        #26
+        sha256:b5cfbc4cecc95f7dd77e510cfcecc3a1482cf9b0ca93601c0e42cac9e7928caa
+
+        #26 CACHED
+
+
+        #21 [app  4/17] COPY --from=composer --link /composer /usr/bin/
+
+        #21
+        sha256:a01b7a374a2de9af02942b85832dc40d504bd00ef2bb79184bf5eca09c5652e3
+
+        #21 CACHED
+
+
+        #24 [app  6/17] COPY --from=nodejs --link /usr/local/lib/node_modules
+        /usr/local/lib/node_modules
+
+        #24
+        sha256:5d04446ebf5c26d43d583fde8a941e8090fc97606134a709aef0ffb153d226f4
+
+        #24 CACHED
+
+
+        #31 [app 12/17] RUN mv "/usr/local/etc/php/php.ini-development"
+        "/usr/local/etc/php/php.ini"
+
+        #31
+        sha256:1da58657c95c9d80eb05aae7f83cac172d8dd0d2da22f9763cb88c51c84465bd
+
+        #31 CACHED
+
+
+        #32 [app 13/17] COPY --link ./app/bin ./app/bin
+
+        #32
+        sha256:cf34673d6e2f11dc5266546442600eaf1fa2c3aaea618b94272e23c12c050207
+
+        #32 DONE 0.0s
+
+
+        #33 [app 14/17] RUN chmod +x ./bin/console;
+
+        #33
+        sha256:544b1fe803cbac6a31a0133dc4333421eae5b78de6f7bb1ea88b55e03d756d61
+
+        #33 0.324 chmod: ./bin/console: No such file or directory
+
+        #33 ERROR: executor failed running [/bin/sh -c chmod +x ./bin/console;]:
+        exit code: 1
+
+        ------
+         > [app 14/17] RUN chmod +x ./bin/console;:
+        ------
+
+        executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code:
+        1
+      proc:
+        connected: false
+        signalCode: null
+        exitCode: 1
+        killed: false
+        spawnfile: >-
+          /Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker
+        spawnargs:
+          - >-
+            /Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker
+          - build
+          - '-t'
+          - 'app:v-c8f3fa6ae2'
+          - '--build-arg'
+          - GARDEN_MODULE_VERSION=v-c8f3fa6ae2
+          - '--target'
+          - app
+          - '--file'
+          - /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app/Dockerfile
+          - /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app
+        pid: 93136
+        stdin:
+          connecting: false
+          allowHalfOpen: false
+          server: null
+        stdout:
+          connecting: false
+          allowHalfOpen: false
+          server: null
+        stderr:
+          connecting: false
+          allowHalfOpen: false
+          server: null
+        stdio:
+          - ~err~detail~result~proc~stdin
+          - ~err~detail~result~proc~stdout
+          - ~err~detail~result~proc~stderr
+    code: 1
+    all: >
+      #1 [internal] load build definition from Dockerfile
+
+      #1 sha256:0aec6590f4a9a9bd81037b3c8051d80c0fcaaca724539b10922daa73782c70dc
+
+      #1 transferring dockerfile: 2.24kB done
+
+      #1 DONE 0.0s
+
+
+      #2 [internal] load .dockerignore
+
+      #2 sha256:6cf8f102695c6b38b20f456b5d372eece6e0a8bb3160106a392937d8a39c6235
+
+      #2 transferring context: 2B done
+
+      #2 DONE 0.0s
+
+
+      #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+      #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+      #3 ...
+
+
+      #4 [auth] docker/dockerfile:pull token for registry-1.docker.io
+
+      #4 sha256:62ddf518d63329e855a5cf75b9c24abbd67850422d63c8d85caf59a4058ec065
+
+      #4 DONE 0.0s
+
+
+      #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+      #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+      #3 DONE 1.8s
+
+
+      #5
+      docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+      #5 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+      #5 CACHED
+
+
+      #6 [internal] load build definition from Dockerfile
+
+      #6 sha256:7cf29994e29091d932085beb9591f40459aadb4b6f7bd6d30d1866e1789eb766
+
+      #6 DONE 0.0s
+
+
+      #7 [internal] load .dockerignore
+
+      #7 sha256:06b3a6dd64984d56b2e18edc86a88ee44099880499075bf74769a336c241a779
+
+      #7 DONE 0.0s
+
+
+      #11 [internal] load metadata for
+      docker.io/mlocati/php-extension-installer:latest
+
+      #11
+      sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+      #11 ...
+
+
+      #12 [auth] library/node:pull token for registry-1.docker.io
+
+      #12
+      sha256:ce18d7c67d327aa5d0dbc583b33c8dccec3e77a7c093c6a6c16a50fbef65d447
+
+      #12 DONE 0.0s
+
+
+      #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+      #10
+      sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+      #10 ...
+
+
+      #9 [internal] load metadata for docker.io/library/node:18-alpine
+
+      #9 sha256:5ee8ea8626137e4a4e007f934eed3f693a5155be1152f5d3acaa7750c4ab9271
+
+      #9 DONE 1.3s
+
+
+      #13 [auth] composer/composer:pull token for registry-1.docker.io
+
+      #13
+      sha256:6da3d3ff1a4a2ee7133e2794c8433994eb823ca44f8855fa36e22891ded09f21
+
+      #13 DONE 0.0s
+
+
+      #14 [auth] library/php:pull token for registry-1.docker.io
+
+      #14
+      sha256:119f10e8d1572cc5ff35a8d485ea3c526ef443ad846317e36d281bfdf124d722
+
+      #14 DONE 0.0s
+
+
+      #15 [auth] mlocati/php-extension-installer:pull token for
+      registry-1.docker.io
+
+      #15
+      sha256:c48794bdb881de3dfd2ae255f17e915c0fd122ad5cc58163ef708e12c4107b02
+
+      #15 DONE 0.0s
+
+
+      #8 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+
+      #8 sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+
+      #8 DONE 1.9s
+
+
+      #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+      #10
+      sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+      #10 DONE 1.8s
+
+
+      #11 [internal] load metadata for
+      docker.io/mlocati/php-extension-installer:latest
+
+      #11
+      sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+      #11 DONE 2.0s
+
+
+      #16 [app  1/17] FROM
+      docker.io/library/php:8.2-fpm-alpine@sha256:dae174052d1e0b75ad37594c14ae24dd0dd27041162c1a0f3153cc5fbd8114dd
+
+      #16
+      sha256:c8b8abe9ffa9ace47b1dd437fe1e5b6c4c3c29f3b2a36206077be3e1bebdfacf
+
+      #16 DONE 0.0s
+
+
+      #22 [nodejs 1/1] FROM
+      docker.io/library/node:18-alpine@sha256:f605fcd5254d0e398e04d93c7b11e2aec2a6e1aeb7da1f99bc40cd101dd8cde4
+
+      #22
+      sha256:77827acad3ab054ff93ffd715ab8f0981aade8229dcaeded9e58cbe516c4faa8
+
+      #22 DONE 0.0s
+
+
+      #18 [php_extension_installer 1/1] FROM
+      docker.io/mlocati/php-extension-installer:latest@sha256:87b296530ee351d9a0978b8ed851446157cf866f9a81f542c5be542bc014b9b9
+
+      #18
+      sha256:c492f9007d3fd2e49ff18d44af67bebfef5055e05fbe4c609f91b7eafa5fc987
+
+      #18 DONE 0.0s
+
+
+      #20 [composer 1/1] FROM
+      docker.io/composer/composer:2-bin@sha256:6a8b987cd68b8c38863bf05cba6a5776ddd2f6753a20b83e12a1d6ae4827d4a5
+
+      #20
+      sha256:8c34a4d8dc3e231d106045a6ef0ea462d0bdc4458c87e80455b2b46bb3b21851
+
+      #20 DONE 0.0s
+
+
+      #28 [internal] load build context
+
+      #28
+      sha256:6b59dbfbae8ae2c59f8d2cdf59dff2ddd454b0f65687c28a9ccb61d5f9a2b58e
+
+      #28 transferring context: 29.25kB 0.0s done
+
+      #28 DONE 0.0s
+
+
+      #19 [app  3/17] COPY --from=php_extension_installer --link
+      /usr/bin/install-php-extensions /usr/bin/
+
+      #19
+      sha256:0d903561b793c7c94444be6cb0c4827a74de697e4283aa54cb1163945e160cc3
+
+      #19 CACHED
+
+
+      #23 [app  5/17] COPY --from=nodejs --link /usr/local/bin/node
+      /usr/local/bin/
+
+      #23
+      sha256:4b4b8beb4324af52aef95d0d0e697dce54e15cb631d0466c1ab135833aeb62f5
+
+      #23 CACHED
+
+
+      #25 [app  7/17] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js
+      /usr/local/bin/npm
+
+      #25
+      sha256:76be8c7fb6bdd7647fe4c8b0823a4758ecdeff890997354560f614c046b2296c
+
+      #25 CACHED
+
+
+      #29 [app 10/17] COPY --link ./app/etc/conf.d/app.ini
+      /usr/local/etc/php/conf.d/
+
+      #29
+      sha256:4e97cc6971abe6940c55a13d2db67432e5a316c5cfa4d7fc4cddfbbb873c6d87
+
+      #29 CACHED
+
+
+      #30 [app 11/17] COPY --link ./app/etc/php-fpm.d/zz-docker.conf
+      /usr/local/etc/php-fpm.d/zz-docker.conf
+
+      #30
+      sha256:85942a6769d07d842b9d95fc684c36b60aaeffa36a64bb732311fc652319902c
+
+      #30 CACHED
+
+
+      #27 [app  9/17] RUN install-php-extensions intl zip apcu opcache
+      pdo_pgsql;
+
+      #27
+      sha256:7787ca72319e5b7fa2d0adfc641c2f5c9a2086cf944649aa74be2d8b172f2391
+
+      #27 CACHED
+
+
+      #17 [app  2/17] WORKDIR /srv/app
+
+      #17
+      sha256:3200e88b4ae95031bc133099fb5786f7fe13b65a2abce90f7e2b9cd2ae4e8a0c
+
+      #17 CACHED
+
+
+      #26 [app  8/17] RUN apk add --no-cache bash make;
+
+      #26
+      sha256:b5cfbc4cecc95f7dd77e510cfcecc3a1482cf9b0ca93601c0e42cac9e7928caa
+
+      #26 CACHED
+
+
+      #21 [app  4/17] COPY --from=composer --link /composer /usr/bin/
+
+      #21
+      sha256:a01b7a374a2de9af02942b85832dc40d504bd00ef2bb79184bf5eca09c5652e3
+
+      #21 CACHED
+
+
+      #24 [app  6/17] COPY --from=nodejs --link /usr/local/lib/node_modules
+      /usr/local/lib/node_modules
+
+      #24
+      sha256:5d04446ebf5c26d43d583fde8a941e8090fc97606134a709aef0ffb153d226f4
+
+      #24 CACHED
+
+
+      #31 [app 12/17] RUN mv "/usr/local/etc/php/php.ini-development"
+      "/usr/local/etc/php/php.ini"
+
+      #31
+      sha256:1da58657c95c9d80eb05aae7f83cac172d8dd0d2da22f9763cb88c51c84465bd
+
+      #31 CACHED
+
+
+      #32 [app 13/17] COPY --link ./app/bin ./app/bin
+
+      #32
+      sha256:cf34673d6e2f11dc5266546442600eaf1fa2c3aaea618b94272e23c12c050207
+
+      #32 DONE 0.0s
+
+
+      #33 [app 14/17] RUN chmod +x ./bin/console;
+
+      #33
+      sha256:544b1fe803cbac6a31a0133dc4333421eae5b78de6f7bb1ea88b55e03d756d61
+
+      #33 0.324 chmod: ./bin/console: No such file or directory
+
+      #33 ERROR: executor failed running [/bin/sh -c chmod +x ./bin/console;]:
+      exit code: 1
+
+      ------
+       > [app 14/17] RUN chmod +x ./bin/console;:
+      ------
+
+      executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code: 1
+    stdout: ''
+    stderr: >
+      #1 [internal] load build definition from Dockerfile
+
+      #1 sha256:0aec6590f4a9a9bd81037b3c8051d80c0fcaaca724539b10922daa73782c70dc
+
+      #1 transferring dockerfile: 2.24kB done
+
+      #1 DONE 0.0s
+
+
+      #2 [internal] load .dockerignore
+
+      #2 sha256:6cf8f102695c6b38b20f456b5d372eece6e0a8bb3160106a392937d8a39c6235
+
+      #2 transferring context: 2B done
+
+      #2 DONE 0.0s
+
+
+      #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+      #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+      #3 ...
+
+
+      #4 [auth] docker/dockerfile:pull token for registry-1.docker.io
+
+      #4 sha256:62ddf518d63329e855a5cf75b9c24abbd67850422d63c8d85caf59a4058ec065
+
+      #4 DONE 0.0s
+
+
+      #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+      #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+      #3 DONE 1.8s
+
+
+      #5
+      docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+      #5 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+      #5 CACHED
+
+
+      #6 [internal] load build definition from Dockerfile
+
+      #6 sha256:7cf29994e29091d932085beb9591f40459aadb4b6f7bd6d30d1866e1789eb766
+
+      #6 DONE 0.0s
+
+
+      #7 [internal] load .dockerignore
+
+      #7 sha256:06b3a6dd64984d56b2e18edc86a88ee44099880499075bf74769a336c241a779
+
+      #7 DONE 0.0s
+
+
+      #11 [internal] load metadata for
+      docker.io/mlocati/php-extension-installer:latest
+
+      #11
+      sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+      #11 ...
+
+
+      #12 [auth] library/node:pull token for registry-1.docker.io
+
+      #12
+      sha256:ce18d7c67d327aa5d0dbc583b33c8dccec3e77a7c093c6a6c16a50fbef65d447
+
+      #12 DONE 0.0s
+
+
+      #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+      #10
+      sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+      #10 ...
+
+
+      #9 [internal] load metadata for docker.io/library/node:18-alpine
+
+      #9 sha256:5ee8ea8626137e4a4e007f934eed3f693a5155be1152f5d3acaa7750c4ab9271
+
+      #9 DONE 1.3s
+
+
+      #13 [auth] composer/composer:pull token for registry-1.docker.io
+
+      #13
+      sha256:6da3d3ff1a4a2ee7133e2794c8433994eb823ca44f8855fa36e22891ded09f21
+
+      #13 DONE 0.0s
+
+
+      #14 [auth] library/php:pull token for registry-1.docker.io
+
+      #14
+      sha256:119f10e8d1572cc5ff35a8d485ea3c526ef443ad846317e36d281bfdf124d722
+
+      #14 DONE 0.0s
+
+
+      #15 [auth] mlocati/php-extension-installer:pull token for
+      registry-1.docker.io
+
+      #15
+      sha256:c48794bdb881de3dfd2ae255f17e915c0fd122ad5cc58163ef708e12c4107b02
+
+      #15 DONE 0.0s
+
+
+      #8 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+
+      #8 sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+
+      #8 DONE 1.9s
+
+
+      #10 [internal] load metadata for docker.io/composer/composer:2-bin
+
+      #10
+      sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+      #10 DONE 1.8s
+
+
+      #11 [internal] load metadata for
+      docker.io/mlocati/php-extension-installer:latest
+
+      #11
+      sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+      #11 DONE 2.0s
+
+
+      #16 [app  1/17] FROM
+      docker.io/library/php:8.2-fpm-alpine@sha256:dae174052d1e0b75ad37594c14ae24dd0dd27041162c1a0f3153cc5fbd8114dd
+
+      #16
+      sha256:c8b8abe9ffa9ace47b1dd437fe1e5b6c4c3c29f3b2a36206077be3e1bebdfacf
+
+      #16 DONE 0.0s
+
+
+      #22 [nodejs 1/1] FROM
+      docker.io/library/node:18-alpine@sha256:f605fcd5254d0e398e04d93c7b11e2aec2a6e1aeb7da1f99bc40cd101dd8cde4
+
+      #22
+      sha256:77827acad3ab054ff93ffd715ab8f0981aade8229dcaeded9e58cbe516c4faa8
+
+      #22 DONE 0.0s
+
+
+      #18 [php_extension_installer 1/1] FROM
+      docker.io/mlocati/php-extension-installer:latest@sha256:87b296530ee351d9a0978b8ed851446157cf866f9a81f542c5be542bc014b9b9
+
+      #18
+      sha256:c492f9007d3fd2e49ff18d44af67bebfef5055e05fbe4c609f91b7eafa5fc987
+
+      #18 DONE 0.0s
+
+
+      #20 [composer 1/1] FROM
+      docker.io/composer/composer:2-bin@sha256:6a8b987cd68b8c38863bf05cba6a5776ddd2f6753a20b83e12a1d6ae4827d4a5
+
+      #20
+      sha256:8c34a4d8dc3e231d106045a6ef0ea462d0bdc4458c87e80455b2b46bb3b21851
+
+      #20 DONE 0.0s
+
+
+      #28 [internal] load build context
+
+      #28
+      sha256:6b59dbfbae8ae2c59f8d2cdf59dff2ddd454b0f65687c28a9ccb61d5f9a2b58e
+
+      #28 transferring context: 29.25kB 0.0s done
+
+      #28 DONE 0.0s
+
+
+      #19 [app  3/17] COPY --from=php_extension_installer --link
+      /usr/bin/install-php-extensions /usr/bin/
+
+      #19
+      sha256:0d903561b793c7c94444be6cb0c4827a74de697e4283aa54cb1163945e160cc3
+
+      #19 CACHED
+
+
+      #23 [app  5/17] COPY --from=nodejs --link /usr/local/bin/node
+      /usr/local/bin/
+
+      #23
+      sha256:4b4b8beb4324af52aef95d0d0e697dce54e15cb631d0466c1ab135833aeb62f5
+
+      #23 CACHED
+
+
+      #25 [app  7/17] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js
+      /usr/local/bin/npm
+
+      #25
+      sha256:76be8c7fb6bdd7647fe4c8b0823a4758ecdeff890997354560f614c046b2296c
+
+      #25 CACHED
+
+
+      #29 [app 10/17] COPY --link ./app/etc/conf.d/app.ini
+      /usr/local/etc/php/conf.d/
+
+      #29
+      sha256:4e97cc6971abe6940c55a13d2db67432e5a316c5cfa4d7fc4cddfbbb873c6d87
+
+      #29 CACHED
+
+
+      #30 [app 11/17] COPY --link ./app/etc/php-fpm.d/zz-docker.conf
+      /usr/local/etc/php-fpm.d/zz-docker.conf
+
+      #30
+      sha256:85942a6769d07d842b9d95fc684c36b60aaeffa36a64bb732311fc652319902c
+
+      #30 CACHED
+
+
+      #27 [app  9/17] RUN install-php-extensions intl zip apcu opcache
+      pdo_pgsql;
+
+      #27
+      sha256:7787ca72319e5b7fa2d0adfc641c2f5c9a2086cf944649aa74be2d8b172f2391
+
+      #27 CACHED
+
+
+      #17 [app  2/17] WORKDIR /srv/app
+
+      #17
+      sha256:3200e88b4ae95031bc133099fb5786f7fe13b65a2abce90f7e2b9cd2ae4e8a0c
+
+      #17 CACHED
+
+
+      #26 [app  8/17] RUN apk add --no-cache bash make;
+
+      #26
+      sha256:b5cfbc4cecc95f7dd77e510cfcecc3a1482cf9b0ca93601c0e42cac9e7928caa
+
+      #26 CACHED
+
+
+      #21 [app  4/17] COPY --from=composer --link /composer /usr/bin/
+
+      #21
+      sha256:a01b7a374a2de9af02942b85832dc40d504bd00ef2bb79184bf5eca09c5652e3
+
+      #21 CACHED
+
+
+      #24 [app  6/17] COPY --from=nodejs --link /usr/local/lib/node_modules
+      /usr/local/lib/node_modules
+
+      #24
+      sha256:5d04446ebf5c26d43d583fde8a941e8090fc97606134a709aef0ffb153d226f4
+
+      #24 CACHED
+
+
+      #31 [app 12/17] RUN mv "/usr/local/etc/php/php.ini-development"
+      "/usr/local/etc/php/php.ini"
+
+      #31
+      sha256:1da58657c95c9d80eb05aae7f83cac172d8dd0d2da22f9763cb88c51c84465bd
+
+      #31 CACHED
+
+
+      #32 [app 13/17] COPY --link ./app/bin ./app/bin
+
+      #32
+      sha256:cf34673d6e2f11dc5266546442600eaf1fa2c3aaea618b94272e23c12c050207
+
+      #32 DONE 0.0s
+
+
+      #33 [app 14/17] RUN chmod +x ./bin/console;
+
+      #33
+      sha256:544b1fe803cbac6a31a0133dc4333421eae5b78de6f7bb1ea88b55e03d756d61
+
+      #33 0.324 chmod: ./bin/console: No such file or directory
+
+      #33 ERROR: executor failed running [/bin/sh -c chmod +x ./bin/console;]:
+      exit code: 1
+
+      ------
+       > [app 14/17] RUN chmod +x ./bin/console;:
+      ------
+
+      executor failed running [/bin/sh -c chmod +x ./bin/console;]: exit code: 1
+    proc: ~err~detail~result~proc
+  type: runtime
+args:
+  - build
+  - '-t'
+  - 'app:v-c8f3fa6ae2'
+  - '--build-arg'
+  - GARDEN_MODULE_VERSION=v-c8f3fa6ae2
+  - '--target'
+  - app
+  - '--file'
+  - /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app/Dockerfile
+  - /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app
+cwd: /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/app
+
+
+[2023-03-11T08:21:02.349Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:21:02.351Z] Watcher: Starting FSWatcher
+
+[2023-03-11T08:21:02.356Z] Waiting for code changes...

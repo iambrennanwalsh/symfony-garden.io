@@ -1,0 +1,363 @@
+
+[2023-03-11T08:26:22.525Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T08:26:22.710Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:26:22.870Z] Getting status...
+
+[2023-03-11T08:26:24.308Z] Using current context: docker-desktop
+
+[2023-03-11T08:26:24.331Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T08:26:24.350Z] Getting status... → Cached
+
+[2023-03-11T08:26:24.351Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T08:26:24.352Z] Resolving 3 modules...
+
+[2023-03-11T08:26:24.415Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T08:26:24.537Z] Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:26:24.571Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T08:26:24.656Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:26:24.670Z] Resolving 3 modules... → Done
+
+[2023-03-11T08:26:24.683Z] Processing...
+
+[2023-03-11T08:26:24.698Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T08:26:24.769Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T08:26:24.778Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T08:26:24.780Z] Syncing module sources (42 files)...
+
+[2023-03-11T08:26:24.804Z] Syncing 42 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T08:26:24.842Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-11T08:26:24.843Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-11T08:26:24.863Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-11T08:26:24.929Z] Syncing module sources (42 files)... → Done (took 0.1 sec)
+
+[2023-03-11T08:26:24.933Z] Getting build status for v-c684a0c14a...
+
+[2023-03-11T08:26:24.940Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-c684a0c14a -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:26:25.013Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:26:25.014Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:26:25.052Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:26:25.079Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:26:25.081Z] All resources match.
+
+[2023-03-11T08:26:25.083Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:26:25.083Z] All resources match.
+
+[2023-03-11T08:26:25.098Z] Deploying version v-a957583129...
+
+[2023-03-11T08:26:25.100Z] Deploying version v-a957583129... → Already deployed
+
+[2023-03-11T08:26:25.123Z] Started proxy to database/database:5432 on localhost:5432
+
+[2023-03-11T08:26:25.124Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-11T08:26:25.131Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:26:25.132Z] Resource server is not a superset of deployed resource
+
+[2023-03-11T08:26:25.362Z] Image app:v-c684a0c14a already exists
+
+[2023-03-11T08:26:25.365Z] Getting build status for v-c684a0c14a... → Already built
+
+[2023-03-11T08:26:25.372Z] Syncing module sources (3 files)...
+
+[2023-03-11T08:26:25.375Z] Deploying version v-bba308aeb7...
+
+[2023-03-11T08:26:25.377Z] Deploying version v-bba308aeb7... → Already deployed
+
+[2023-03-11T08:26:25.378Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-11T08:26:25.387Z] Started proxy to app/app:80 on localhost:56266
+
+[2023-03-11T08:26:25.390Z] Port forward: http://localhost:56266 → app:80 (app)
+
+[2023-03-11T08:26:25.394Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2023-03-11T08:26:25.396Z] Getting build status for v-a848a8a596...
+
+[2023-03-11T08:26:25.408Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-a848a8a596 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:26:25.506Z] Image server:v-a848a8a596 already exists
+
+[2023-03-11T08:26:25.508Z] Getting build status for v-a848a8a596... → Already built
+
+[2023-03-11T08:26:25.512Z] Deploying version v-b4b307c056...
+
+[2023-03-11T08:26:25.518Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-03-11T08:26:25.519Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T08:26:25.519Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T08:26:26.160Z] Waiting for resources to be ready...
+
+[2023-03-11T08:26:26.161Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T08:26:28.212Z] Status of Deployment server is "ready"
+
+[2023-03-11T08:26:28.212Z] [kubernetes-plugin]: Status of Deployment server is "ready"
+
+[2023-03-11T08:26:28.212Z] Status of Service server is "ready"
+
+[2023-03-11T08:26:28.212Z] [kubernetes-plugin]: Status of Service server is "ready"
+
+[2023-03-11T08:26:28.212Z] Status of Ingress server-0 is "ready"
+
+[2023-03-11T08:26:28.212Z] [kubernetes-plugin]: Status of Ingress server-0 is "ready"
+
+[2023-03-11T08:26:28.212Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-11T08:26:28.216Z] Resources ready
+
+[2023-03-11T08:26:28.245Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:26:28.268Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:26:28.270Z] All resources match.
+
+[2023-03-11T08:26:28.275Z] Deploying version v-b4b307c056... → Done (took 2.8 sec)
+
+[2023-03-11T08:26:28.279Z] Ingress: http://todone.local
+
+[2023-03-11T08:26:28.284Z] Started proxy to server/server:80 on localhost:56310
+
+[2023-03-11T08:26:28.289Z] Port forward: http://localhost:56310 → server:80 (http)
+
+[2023-03-11T08:26:28.297Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:26:28.299Z] Watcher: Starting FSWatcher
+
+[2023-03-11T08:26:28.302Z] Waiting for code changes...
+
+[2023-03-11T08:26:31.312Z] Starting port forward to server/server:80
+
+[2023-03-11T08:26:31.329Z] Forwarding local port 56325 to Service/server port 80
+
+[2023-03-11T08:26:32.218Z] Successfully started port forward to server/server:80
+
+[2023-03-11T08:26:32.224Z] Connecting to server/server:80 port forward at localhost:56325
+
+[2023-03-11T08:26:32.226Z] Connecting to server/server:80 port forward at localhost:56325
+
+[2023-03-11T08:26:32.226Z] Connecting to server/server:80 port forward at localhost:56325
+
+[2023-03-11T08:26:32.808Z] Connection from ::1:56323 ended
+
+[2023-03-11T08:26:33.429Z] Connection from ::1:56324 ended
+
+[2023-03-11T08:27:01.324Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-11T08:27:01.475Z] Getting status...
+
+[2023-03-11T08:27:02.060Z] Using current context: docker-desktop
+
+[2023-03-11T08:27:02.137Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T08:27:02.166Z] Getting status... → Cached
+
+[2023-03-11T08:27:02.169Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T08:27:02.172Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T08:27:02.327Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:02.367Z] Resolving 3 modules...
+
+[2023-03-11T08:27:02.437Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T08:27:02.593Z] Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:02.608Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T08:27:02.706Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:02.714Z] Resolving 3 modules... → Done
+
+[2023-03-11T08:27:02.717Z] Module configuration changed, reloading...
+
+[2023-03-11T08:27:02.717Z] Watcher: Clearing handlers
+
+[2023-03-11T08:27:02.912Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-11T08:27:03.036Z] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌍  Running in namespace wagregistry-brennanwalsh in environment local
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+[2023-03-11T08:27:03.048Z] Garden dashboard running at http://localhost:9777?key=2nvj8eefnhw0kovqz7d7qj3b
+
+[2023-03-11T08:27:03.055Z] Getting status...
+
+[2023-03-11T08:27:03.533Z] Using current context: docker-desktop
+
+[2023-03-11T08:27:03.584Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T08:27:03.594Z] Getting status... → Cached
+
+[2023-03-11T08:27:03.596Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T08:27:03.598Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T08:27:03.739Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:03.765Z] Resolving 3 modules...
+
+[2023-03-11T08:27:03.782Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T08:27:03.882Z] Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:03.896Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T08:27:03.997Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:04.008Z] Resolving 3 modules... → Done
+
+[2023-03-11T08:27:04.015Z] Processing...
+
+[2023-03-11T08:27:04.034Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T08:27:04.071Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T08:27:04.077Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T08:27:04.081Z] Syncing module sources (42 files)...
+
+[2023-03-11T08:27:04.082Z] Syncing 42 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T08:27:04.111Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:27:04.126Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:27:04.127Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:27:04.162Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:27:04.163Z] Resource app is not a superset of deployed resource
+
+[2023-03-11T08:27:04.180Z] Syncing module sources (42 files)... → Done (took 0.1 sec)
+
+[2023-03-11T08:27:04.184Z] Getting build status for v-c684a0c14a...
+
+[2023-03-11T08:27:04.192Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:27:04.192Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:27:04.193Z] All resources match.
+
+[2023-03-11T08:27:04.193Z] All resources match.
+
+[2023-03-11T08:27:04.193Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-c684a0c14a -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:04.270Z] Deploying version v-a957583129...
+
+[2023-03-11T08:27:04.275Z] Deploying version v-a957583129... → Already deployed
+
+[2023-03-11T08:27:04.283Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-11T08:27:04.673Z] Image app:v-c684a0c14a already exists
+
+[2023-03-11T08:27:04.678Z] Getting build status for v-c684a0c14a... → Already built
+
+[2023-03-11T08:27:04.680Z] Syncing module sources (3 files)...
+
+[2023-03-11T08:27:04.686Z] Deploying version v-2106fd84f6...
+
+[2023-03-11T08:27:04.697Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-11T08:27:04.697Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T08:27:04.698Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T08:27:04.805Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-11T08:27:04.812Z] Getting build status for v-a848a8a596...
+
+[2023-03-11T08:27:04.819Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-a848a8a596 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:04.989Z] Image server:v-a848a8a596 already exists
+
+[2023-03-11T08:27:04.994Z] Getting build status for v-a848a8a596... → Already built
+
+[2023-03-11T08:27:04.999Z] Deploying version v-b4b307c056...
+
+[2023-03-11T08:27:05.003Z] Deploying version v-b4b307c056... → Already deployed
+
+[2023-03-11T08:27:05.008Z] Ingress: http://todone.local
+
+[2023-03-11T08:27:05.012Z] Port forward: http://localhost:56310 → server:80 (http)
+
+[2023-03-11T08:27:05.385Z] Waiting for resources to be ready...
+
+[2023-03-11T08:27:05.386Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T08:27:07.435Z] Status of Deployment app is "ready"
+
+[2023-03-11T08:27:07.435Z] [kubernetes-plugin]: Status of Deployment app is "ready"
+
+[2023-03-11T08:27:07.435Z] Status of Service app is "ready"
+
+[2023-03-11T08:27:07.435Z] [kubernetes-plugin]: Status of Service app is "ready"
+
+[2023-03-11T08:27:07.436Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-11T08:27:07.451Z] Resources ready
+
+[2023-03-11T08:27:07.532Z] Getting currently deployed resource statuses...
+
+[2023-03-11T08:27:07.553Z] Comparing expected and deployed resources...
+
+[2023-03-11T08:27:07.554Z] All resources match.
+
+[2023-03-11T08:27:07.561Z] Deploying version v-2106fd84f6... → Done (took 2.9 sec)
+
+[2023-03-11T08:27:07.569Z] Started proxy to app/app:9000 on localhost:9000
+
+[2023-03-11T08:27:07.573Z] Port forward: localhost:9000 → app:9000 (app)
+
+[2023-03-11T08:27:07.577Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:07.577Z] Watcher: Using existing FSWatcher
+
+[2023-03-11T08:27:07.577Z] Watcher: Ignoring paths /Users/brennanwalsh/Sites/Sandbox/proj/.garden/**/*, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitmodules, /Users/brennanwalsh/Sites/Sandbox/proj/.garden/**/*, /Users/brennanwalsh/Sites/Sandbox/proj/debug-info*/**, /Users/brennanwalsh/Sites/Sandbox/proj/.DS_Store, /Users/brennanwalsh/Sites/Sandbox/proj/.garden, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitignore, /Users/brennanwalsh/Sites/Sandbox/proj/Dockerfile, /Users/brennanwalsh/Sites/Sandbox/proj/app, /Users/brennanwalsh/Sites/Sandbox/proj/composer.lock, /Users/brennanwalsh/Sites/Sandbox/proj/env.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/phpunit.xml, /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/server, /Users/brennanwalsh/Sites/Sandbox/proj/symfony.lock, /Users/brennanwalsh/Sites/Sandbox/proj/var, /Users/brennanwalsh/Sites/Sandbox/proj/vendor, /Users/brennanwalsh/Sites/Sandbox/proj/.DS_Store, /Users/brennanwalsh/Sites/Sandbox/proj/.garden, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitignore, /Users/brennanwalsh/Sites/Sandbox/proj/Dockerfile, /Users/brennanwalsh/Sites/Sandbox/proj/app, /Users/brennanwalsh/Sites/Sandbox/proj/composer.lock, /Users/brennanwalsh/Sites/Sandbox/proj/env.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/phpunit.xml, /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/server, /Users/brennanwalsh/Sites/Sandbox/proj/symfony.lock, /Users/brennanwalsh/Sites/Sandbox/proj/var, /Users/brennanwalsh/Sites/Sandbox/proj/vendor, /Users/brennanwalsh/Sites/Sandbox/proj/.DS_Store, /Users/brennanwalsh/Sites/Sandbox/proj/.garden, /Users/brennanwalsh/Sites/Sandbox/proj/.git, /Users/brennanwalsh/Sites/Sandbox/proj/.gitignore, /Users/brennanwalsh/Sites/Sandbox/proj/Dockerfile, /Users/brennanwalsh/Sites/Sandbox/proj/app, /Users/brennanwalsh/Sites/Sandbox/proj/composer.lock, /Users/brennanwalsh/Sites/Sandbox/proj/env.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/phpunit.xml, /Users/brennanwalsh/Sites/Sandbox/proj/project.garden.yaml, /Users/brennanwalsh/Sites/Sandbox/proj/server, /Users/brennanwalsh/Sites/Sandbox/proj/symfony.lock, /Users/brennanwalsh/Sites/Sandbox/proj/var, /Users/brennanwalsh/Sites/Sandbox/proj/vendor
+
+[2023-03-11T08:27:07.578Z] Watcher: Watch /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T08:27:07.584Z] Waiting for code changes...

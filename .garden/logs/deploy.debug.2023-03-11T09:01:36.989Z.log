@@ -1,0 +1,296 @@
+
+[2023-03-11T09:01:37.015Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T09:01:37.151Z] Found 2 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:01:37.300Z] Getting status...
+
+[2023-03-11T09:01:38.897Z] Using current context: docker-desktop
+
+[2023-03-11T09:01:38.955Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T09:01:38.977Z] Getting status... → Cached
+
+[2023-03-11T09:01:38.979Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T09:01:38.983Z] Resolving 3 modules...
+
+[2023-03-11T09:01:39.092Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T09:01:39.221Z] Found 42 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:01:39.270Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T09:01:39.366Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:01:39.386Z] Resolving 3 modules... → Done
+
+[2023-03-11T09:01:39.407Z] Processing...
+
+[2023-03-11T09:01:39.423Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T09:01:39.486Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T09:01:39.494Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T09:01:39.496Z] Syncing module sources (42 files)...
+
+[2023-03-11T09:01:39.516Z] Syncing 42 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T09:01:39.524Z] Syncing module sources (42 files)... → Done (took 0 sec)
+
+[2023-03-11T09:01:39.527Z] Getting build status for v-e5c060db16...
+
+[2023-03-11T09:01:39.532Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-e5c060db16 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:01:39.800Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-11T09:01:39.801Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-11T09:01:39.808Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-11T09:01:39.941Z] Getting currently deployed resource statuses...
+
+[2023-03-11T09:01:39.942Z] Getting currently deployed resource statuses...
+
+[2023-03-11T09:01:39.983Z] Getting currently deployed resource statuses...
+
+[2023-03-11T09:01:39.986Z] Image app:v-e5c060db16 already exists
+
+[2023-03-11T09:01:39.989Z] Getting build status for v-e5c060db16... → Already built
+
+[2023-03-11T09:01:39.993Z] Syncing module sources (3 files)...
+
+[2023-03-11T09:01:39.995Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-11T09:01:40.019Z] Comparing expected and deployed resources...
+
+[2023-03-11T09:01:40.019Z] Comparing expected and deployed resources...
+
+[2023-03-11T09:01:40.020Z] All resources match.
+
+[2023-03-11T09:01:40.020Z] All resources match.
+
+[2023-03-11T09:01:40.028Z] Deploying version v-c61403eeeb...
+
+[2023-03-11T09:01:40.029Z] Deploying version v-c61403eeeb... → Already deployed
+
+[2023-03-11T09:01:40.031Z] Deploying version v-a957583129...
+
+[2023-03-11T09:01:40.032Z] Deploying version v-a957583129... → Already deployed
+
+[2023-03-11T09:01:40.052Z] Comparing expected and deployed resources...
+
+[2023-03-11T09:01:40.053Z] Resource server is not a superset of deployed resource
+
+[2023-03-11T09:01:40.064Z] Started proxy to app/app:9000 on localhost:9000
+
+[2023-03-11T09:01:40.064Z] Started proxy to database/database:5432 on localhost:5432
+
+[2023-03-11T09:01:40.066Z] Port forward: localhost:9000 → app:9000 (app)
+
+[2023-03-11T09:01:40.068Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-11T09:01:40.076Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-11T09:01:40.079Z] Getting build status for v-4c8cc73430...
+
+[2023-03-11T09:01:40.087Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-4c8cc73430 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:01:40.201Z] Building version v-4c8cc73430...
+
+[2023-03-11T09:01:40.464Z] Building server:v-4c8cc73430...
+
+[2023-03-11T09:01:40.466Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker build -t server:v-4c8cc73430 --build-arg GARDEN_MODULE_VERSION=v-4c8cc73430 --target server --file /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/server/Dockerfile /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/server' in /Users/brennanwalsh/Sites/Sandbox/proj/.garden/build/server
+
+[2023-03-11T09:01:40.900Z] [local-docker]: #1 [internal] load build definition from Dockerfile
+
+[2023-03-11T09:01:40.900Z] [local-docker]: #1 sha256:1d29cdc11b453a2db33f2a0edc6bccebc066214e5c0e0e20733a9e4a48c3fe16
+
+[2023-03-11T09:01:40.900Z] [local-docker]: #1 transferring dockerfile: 37B done
+
+[2023-03-11T09:01:40.900Z] [local-docker]: #1 DONE 0.0s
+
+[2023-03-11T09:01:40.900Z] [local-docker]: 
+
+[2023-03-11T09:01:40.900Z] [local-docker]: #2 [internal] load .dockerignore
+
+[2023-03-11T09:01:40.900Z] [local-docker]: #2 sha256:15f8dca1452a42d2ccbb9b2b994cd300db052193bd0b7e70ceb18d00acda0126
+
+[2023-03-11T09:01:40.901Z] [local-docker]: #2 transferring context: 2B done
+
+[2023-03-11T09:01:40.901Z] [local-docker]: #2 DONE 0.0s
+
+[2023-03-11T09:01:40.902Z] [local-docker]: 
+
+[2023-03-11T09:01:40.902Z] [local-docker]: #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+[2023-03-11T09:01:40.902Z] [local-docker]: #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+[2023-03-11T09:01:41.917Z] [local-docker]: #3 DONE 1.1s
+
+[2023-03-11T09:01:42.067Z] [local-docker]: 
+
+[2023-03-11T09:01:42.068Z] [local-docker]: #4 docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+[2023-03-11T09:01:42.068Z] [local-docker]: #4 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+[2023-03-11T09:01:42.068Z] [local-docker]: #4 CACHED
+
+[2023-03-11T09:01:42.507Z] [local-docker]: 
+
+[2023-03-11T09:01:42.508Z] [local-docker]: #6 [internal] load .dockerignore
+
+[2023-03-11T09:01:42.508Z] [local-docker]: #6 sha256:bff88eb4485924bd54391d298d73553557bcf94ef9bcaa044bc9abecbd5cacd9
+
+[2023-03-11T09:01:42.508Z] [local-docker]: #6 DONE 0.0s
+
+[2023-03-11T09:01:42.508Z] [local-docker]: 
+
+[2023-03-11T09:01:42.508Z] [local-docker]: #5 [internal] load build definition from Dockerfile
+
+[2023-03-11T09:01:42.508Z] [local-docker]: #5 sha256:6341491440bd6d9acacb486638d0f13ee1d9348a717500ecb90a2f03102846ec
+
+[2023-03-11T09:01:42.508Z] [local-docker]: #5 DONE 0.0s
+
+[2023-03-11T09:01:42.509Z] [local-docker]: 
+
+[2023-03-11T09:01:42.509Z] [local-docker]: #7 [internal] load metadata for docker.io/library/caddy:2.6-alpine
+
+[2023-03-11T09:01:42.509Z] [local-docker]: #7 sha256:b5c2bfb54074ace1ac2676cd0cfcdd7bf608114053735ecb316464b673ee88af
+
+[2023-03-11T09:01:42.945Z] [local-docker]: #7 DONE 0.5s
+
+[2023-03-11T09:01:42.945Z] [local-docker]: 
+
+[2023-03-11T09:01:42.945Z] [local-docker]: #12 [server 1/4] FROM docker.io/library/caddy:2.6-alpine@sha256:3f4414616d9141c4fbd9f66641d9b91a3b67833dd4145738c536dee584db5314
+
+[2023-03-11T09:01:42.945Z] [local-docker]: #12 sha256:7512f525f983f4aa77728146b3cf48a3abfc49a3375957ea816cc1eb65fd60fa
+
+[2023-03-11T09:01:42.946Z] [local-docker]: #12 DONE 0.0s
+
+[2023-03-11T09:01:43.018Z] [local-docker]: 
+
+[2023-03-11T09:01:43.018Z] [local-docker]: #12 [server 1/4] FROM docker.io/library/caddy:2.6-alpine@sha256:3f4414616d9141c4fbd9f66641d9b91a3b67833dd4145738c536dee584db5314
+
+[2023-03-11T09:01:43.019Z] [local-docker]: #12 sha256:7512f525f983f4aa77728146b3cf48a3abfc49a3375957ea816cc1eb65fd60fa
+
+[2023-03-11T09:01:43.019Z] [local-docker]: #12 resolve docker.io/library/caddy:2.6-alpine@sha256:3f4414616d9141c4fbd9f66641d9b91a3b67833dd4145738c536dee584db5314 done
+
+[2023-03-11T09:01:43.019Z] [local-docker]: #12 DONE 0.0s
+
+[2023-03-11T09:01:43.019Z] [local-docker]: 
+
+[2023-03-11T09:01:43.019Z] [local-docker]: #9 [internal] load build context
+
+[2023-03-11T09:01:43.020Z] [local-docker]: #9 sha256:9319bd528fede05a9265044d448f0f515147f7562f54196be1b5dad03636901b
+
+[2023-03-11T09:01:43.020Z] [local-docker]: #9 transferring context: 277B done
+
+[2023-03-11T09:01:43.020Z] [local-docker]: #9 DONE 0.0s
+
+[2023-03-11T09:01:43.021Z] [local-docker]: 
+
+[2023-03-11T09:01:43.021Z] [local-docker]: #8 [server 2/4] WORKDIR /srv/app
+
+[2023-03-11T09:01:43.021Z] [local-docker]: #8 sha256:4f4cee17ac54c82763d359b937a28ab3630c941c21b6bf24e4c1ec8c8eecfc5b
+
+[2023-03-11T09:01:43.021Z] [local-docker]: #8 CACHED
+
+[2023-03-11T09:01:43.021Z] [local-docker]: 
+
+[2023-03-11T09:01:43.023Z] [local-docker]: #10 [server 3/4] COPY --link ./server/Caddyfile /etc/caddy/Caddyfile
+
+[2023-03-11T09:01:43.023Z] [local-docker]: #10 sha256:f95dfad77445e5f6e901c3e4d3927800c2e9753245390dda503621781784bb6a
+
+[2023-03-11T09:01:43.023Z] [local-docker]: #10 DONE 0.0s
+
+[2023-03-11T09:01:43.023Z] [local-docker]: 
+
+[2023-03-11T09:01:43.024Z] [local-docker]: #11 [server 4/4] COPY --link ./app/public public
+
+[2023-03-11T09:01:43.024Z] [local-docker]: #11 sha256:f3f1c058cc3156fe4609b03c0e0bbb0188bfca0190e98470b5d2b493e86e4203
+
+[2023-03-11T09:01:43.024Z] [local-docker]: #11 DONE 0.0s
+
+[2023-03-11T09:01:43.024Z] [local-docker]: 
+
+[2023-03-11T09:01:43.024Z] [local-docker]: #13 exporting to image
+
+[2023-03-11T09:01:43.024Z] [local-docker]: #13 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+
+[2023-03-11T09:01:43.025Z] [local-docker]: #13 exporting layers 0.0s done
+
+[2023-03-11T09:01:43.025Z] [local-docker]: #13 writing image sha256:809e949db95695bfbcf7e23037b1933d8a9c238d58a29fbbbe5f2ee4082e4f9f done
+
+[2023-03-11T09:01:43.025Z] [local-docker]: #13 naming to docker.io/library/server:v-4c8cc73430 done
+
+[2023-03-11T09:01:43.025Z] [local-docker]: #13 DONE 0.0s
+
+[2023-03-11T09:01:43.035Z] Building server:v-4c8cc73430... → Done (took 3 sec)
+
+[2023-03-11T09:01:43.042Z] Deploying version v-b0675ac83b...
+
+[2023-03-11T09:01:43.059Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-03-11T09:01:43.061Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-11T09:01:43.061Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-11T09:01:43.967Z] Waiting for resources to be ready...
+
+[2023-03-11T09:01:43.969Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-11T09:01:46.044Z] Status of Deployment server is "ready"
+
+[2023-03-11T09:01:46.045Z] [kubernetes-plugin]: Status of Deployment server is "ready"
+
+[2023-03-11T09:01:46.045Z] Status of Service server is "ready"
+
+[2023-03-11T09:01:46.045Z] [kubernetes-plugin]: Status of Service server is "ready"
+
+[2023-03-11T09:01:46.045Z] Status of Ingress server-0 is "ready"
+
+[2023-03-11T09:01:46.045Z] [kubernetes-plugin]: Status of Ingress server-0 is "ready"
+
+[2023-03-11T09:01:46.045Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-11T09:01:46.049Z] Resources ready
+
+[2023-03-11T09:01:46.078Z] Getting currently deployed resource statuses...
+
+[2023-03-11T09:01:46.101Z] Comparing expected and deployed resources...
+
+[2023-03-11T09:01:46.103Z] All resources match.
+
+[2023-03-11T09:01:46.107Z] Deploying version v-b0675ac83b... → Done (took 3.1 sec)
+
+[2023-03-11T09:01:46.111Z] Ingress: http://todone.local
+
+[2023-03-11T09:01:46.115Z] Started proxy to server/server:80 on localhost:50228
+
+[2023-03-11T09:01:46.120Z] Port forward: http://localhost:50228 → server:80 (http)
+
+[2023-03-11T09:01:46.129Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T09:01:46.130Z] Watcher: Starting FSWatcher
+
+[2023-03-11T09:01:46.133Z] Waiting for code changes...
+
+[2023-03-11T09:01:48.015Z] Starting port forward to server/server:80
+
+[2023-03-11T09:01:48.094Z] Forwarding local port 50239 to Service/server port 80
+
+[2023-03-11T09:01:48.984Z] Successfully started port forward to server/server:80
+
+[2023-03-11T09:01:48.986Z] Connecting to server/server:80 port forward at localhost:50239
+
+[2023-03-11T09:01:48.991Z] Connecting to server/server:80 port forward at localhost:50239
+
+[2023-03-11T09:01:48.991Z] Connecting to server/server:80 port forward at localhost:50239

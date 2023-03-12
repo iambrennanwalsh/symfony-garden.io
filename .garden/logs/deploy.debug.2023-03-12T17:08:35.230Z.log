@@ -1,0 +1,1010 @@
+
+[2023-03-12T17:08:35.267Z] Scanning project root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-12T17:08:35.349Z] Found 1 files in project root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:08:35.497Z] Getting status...
+
+[2023-03-12T17:08:36.860Z] Using current context: docker-desktop
+
+[2023-03-12T17:08:36.881Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-12T17:08:36.905Z] Getting status... → Cached
+
+[2023-03-12T17:08:36.906Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-12T17:08:36.908Z] Resolving 3 modules...
+
+[2023-03-12T17:08:36.958Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-12T17:08:37.058Z] Found 46 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:08:37.090Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-12T17:08:37.190Z] Found 3 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:08:37.210Z] Resolving 3 modules... → Done
+
+[2023-03-12T17:08:37.235Z] Processing...
+
+[2023-03-12T17:08:37.264Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-12T17:08:37.320Z] Getting build status for v-b8ece8345c...
+
+[2023-03-12T17:08:37.326Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-12T17:08:37.327Z] Syncing module sources (46 files)...
+
+[2023-03-12T17:08:37.344Z] Syncing 46 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-12T17:08:37.373Z] Syncing module sources (46 files)... → Done (took 0 sec)
+
+[2023-03-12T17:08:37.378Z] Getting build status for v-f9b11219f6...
+
+[2023-03-12T17:08:37.384Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-f9b11219f6 -q' in /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:08:37.623Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-12T17:08:37.649Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-12T17:08:37.650Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-12T17:08:37.729Z] -> Configuring in dev mode
+
+[2023-03-12T17:08:37.763Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:08:37.763Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:08:37.769Z] Building version v-f9b11219f6...
+
+[2023-03-12T17:08:37.879Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:08:37.926Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:08:37.928Z] All resources match.
+
+[2023-03-12T17:08:37.947Z] Deploying version v-892a1eba15...
+
+[2023-03-12T17:08:37.949Z] Deploying version v-892a1eba15... → Already deployed
+
+[2023-03-12T17:08:37.964Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:08:37.966Z] Resource server is not a superset of deployed resource
+
+[2023-03-12T17:08:37.985Z] Started proxy to database/database:5432 on localhost:5432
+
+[2023-03-12T17:08:37.987Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-12T17:08:37.999Z] Building app:v-f9b11219f6...
+
+[2023-03-12T17:08:38.000Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker build -t app:v-f9b11219f6 --build-arg GARDEN_MODULE_VERSION=v-f9b11219f6 --target app --file /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/build/app/Dockerfile /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/build/app' in /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/build/app
+
+[2023-03-12T17:08:38.417Z] [local-docker]: #1 [internal] load build definition from Dockerfile
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #1 sha256:37ad3fa67baf0bfea0c73c35e7b7ee49626e5b4c4569ccf8c85ac298218c75b9
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #1 transferring dockerfile: 37B done
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #1 DONE 0.0s
+
+[2023-03-12T17:08:38.418Z] [local-docker]: 
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #2 [internal] load .dockerignore
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #2 sha256:085324d18309539ca403de1d1fc8cef03256a7ac9c6cbd26c32cd34d20879bbb
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #2 transferring context: 2B done
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #2 DONE 0.0s
+
+[2023-03-12T17:08:38.418Z] [local-docker]: 
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+[2023-03-12T17:08:38.418Z] [local-docker]: #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+[2023-03-12T17:08:39.169Z] [local-docker]: #3 DONE 0.8s
+
+[2023-03-12T17:08:39.170Z] [local-docker]: 
+
+[2023-03-12T17:08:39.170Z] [local-docker]: #4 docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+[2023-03-12T17:08:39.170Z] [local-docker]: #4 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+[2023-03-12T17:08:39.170Z] [local-docker]: #4 CACHED
+
+[2023-03-12T17:08:39.275Z] [local-docker]: 
+
+[2023-03-12T17:08:39.275Z] [local-docker]: #5 [internal] load build definition from Dockerfile
+
+[2023-03-12T17:08:39.275Z] [local-docker]: #5 sha256:d279ca5a2fa5903f3ab473be7c5e9a1e1ee16f5632884f0260b448a771a6c344
+
+[2023-03-12T17:08:39.275Z] [local-docker]: #5 DONE 0.0s
+
+[2023-03-12T17:08:39.276Z] [local-docker]: 
+
+[2023-03-12T17:08:39.276Z] [local-docker]: #6 [internal] load .dockerignore
+
+[2023-03-12T17:08:39.276Z] [local-docker]: #6 sha256:6a0b476815e195a35c0417c490205ca3ebb8a7dfb0fffdb38d259a7133408bf9
+
+[2023-03-12T17:08:39.276Z] [local-docker]: #6 DONE 0.0s
+
+[2023-03-12T17:08:39.276Z] [local-docker]: 
+
+[2023-03-12T17:08:39.277Z] [local-docker]: #9 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+
+[2023-03-12T17:08:39.277Z] [local-docker]: #9 sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+
+[2023-03-12T17:08:39.879Z] [local-docker]: #9 ...
+
+[2023-03-12T17:08:39.880Z] [local-docker]: 
+
+[2023-03-12T17:08:39.880Z] [local-docker]: #8 [internal] load metadata for docker.io/library/node:18-alpine
+
+[2023-03-12T17:08:39.880Z] [local-docker]: #8 sha256:5ee8ea8626137e4a4e007f934eed3f693a5155be1152f5d3acaa7750c4ab9271
+
+[2023-03-12T17:08:39.880Z] [local-docker]: #8 DONE 0.5s
+
+[2023-03-12T17:08:40.030Z] [local-docker]: 
+
+[2023-03-12T17:08:40.031Z] [local-docker]: #9 [internal] load metadata for docker.io/library/php:8.2-fpm-alpine
+
+[2023-03-12T17:08:40.031Z] [local-docker]: #9 sha256:44689ef69613d66cf16d0f373113eeb2a28b44062abfad4887f556b2769a254a
+
+[2023-03-12T17:08:40.031Z] [local-docker]: #9 DONE 0.6s
+
+[2023-03-12T17:08:40.031Z] [local-docker]: 
+
+[2023-03-12T17:08:40.031Z] [local-docker]: #10 [internal] load metadata for docker.io/mlocati/php-extension-installer:latest
+
+[2023-03-12T17:08:40.031Z] [local-docker]: #10 sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+[2023-03-12T17:08:40.183Z] [local-docker]: #10 ...
+
+[2023-03-12T17:08:40.184Z] [local-docker]: 
+
+[2023-03-12T17:08:40.185Z] [local-docker]: #7 [internal] load metadata for docker.io/composer/composer:2-bin
+
+[2023-03-12T17:08:40.185Z] [local-docker]: #7 sha256:0157127993e94986bf7244f58161f892c2a73d68ca607376ce01228a4b15af94
+
+[2023-03-12T17:08:40.185Z] [local-docker]: #7 DONE 0.8s
+
+[2023-03-12T17:08:40.282Z] [local-docker]: 
+
+[2023-03-12T17:08:40.283Z] [local-docker]: #10 [internal] load metadata for docker.io/mlocati/php-extension-installer:latest
+
+[2023-03-12T17:08:40.283Z] [local-docker]: #10 sha256:94077f4fbf3dc80fac21037ef28c4efd7bb825c5c89e9942beb2f1d9b8b41fa8
+
+[2023-03-12T17:08:40.285Z] [local-docker]: #10 DONE 1.0s
+
+[2023-03-12T17:08:40.286Z] [local-docker]: 
+
+[2023-03-12T17:08:40.287Z] [local-docker]: #11 [app  1/17] FROM docker.io/library/php:8.2-fpm-alpine@sha256:dae174052d1e0b75ad37594c14ae24dd0dd27041162c1a0f3153cc5fbd8114dd
+
+[2023-03-12T17:08:40.287Z] [local-docker]: #11 sha256:c8b8abe9ffa9ace47b1dd437fe1e5b6c4c3c29f3b2a36206077be3e1bebdfacf
+
+[2023-03-12T17:08:40.287Z] [local-docker]: #11 DONE 0.0s
+
+[2023-03-12T17:08:40.288Z] [local-docker]: 
+
+[2023-03-12T17:08:40.288Z] [local-docker]: #15 [composer 1/1] FROM docker.io/composer/composer:2-bin@sha256:6a8b987cd68b8c38863bf05cba6a5776ddd2f6753a20b83e12a1d6ae4827d4a5
+
+[2023-03-12T17:08:40.288Z] [local-docker]: #15 sha256:8c34a4d8dc3e231d106045a6ef0ea462d0bdc4458c87e80455b2b46bb3b21851
+
+[2023-03-12T17:08:40.288Z] [local-docker]: #15 DONE 0.0s
+
+[2023-03-12T17:08:40.289Z] [local-docker]: 
+
+[2023-03-12T17:08:40.289Z] [local-docker]: #13 [php_extension_installer 1/1] FROM docker.io/mlocati/php-extension-installer:latest@sha256:87b296530ee351d9a0978b8ed851446157cf866f9a81f542c5be542bc014b9b9
+
+[2023-03-12T17:08:40.289Z] [local-docker]: #13 sha256:c492f9007d3fd2e49ff18d44af67bebfef5055e05fbe4c609f91b7eafa5fc987
+
+[2023-03-12T17:08:40.289Z] [local-docker]: #13 DONE 0.0s
+
+[2023-03-12T17:08:40.290Z] [local-docker]: 
+
+[2023-03-12T17:08:40.290Z] [local-docker]: #17 [nodejs 1/1] FROM docker.io/library/node:18-alpine@sha256:f605fcd5254d0e398e04d93c7b11e2aec2a6e1aeb7da1f99bc40cd101dd8cde4
+
+[2023-03-12T17:08:40.290Z] [local-docker]: #17 sha256:77827acad3ab054ff93ffd715ab8f0981aade8229dcaeded9e58cbe516c4faa8
+
+[2023-03-12T17:08:40.290Z] [local-docker]: #17 DONE 0.0s
+
+[2023-03-12T17:08:40.290Z] [local-docker]: 
+
+[2023-03-12T17:08:40.291Z] [local-docker]: #23 [internal] load build context
+
+[2023-03-12T17:08:40.291Z] [local-docker]: #23 sha256:4d60dd1d7ef8fe85581f570454edeb1fd47812707a89a295d074a95197b8dc4d
+
+[2023-03-12T17:08:40.291Z] [local-docker]: #23 transferring context: 3.37kB done
+
+[2023-03-12T17:08:40.291Z] [local-docker]: #23 DONE 0.0s
+
+[2023-03-12T17:08:40.361Z] [local-docker]: 
+
+[2023-03-12T17:08:40.361Z] [local-docker]: #12 [app  2/17] WORKDIR /srv/app
+
+[2023-03-12T17:08:40.362Z] [local-docker]: #12 sha256:3200e88b4ae95031bc133099fb5786f7fe13b65a2abce90f7e2b9cd2ae4e8a0c
+
+[2023-03-12T17:08:40.362Z] [local-docker]: #12 CACHED
+
+[2023-03-12T17:08:40.362Z] [local-docker]: 
+
+[2023-03-12T17:08:40.362Z] [local-docker]: #16 [app  4/17] COPY --from=composer --link /composer /usr/bin/
+
+[2023-03-12T17:08:40.362Z] [local-docker]: #16 sha256:a01b7a374a2de9af02942b85832dc40d504bd00ef2bb79184bf5eca09c5652e3
+
+[2023-03-12T17:08:40.362Z] [local-docker]: #16 CACHED
+
+[2023-03-12T17:08:40.363Z] [local-docker]: 
+
+[2023-03-12T17:08:40.363Z] [local-docker]: #18 [app  5/17] COPY --from=nodejs --link /usr/local/bin/node /usr/local/bin/
+
+[2023-03-12T17:08:40.363Z] [local-docker]: #18 sha256:4b4b8beb4324af52aef95d0d0e697dce54e15cb631d0466c1ab135833aeb62f5
+
+[2023-03-12T17:08:40.363Z] [local-docker]: #18 CACHED
+
+[2023-03-12T17:08:40.363Z] [local-docker]: 
+
+[2023-03-12T17:08:40.363Z] [local-docker]: #29 [app 15/17] COPY --link ./app/etc/docker-entrypoint ./app/etc/wait-for-it ./app/etc/docker-healthcheck /usr/local/bin/
+
+[2023-03-12T17:08:40.364Z] [local-docker]: #29 sha256:337de38b950a0d16af2762685660a20063cba9d3255556f70da37991d085ec65
+
+[2023-03-12T17:08:40.364Z] [local-docker]: #29 CACHED
+
+[2023-03-12T17:08:40.364Z] [local-docker]: 
+
+[2023-03-12T17:08:40.364Z] [local-docker]: #25 [app 11/17] COPY --link ./app/etc/php-fpm.d/zz-docker.conf /usr/local/etc/php-fpm.d/zz-docker.conf
+
+[2023-03-12T17:08:40.364Z] [local-docker]: #25 sha256:3f4aec2cc6226887f101a1fee58ab9e2997581093dd28f98f9f7d2f029cc07ca
+
+[2023-03-12T17:08:40.365Z] [local-docker]: #25 CACHED
+
+[2023-03-12T17:08:40.365Z] [local-docker]: 
+
+[2023-03-12T17:08:40.365Z] [local-docker]: #27 [app 13/17] COPY --link ./app/bin ./bin
+
+[2023-03-12T17:08:40.365Z] [local-docker]: #27 sha256:066f4081435008c909699b28f2ddd9f6d89194744504d0d42ccdb59bbd20d482
+
+[2023-03-12T17:08:40.365Z] [local-docker]: #27 CACHED
+
+[2023-03-12T17:08:40.365Z] [local-docker]: 
+
+[2023-03-12T17:08:40.365Z] [local-docker]: #21 [app  8/17] RUN apk add --no-cache bash make;
+
+[2023-03-12T17:08:40.365Z] [local-docker]: #21 sha256:b5cfbc4cecc95f7dd77e510cfcecc3a1482cf9b0ca93601c0e42cac9e7928caa
+
+[2023-03-12T17:08:40.366Z] [local-docker]: #21 CACHED
+
+[2023-03-12T17:08:40.366Z] [local-docker]: 
+
+[2023-03-12T17:08:40.366Z] [local-docker]: #24 [app 10/17] COPY --link ./app/etc/conf.d/app.ini /usr/local/etc/php/conf.d/
+
+[2023-03-12T17:08:40.367Z] [local-docker]: #24 sha256:0a630a317832366d5e4b4cdd296d1ce93b15aea643fec080f5358b474889ad22
+
+[2023-03-12T17:08:40.368Z] [local-docker]: #24 CACHED
+
+[2023-03-12T17:08:40.368Z] [local-docker]: 
+
+[2023-03-12T17:08:40.368Z] [local-docker]: #20 [app  7/17] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+
+[2023-03-12T17:08:40.368Z] [local-docker]: #20 sha256:76be8c7fb6bdd7647fe4c8b0823a4758ecdeff890997354560f614c046b2296c
+
+[2023-03-12T17:08:40.368Z] [local-docker]: #20 CACHED
+
+[2023-03-12T17:08:40.368Z] [local-docker]: 
+
+[2023-03-12T17:08:40.369Z] [local-docker]: #28 [app 14/17] RUN chmod +x ./bin/console;
+
+[2023-03-12T17:08:40.369Z] [local-docker]: #28 sha256:a2a8087606f9baa7973608b51b0136e3e2b59816d9005bcf9f95896fdb37d771
+
+[2023-03-12T17:08:40.369Z] [local-docker]: #28 CACHED
+
+[2023-03-12T17:08:40.369Z] [local-docker]: 
+
+[2023-03-12T17:08:40.369Z] [local-docker]: #14 [app  3/17] COPY --from=php_extension_installer --link /usr/bin/install-php-extensions /usr/bin/
+
+[2023-03-12T17:08:40.369Z] [local-docker]: #14 sha256:0d903561b793c7c94444be6cb0c4827a74de697e4283aa54cb1163945e160cc3
+
+[2023-03-12T17:08:40.369Z] [local-docker]: #14 CACHED
+
+[2023-03-12T17:08:40.369Z] [local-docker]: 
+
+[2023-03-12T17:08:40.369Z] [local-docker]: #19 [app  6/17] COPY --from=nodejs --link /usr/local/lib/node_modules /usr/local/lib/node_modules
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #19 sha256:5d04446ebf5c26d43d583fde8a941e8090fc97606134a709aef0ffb153d226f4
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #19 CACHED
+
+[2023-03-12T17:08:40.370Z] [local-docker]: 
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #22 [app  9/17] RUN install-php-extensions intl zip apcu opcache pdo_pgsql;
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #22 sha256:7787ca72319e5b7fa2d0adfc641c2f5c9a2086cf944649aa74be2d8b172f2391
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #22 CACHED
+
+[2023-03-12T17:08:40.370Z] [local-docker]: 
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #26 [app 12/17] RUN mv "/usr/local/etc/php/php.ini-development" "/usr/local/etc/php/php.ini"
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #26 sha256:bcf33a5dcd2683ef0fc31f4f4833c89c0bc60ff0abfc98fa343dab12e9c18926
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #26 CACHED
+
+[2023-03-12T17:08:40.370Z] [local-docker]: 
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #30 [app 16/17] RUN chmod +x /usr/local/bin/docker-entrypoint; 		chmod +x /usr/local/bin/wait-for-it; 		chmod +x /usr/local/bin/docker-healthcheck;
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #30 sha256:4e29b5c9a2bbd2109c540555780525ce7b57a1063caa2098dce3bfc57b1c621a
+
+[2023-03-12T17:08:40.370Z] [local-docker]: #30 CACHED
+
+[2023-03-12T17:08:40.371Z] [local-docker]: 
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #31 [app 17/17] COPY --link  ./app .
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #31 sha256:d01d11126a6968577988e0d69091bbcf736f5b1ce8c22e3c9a79097454bb40b0
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #31 DONE 0.0s
+
+[2023-03-12T17:08:40.371Z] [local-docker]: 
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #32 exporting to image
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #32 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #32 exporting layers 0.0s done
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #32 writing image sha256:8e598af5e1aef0dd0093bfadb2e3f1d38734d37d468a6f1d0bddb15eeb1c843d done
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #32 naming to docker.io/library/app:v-f9b11219f6 done
+
+[2023-03-12T17:08:40.371Z] [local-docker]: #32 DONE 0.0s
+
+[2023-03-12T17:08:40.377Z] Building app:v-f9b11219f6... → Done (took 3 sec)
+
+[2023-03-12T17:08:40.385Z] Syncing module sources (3 files)...
+
+[2023-03-12T17:08:40.388Z] Deploying version v-8b5eea3799...
+
+[2023-03-12T17:08:40.400Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-12T17:08:40.400Z] Kubernetes: Getting API resource info for group batch/v1
+
+[2023-03-12T17:08:40.401Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-12T17:08:40.401Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-12T17:08:40.512Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-12T17:08:40.516Z] Getting build status for v-3ed29a110d...
+
+[2023-03-12T17:08:40.518Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-3ed29a110d -q' in /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:08:40.629Z] Building version v-3ed29a110d...
+
+[2023-03-12T17:08:40.725Z] Building server:v-3ed29a110d...
+
+[2023-03-12T17:08:40.727Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker build -t server:v-3ed29a110d --build-arg GARDEN_MODULE_VERSION=v-3ed29a110d --target server --file /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/build/server/Dockerfile /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/build/server' in /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/build/server
+
+[2023-03-12T17:08:40.989Z] [local-docker]: #1 [internal] load build definition from Dockerfile
+
+[2023-03-12T17:08:40.990Z] [local-docker]: #1 sha256:45b1489e84210bed0e45d3c0b8a85b0ce4b1b2b2cc615cdf7147a6745673d3c8
+
+[2023-03-12T17:08:41.130Z] Waiting for resources to be ready...
+
+[2023-03-12T17:08:41.130Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-12T17:08:41.139Z] [local-docker]: #1 transferring dockerfile: 37B done
+
+[2023-03-12T17:08:41.139Z] [local-docker]: #1 DONE 0.0s
+
+[2023-03-12T17:08:41.139Z] [local-docker]: 
+
+[2023-03-12T17:08:41.139Z] [local-docker]: #2 [internal] load .dockerignore
+
+[2023-03-12T17:08:41.139Z] [local-docker]: #2 sha256:69be883be7b67787e1919af4f2c9c7a778c0488526b5bb45f64059dd1c3fa9c7
+
+[2023-03-12T17:08:41.139Z] [local-docker]: #2 transferring context: 2B done
+
+[2023-03-12T17:08:41.139Z] [local-docker]: #2 DONE 0.0s
+
+[2023-03-12T17:08:41.289Z] [local-docker]: 
+
+[2023-03-12T17:08:41.289Z] [local-docker]: #3 resolve image config for docker.io/docker/dockerfile:1.4
+
+[2023-03-12T17:08:41.290Z] [local-docker]: #3 sha256:9ea865748483b1f4f52c8c6ec970fc4927717bff340cfc4c224a179f2ef026ca
+
+[2023-03-12T17:08:41.558Z] [local-docker]: #3 DONE 0.4s
+
+[2023-03-12T17:08:41.708Z] [local-docker]: 
+
+[2023-03-12T17:08:41.708Z] [local-docker]: #4 docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+
+[2023-03-12T17:08:41.709Z] [local-docker]: #4 sha256:66a0e12aa5cbc2eaf894e26a8df172f6c2bc232ebfb59d1ecf39b78f65e274a5
+
+[2023-03-12T17:08:41.709Z] [local-docker]: #4 CACHED
+
+[2023-03-12T17:08:41.858Z] [local-docker]: 
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #6 [internal] load build definition from Dockerfile
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #6 sha256:5a0c376da4ff4a79aa7c8f52ee92a88346f4dbf95a4542e8079dea3b77373ce8
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #6 DONE 0.0s
+
+[2023-03-12T17:08:41.859Z] [local-docker]: 
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #5 [internal] load .dockerignore
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #5 sha256:fd4f8009da4789678b0adc2767f427b208301df2caa2a623677169f4560777b3
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #5 DONE 0.0s
+
+[2023-03-12T17:08:41.859Z] [local-docker]: 
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #7 [internal] load metadata for docker.io/library/caddy:2.6-alpine
+
+[2023-03-12T17:08:41.859Z] [local-docker]: #7 sha256:b5c2bfb54074ace1ac2676cd0cfcdd7bf608114053735ecb316464b673ee88af
+
+[2023-03-12T17:08:42.263Z] [local-docker]: #7 DONE 0.5s
+
+[2023-03-12T17:08:42.289Z] [local-docker]: 
+
+[2023-03-12T17:08:42.289Z] [local-docker]: #8 [server 1/4] FROM docker.io/library/caddy:2.6-alpine@sha256:3f4414616d9141c4fbd9f66641d9b91a3b67833dd4145738c536dee584db5314
+
+[2023-03-12T17:08:42.290Z] [local-docker]: #8 sha256:7512f525f983f4aa77728146b3cf48a3abfc49a3375957ea816cc1eb65fd60fa
+
+[2023-03-12T17:08:42.290Z] [local-docker]: #8 resolve docker.io/library/caddy:2.6-alpine@sha256:3f4414616d9141c4fbd9f66641d9b91a3b67833dd4145738c536dee584db5314 done
+
+[2023-03-12T17:08:42.290Z] [local-docker]: #8 DONE 0.0s
+
+[2023-03-12T17:08:42.290Z] [local-docker]: 
+
+[2023-03-12T17:08:42.291Z] [local-docker]: #10 [internal] load build context
+
+[2023-03-12T17:08:42.291Z] [local-docker]: #10 sha256:ff592fdc8a7dc80e66c1d9970b3eec6677a3e9df64f739fd60916a0d457f6025
+
+[2023-03-12T17:08:42.291Z] [local-docker]: #10 transferring context: 156B done
+
+[2023-03-12T17:08:42.291Z] [local-docker]: #10 DONE 0.0s
+
+[2023-03-12T17:08:42.292Z] [local-docker]: 
+
+[2023-03-12T17:08:42.292Z] [local-docker]: #9 [server 2/4] WORKDIR /srv/app
+
+[2023-03-12T17:08:42.292Z] [local-docker]: #9 sha256:4f4cee17ac54c82763d359b937a28ab3630c941c21b6bf24e4c1ec8c8eecfc5b
+
+[2023-03-12T17:08:42.292Z] [local-docker]: #9 CACHED
+
+[2023-03-12T17:08:42.292Z] [local-docker]: 
+
+[2023-03-12T17:08:42.292Z] [local-docker]: #11 [server 3/4] COPY --link ./server/Caddyfile /etc/caddy/Caddyfile
+
+[2023-03-12T17:08:42.293Z] [local-docker]: #11 sha256:2baf5dd688f5aade1b306cdecffc984bcf3a0a101bb15b9c6437b45d8f240c0a
+
+[2023-03-12T17:08:42.293Z] [local-docker]: #11 CACHED
+
+[2023-03-12T17:08:42.293Z] [local-docker]: 
+
+[2023-03-12T17:08:42.293Z] [local-docker]: #12 [server 4/4] COPY --link ./app/public public
+
+[2023-03-12T17:08:42.294Z] [local-docker]: #12 sha256:c9c796a35bd383f534777b50ac8f41ec6cee39594b80c5354790f430794951eb
+
+[2023-03-12T17:08:42.294Z] [local-docker]: #12 CACHED
+
+[2023-03-12T17:08:42.294Z] [local-docker]: 
+
+[2023-03-12T17:08:42.294Z] [local-docker]: #13 exporting to image
+
+[2023-03-12T17:08:42.294Z] [local-docker]: #13 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+
+[2023-03-12T17:08:42.294Z] [local-docker]: #13 exporting layers done
+
+[2023-03-12T17:08:42.295Z] [local-docker]: #13 writing image sha256:1a07818ccd2c71d15695bfe97c7b236a830968f584021bea20b0e90784c8e2e5 done
+
+[2023-03-12T17:08:42.295Z] [local-docker]: #13 naming to docker.io/library/server:v-3ed29a110d done
+
+[2023-03-12T17:08:42.295Z] [local-docker]: #13 DONE 0.0s
+
+[2023-03-12T17:08:42.302Z] Building server:v-3ed29a110d... → Done (took 1.8 sec)
+
+[2023-03-12T17:08:42.307Z] Deploying version v-7471242306...
+
+[2023-03-12T17:08:42.314Z] -> Configuring in dev mode
+
+[2023-03-12T17:08:42.315Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-12T17:08:42.315Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-12T17:08:42.982Z] Waiting for resources to be ready...
+
+[2023-03-12T17:08:42.985Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-12T17:08:43.167Z] Status of Deployment app is "ready"
+
+[2023-03-12T17:08:43.167Z] [kubernetes-plugin]: Status of Deployment app is "ready"
+
+[2023-03-12T17:08:43.167Z] Status of Service app is "ready"
+
+[2023-03-12T17:08:43.167Z] [kubernetes-plugin]: Status of Service app is "ready"
+
+[2023-03-12T17:08:43.167Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-12T17:08:43.171Z] Resources ready
+
+[2023-03-12T17:08:43.213Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:08:43.239Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:08:43.242Z] All resources match.
+
+[2023-03-12T17:08:43.248Z] Deploying version v-8b5eea3799... → Done (took 2.9 sec)
+
+[2023-03-12T17:08:43.255Z] Started proxy to app/app:80 on localhost:60698
+
+[2023-03-12T17:08:43.259Z] Port forward: http://localhost:60698 → app:80 (app)
+
+[2023-03-12T17:08:45.685Z] Status of Deployment server is "deploying"
+
+[2023-03-12T17:08:45.687Z] [kubernetes-plugin]: Status of Deployment server is "deploying"
+
+[2023-03-12T17:08:45.703Z] Deployment/server: Created container server
+
+[2023-03-12T17:08:45.704Z] [kubernetes-plugin]: Deployment/server: Created container server
+
+[2023-03-12T17:08:45.705Z] Status of Service server is "ready"
+
+[2023-03-12T17:08:45.705Z] [kubernetes-plugin]: Status of Service server is "ready"
+
+[2023-03-12T17:08:45.705Z] Status of Ingress server-0 is "ready"
+
+[2023-03-12T17:08:45.706Z] [kubernetes-plugin]: Status of Ingress server-0 is "ready"
+
+[2023-03-12T17:08:48.277Z] Status of Deployment server is "ready"
+
+[2023-03-12T17:08:48.277Z] [kubernetes-plugin]: Status of Deployment server is "ready"
+
+[2023-03-12T17:08:48.277Z] Status of Service server is "ready"
+
+[2023-03-12T17:08:48.277Z] [kubernetes-plugin]: Status of Service server is "ready"
+
+[2023-03-12T17:08:48.277Z] Status of Ingress server-0 is "ready"
+
+[2023-03-12T17:08:48.277Z] [kubernetes-plugin]: Status of Ingress server-0 is "ready"
+
+[2023-03-12T17:08:48.278Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-12T17:08:48.282Z] Resources ready
+
+[2023-03-12T17:08:48.287Z] -> Configuring in dev mode
+
+[2023-03-12T17:08:48.319Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:08:48.347Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:08:48.350Z] All resources match.
+
+[2023-03-12T17:08:48.356Z] Deploying in dev mode
+
+[2023-03-12T17:08:48.916Z] Syncing ./server/Caddyfile to /etc/caddy/Caddyfile in Deployment/server (one-way)
+
+[2023-03-12T17:08:49.595Z] Deploying in dev mode
+
+[2023-03-12T17:08:49.600Z] Syncing ./server/Caddyfile to /etc/caddy/Caddyfile in Deployment/server (one-way)
+
+[2023-03-12T17:08:49.613Z] Deploying version v-7471242306... → Done (took 7.3 sec)
+
+[2023-03-12T17:08:49.620Z] Ingress: http://todone.garden
+
+[2023-03-12T17:08:49.632Z] Started proxy to server/server:80 on localhost:60721
+
+[2023-03-12T17:08:49.636Z] Port forward: http://localhost:60721 → server:80 (http)
+
+[2023-03-12T17:08:49.644Z] Watcher: Watching paths /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:08:49.646Z] Watcher: Starting FSWatcher
+
+[2023-03-12T17:08:49.650Z] Waiting for code changes...
+
+[2023-03-12T17:08:50.958Z] Connected to sync target /etc/caddy/Caddyfile in Deployment/server
+
+[2023-03-12T17:08:50.963Z] [sync]: Completed initial sync from ./server/Caddyfile to /etc/caddy/Caddyfile in Deployment/server
+
+[2023-03-12T17:08:50.970Z] [sync]: Watching for changes
+
+[2023-03-12T17:09:55.519Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-12T17:09:55.633Z] Getting status...
+
+[2023-03-12T17:09:56.264Z] Using current context: docker-desktop
+
+[2023-03-12T17:09:56.297Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-12T17:09:56.328Z] Getting status... → Cached
+
+[2023-03-12T17:09:56.332Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-12T17:09:56.335Z] Scanning project root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-12T17:09:56.446Z] Found 1 files in project root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:56.486Z] Resolving 3 modules...
+
+[2023-03-12T17:09:56.541Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-12T17:09:56.663Z] Found 46 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:56.675Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-12T17:09:56.773Z] Found 3 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:56.782Z] Resolving 3 modules... → Done
+
+[2023-03-12T17:09:56.785Z] Module configuration changed, reloading...
+
+[2023-03-12T17:09:56.786Z] Watcher: Clearing handlers
+
+[2023-03-12T17:09:56.989Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-12T17:09:57.089Z] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌍  Running in namespace default in environment local
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+[2023-03-12T17:09:57.107Z] Garden dashboard running at http://localhost:9777?key=glutiuuovtrf5qzkszaugbuw
+
+[2023-03-12T17:09:57.116Z] Getting status...
+
+[2023-03-12T17:09:57.653Z] Using current context: docker-desktop
+
+[2023-03-12T17:09:57.678Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-12T17:09:57.689Z] Getting status... → Cached
+
+[2023-03-12T17:09:57.693Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-12T17:09:57.694Z] Scanning project root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-12T17:09:57.797Z] Found 1 files in project root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:57.825Z] Resolving 3 modules...
+
+[2023-03-12T17:09:57.842Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-12T17:09:57.947Z] Found 46 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:57.957Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-12T17:09:58.052Z] Found 3 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:58.062Z] Resolving 3 modules... → Done
+
+[2023-03-12T17:09:58.069Z] Processing...
+
+[2023-03-12T17:09:58.090Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-12T17:09:58.123Z] Getting build status for v-b8ece8345c...
+
+[2023-03-12T17:09:58.129Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-12T17:09:58.131Z] Syncing module sources (46 files)...
+
+[2023-03-12T17:09:58.132Z] Syncing 46 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-12T17:09:58.133Z] -> Configuring in dev mode
+
+[2023-03-12T17:09:58.161Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:09:58.161Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:09:58.161Z] Syncing module sources (46 files)... → Done (took 0 sec)
+
+[2023-03-12T17:09:58.166Z] Getting build status for v-f9b11219f6...
+
+[2023-03-12T17:09:58.168Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:09:58.190Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-f9b11219f6 -q' in /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:58.242Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:09:58.244Z] All resources match.
+
+[2023-03-12T17:09:58.244Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:09:58.245Z] Resource app is not a superset of deployed resource
+
+[2023-03-12T17:09:58.258Z] Deploying version v-892a1eba15...
+
+[2023-03-12T17:09:58.262Z] Deploying version v-892a1eba15... → Already deployed
+
+[2023-03-12T17:09:58.263Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:09:58.265Z] All resources match.
+
+[2023-03-12T17:09:58.272Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-12T17:09:58.281Z] Deploying in dev mode
+
+[2023-03-12T17:09:58.286Z] Syncing ./server/Caddyfile to /etc/caddy/Caddyfile in Deployment/server (one-way)
+
+[2023-03-12T17:09:58.580Z] Image app:v-f9b11219f6 already exists
+
+[2023-03-12T17:09:58.586Z] Getting build status for v-f9b11219f6... → Already built
+
+[2023-03-12T17:09:58.587Z] Syncing module sources (3 files)...
+
+[2023-03-12T17:09:58.593Z] Deploying version v-0245f81c14...
+
+[2023-03-12T17:09:58.599Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-12T17:09:58.600Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-12T17:09:58.600Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-12T17:09:58.702Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-12T17:09:58.709Z] Getting build status for v-3ed29a110d...
+
+[2023-03-12T17:09:58.711Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-3ed29a110d -q' in /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:09:58.812Z] Image server:v-3ed29a110d already exists
+
+[2023-03-12T17:09:58.818Z] Getting build status for v-3ed29a110d... → Already built
+
+[2023-03-12T17:09:58.826Z] Deploying version v-7471242306...
+
+[2023-03-12T17:09:58.831Z] Deploying version v-7471242306... → Already deployed
+
+[2023-03-12T17:09:58.836Z] Ingress: http://todone.garden
+
+[2023-03-12T17:09:58.842Z] Port forward: http://localhost:60721 → server:80 (http)
+
+[2023-03-12T17:09:59.209Z] Waiting for resources to be ready...
+
+[2023-03-12T17:09:59.210Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-12T17:10:01.243Z] Status of Deployment app is "ready"
+
+[2023-03-12T17:10:01.243Z] [kubernetes-plugin]: Status of Deployment app is "ready"
+
+[2023-03-12T17:10:01.243Z] Status of Service app is "ready"
+
+[2023-03-12T17:10:01.243Z] [kubernetes-plugin]: Status of Service app is "ready"
+
+[2023-03-12T17:10:01.244Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-12T17:10:01.250Z] Resources ready
+
+[2023-03-12T17:10:01.268Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:10:01.284Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:10:01.287Z] All resources match.
+
+[2023-03-12T17:10:01.294Z] Deploying version v-0245f81c14... → Done (took 2.7 sec)
+
+[2023-03-12T17:10:01.300Z] Port forward: http://localhost:60698 → app:80 (app)
+
+[2023-03-12T17:10:01.304Z] Watcher: Watching paths /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:01.304Z] Watcher: Using existing FSWatcher
+
+[2023-03-12T17:10:01.304Z] Watcher: Ignoring paths /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/**/*, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitmodules, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/**/*, /Users/brennanwalsh/Sites/GitHub/symfony-garden/debug-info*/**, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.DS_Store, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitignore, /Users/brennanwalsh/Sites/GitHub/symfony-garden/Dockerfile, /Users/brennanwalsh/Sites/GitHub/symfony-garden/README.md, /Users/brennanwalsh/Sites/GitHub/symfony-garden/app, /Users/brennanwalsh/Sites/GitHub/symfony-garden/env.yaml, /Users/brennanwalsh/Sites/GitHub/symfony-garden/server, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.DS_Store, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitignore, /Users/brennanwalsh/Sites/GitHub/symfony-garden/Dockerfile, /Users/brennanwalsh/Sites/GitHub/symfony-garden/README.md, /Users/brennanwalsh/Sites/GitHub/symfony-garden/app, /Users/brennanwalsh/Sites/GitHub/symfony-garden/env.yaml, /Users/brennanwalsh/Sites/GitHub/symfony-garden/server, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.DS_Store, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitignore, /Users/brennanwalsh/Sites/GitHub/symfony-garden/Dockerfile, /Users/brennanwalsh/Sites/GitHub/symfony-garden/README.md, /Users/brennanwalsh/Sites/GitHub/symfony-garden/app, /Users/brennanwalsh/Sites/GitHub/symfony-garden/env.yaml, /Users/brennanwalsh/Sites/GitHub/symfony-garden/server
+
+[2023-03-12T17:10:01.305Z] Watcher: Watch /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:01.311Z] Waiting for code changes...
+
+[2023-03-12T17:10:23.088Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-12T17:10:23.210Z] Getting status...
+
+[2023-03-12T17:10:23.679Z] Using current context: docker-desktop
+
+[2023-03-12T17:10:23.715Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-12T17:10:23.752Z] Getting status... → Cached
+
+[2023-03-12T17:10:23.758Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-12T17:10:23.763Z] Scanning project root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-12T17:10:23.890Z] Found 1 files in project root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:23.923Z] Resolving 3 modules...
+
+[2023-03-12T17:10:23.955Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-12T17:10:24.060Z] Found 46 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:24.083Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-12T17:10:24.185Z] Found 3 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:24.198Z] Resolving 3 modules... → Done
+
+[2023-03-12T17:10:24.206Z] Module configuration changed, reloading...
+
+[2023-03-12T17:10:24.206Z] Watcher: Clearing handlers
+
+[2023-03-12T17:10:24.367Z] Error reading safe directories from the .gitconfig: Error: Command "git config --get-all safe.directory" failed with code 1:
+
+[2023-03-12T17:10:24.483Z] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌍  Running in namespace default in environment local
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+[2023-03-12T17:10:24.504Z] Garden dashboard running at http://localhost:9777?key=glutiuuovtrf5qzkszaugbuw
+
+[2023-03-12T17:10:24.513Z] Getting status...
+
+[2023-03-12T17:10:24.993Z] Using current context: docker-desktop
+
+[2023-03-12T17:10:25.017Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-12T17:10:25.030Z] Getting status... → Cached
+
+[2023-03-12T17:10:25.038Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-12T17:10:25.040Z] Scanning project root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-12T17:10:25.147Z] Found 1 files in project root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:25.168Z] Resolving 3 modules...
+
+[2023-03-12T17:10:25.187Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-12T17:10:25.292Z] Found 46 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:25.300Z] Scanning module root at /Users/brennanwalsh/Sites/GitHub/symfony-garden
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-12T17:10:25.397Z] Found 3 files in module root /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:25.408Z] Resolving 3 modules... → Done
+
+[2023-03-12T17:10:25.420Z] Processing...
+
+[2023-03-12T17:10:25.445Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-12T17:10:25.481Z] Getting build status for v-b8ece8345c...
+
+[2023-03-12T17:10:25.489Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-12T17:10:25.492Z] Syncing module sources (46 files)...
+
+[2023-03-12T17:10:25.493Z] Syncing 46 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-12T17:10:25.494Z] -> Configuring in dev mode
+
+[2023-03-12T17:10:25.517Z] Syncing module sources (46 files)... → Done (took 0 sec)
+
+[2023-03-12T17:10:25.523Z] Getting build status for v-f9b11219f6...
+
+[2023-03-12T17:10:25.530Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-f9b11219f6 -q' in /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:25.553Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:10:25.553Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:10:25.580Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:10:25.609Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:10:25.610Z] Resource app is not a superset of deployed resource
+
+[2023-03-12T17:10:25.619Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:10:25.620Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:10:25.620Z] All resources match.
+
+[2023-03-12T17:10:25.620Z] All resources match.
+
+[2023-03-12T17:10:25.629Z] Deploying version v-892a1eba15...
+
+[2023-03-12T17:10:25.636Z] Deploying version v-892a1eba15... → Already deployed
+
+[2023-03-12T17:10:25.643Z] Deploying in dev mode
+
+[2023-03-12T17:10:25.652Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-12T17:10:25.661Z] Syncing ./server/Caddyfile to /etc/caddy/Caddyfile in Deployment/server (one-way)
+
+[2023-03-12T17:10:25.907Z] Image app:v-f9b11219f6 already exists
+
+[2023-03-12T17:10:25.916Z] Getting build status for v-f9b11219f6... → Already built
+
+[2023-03-12T17:10:25.918Z] Syncing module sources (3 files)...
+
+[2023-03-12T17:10:25.926Z] Deploying version v-9376d90f78...
+
+[2023-03-12T17:10:25.930Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-12T17:10:25.931Z] Kubernetes: Getting API resource info for group batch/v1beta1
+
+[2023-03-12T17:10:25.931Z] Kubernetes: Getting API resource info for group extensions/v1beta1
+
+[2023-03-12T17:10:26.027Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2023-03-12T17:10:26.033Z] Getting build status for v-3ed29a110d...
+
+[2023-03-12T17:10:26.035Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-3ed29a110d -q' in /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:26.161Z] Image server:v-3ed29a110d already exists
+
+[2023-03-12T17:10:26.169Z] Getting build status for v-3ed29a110d... → Already built
+
+[2023-03-12T17:10:26.177Z] Deploying version v-7471242306...
+
+[2023-03-12T17:10:26.185Z] Deploying version v-7471242306... → Already deployed
+
+[2023-03-12T17:10:26.193Z] Ingress: http://todone.garden
+
+[2023-03-12T17:10:26.203Z] Port forward: http://localhost:60721 → server:80 (http)
+
+[2023-03-12T17:10:26.537Z] Waiting for resources to be ready...
+
+[2023-03-12T17:10:26.538Z] [kubernetes-plugin]: Waiting for resources to be ready...
+
+[2023-03-12T17:10:28.576Z] Status of Deployment app is "ready"
+
+[2023-03-12T17:10:28.576Z] [kubernetes-plugin]: Status of Deployment app is "ready"
+
+[2023-03-12T17:10:28.576Z] Status of Service app is "ready"
+
+[2023-03-12T17:10:28.577Z] [kubernetes-plugin]: Status of Service app is "ready"
+
+[2023-03-12T17:10:28.577Z] [kubernetes-plugin]: Resources ready
+
+[2023-03-12T17:10:28.589Z] Resources ready
+
+[2023-03-12T17:10:28.610Z] Getting currently deployed resource statuses...
+
+[2023-03-12T17:10:28.626Z] Comparing expected and deployed resources...
+
+[2023-03-12T17:10:28.628Z] All resources match.
+
+[2023-03-12T17:10:28.637Z] Deploying version v-9376d90f78... → Done (took 2.7 sec)
+
+[2023-03-12T17:10:28.645Z] Port forward: http://localhost:60698 → app:80 (app)
+
+[2023-03-12T17:10:28.649Z] Watcher: Watching paths /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:28.649Z] Watcher: Using existing FSWatcher
+
+[2023-03-12T17:10:28.650Z] Watcher: Ignoring paths /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/**/*, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitmodules, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden/**/*, /Users/brennanwalsh/Sites/GitHub/symfony-garden/debug-info*/**, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.DS_Store, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitignore, /Users/brennanwalsh/Sites/GitHub/symfony-garden/Dockerfile, /Users/brennanwalsh/Sites/GitHub/symfony-garden/README.md, /Users/brennanwalsh/Sites/GitHub/symfony-garden/app, /Users/brennanwalsh/Sites/GitHub/symfony-garden/env.yaml, /Users/brennanwalsh/Sites/GitHub/symfony-garden/server, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.DS_Store, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitignore, /Users/brennanwalsh/Sites/GitHub/symfony-garden/Dockerfile, /Users/brennanwalsh/Sites/GitHub/symfony-garden/README.md, /Users/brennanwalsh/Sites/GitHub/symfony-garden/app, /Users/brennanwalsh/Sites/GitHub/symfony-garden/env.yaml, /Users/brennanwalsh/Sites/GitHub/symfony-garden/server, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.DS_Store, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.garden, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.git, /Users/brennanwalsh/Sites/GitHub/symfony-garden/.gitignore, /Users/brennanwalsh/Sites/GitHub/symfony-garden/Dockerfile, /Users/brennanwalsh/Sites/GitHub/symfony-garden/README.md, /Users/brennanwalsh/Sites/GitHub/symfony-garden/app, /Users/brennanwalsh/Sites/GitHub/symfony-garden/env.yaml, /Users/brennanwalsh/Sites/GitHub/symfony-garden/server
+
+[2023-03-12T17:10:28.650Z] Watcher: Watch /Users/brennanwalsh/Sites/GitHub/symfony-garden
+
+[2023-03-12T17:10:28.658Z] Waiting for code changes...

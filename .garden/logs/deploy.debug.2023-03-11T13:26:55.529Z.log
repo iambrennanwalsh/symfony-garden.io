@@ -1,0 +1,124 @@
+
+[2023-03-11T13:26:55.557Z] Scanning project root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-03-11T13:26:55.677Z] Found 1 files in project root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T13:26:55.837Z] Getting status...
+
+[2023-03-11T13:26:57.343Z] Using current context: docker-desktop
+
+[2023-03-11T13:26:57.384Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-03-11T13:26:57.415Z] Getting status... → Cached
+
+[2023-03-11T13:26:57.417Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-03-11T13:26:57.420Z] Resolving 3 modules...
+
+[2023-03-11T13:26:57.482Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./app
+→ Excludes: (none)
+
+[2023-03-11T13:26:57.587Z] Found 43 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T13:26:57.603Z] Scanning module root at /Users/brennanwalsh/Sites/Sandbox/proj
+→ Includes: ./Dockerfile,./server,./app/public
+→ Excludes: (none)
+
+[2023-03-11T13:26:57.709Z] Found 3 files in module root /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T13:26:57.720Z] Resolving 3 modules... → Done
+
+[2023-03-11T13:26:57.747Z] Processing...
+
+[2023-03-11T13:26:57.772Z] Syncing 0 files from . to .garden/build/database (and removing any extraneous files)
+
+[2023-03-11T13:26:57.839Z] Getting build status for v-b8ece8345c...
+
+[2023-03-11T13:26:57.848Z] Getting build status for v-b8ece8345c... → Already built
+
+[2023-03-11T13:26:57.850Z] Syncing module sources (43 files)...
+
+[2023-03-11T13:26:57.874Z] Syncing 43 files from . to .garden/build/app (and removing any extraneous files)
+
+[2023-03-11T13:26:57.913Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-03-11T13:26:57.913Z] Kubernetes: Getting API resource info for group v1
+
+[2023-03-11T13:26:57.928Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-03-11T13:26:57.980Z] Syncing module sources (43 files)... → Done (took 0.1 sec)
+
+[2023-03-11T13:26:57.985Z] Getting build status for v-35835f6875...
+
+[2023-03-11T13:26:58.024Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images app:v-35835f6875 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T13:26:58.089Z] Getting currently deployed resource statuses...
+
+[2023-03-11T13:26:58.090Z] Getting currently deployed resource statuses...
+
+[2023-03-11T13:26:58.133Z] Getting currently deployed resource statuses...
+
+[2023-03-11T13:26:58.165Z] Comparing expected and deployed resources...
+
+[2023-03-11T13:26:58.166Z] Comparing expected and deployed resources...
+
+[2023-03-11T13:26:58.166Z] All resources match.
+
+[2023-03-11T13:26:58.166Z] All resources match.
+
+[2023-03-11T13:26:58.175Z] Deploying version v-a957583129...
+
+[2023-03-11T13:26:58.176Z] Deploying version v-a957583129... → Already deployed
+
+[2023-03-11T13:26:58.190Z] Comparing expected and deployed resources...
+
+[2023-03-11T13:26:58.190Z] All resources match.
+
+[2023-03-11T13:26:58.190Z] Started proxy to database/database:5432 on localhost:5432
+
+[2023-03-11T13:26:58.192Z] Port forward: postgres://localhost:5432 → database:5432 (database)
+
+[2023-03-11T13:26:58.450Z] Image app:v-35835f6875 already exists
+
+[2023-03-11T13:26:58.453Z] Getting build status for v-35835f6875... → Already built
+
+[2023-03-11T13:26:58.459Z] Syncing module sources (3 files)...
+
+[2023-03-11T13:26:58.462Z] Deploying version v-d04afbc049...
+
+[2023-03-11T13:26:58.464Z] Deploying version v-d04afbc049... → Already deployed
+
+[2023-03-11T13:26:58.465Z] Syncing 3 files from . to .garden/build/server (and removing any extraneous files)
+
+[2023-03-11T13:26:58.471Z] Started proxy to app/app:80 on localhost:63317
+
+[2023-03-11T13:26:58.473Z] Port forward: http://localhost:63317 → app:80 (app)
+
+[2023-03-11T13:26:58.478Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2023-03-11T13:26:58.482Z] Getting build status for v-c851c6ac32...
+
+[2023-03-11T13:26:58.486Z] Spawning '/Users/brennanwalsh/.garden/tools/docker/23842c62b99af05f/docker/docker images server:v-c851c6ac32 -q' in /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T13:26:58.614Z] Image server:v-c851c6ac32 already exists
+
+[2023-03-11T13:26:58.618Z] Getting build status for v-c851c6ac32... → Already built
+
+[2023-03-11T13:26:58.622Z] Deploying version v-ba04e925a4...
+
+[2023-03-11T13:26:58.624Z] Deploying version v-ba04e925a4... → Already deployed
+
+[2023-03-11T13:26:58.628Z] Ingress: http://todone.garden
+
+[2023-03-11T13:26:58.638Z] Started proxy to server/server:80 on localhost:63320
+
+[2023-03-11T13:26:58.643Z] Port forward: http://localhost:63320 → server:80 (http)
+
+[2023-03-11T13:26:58.649Z] Watcher: Watching paths /Users/brennanwalsh/Sites/Sandbox/proj
+
+[2023-03-11T13:26:58.650Z] Watcher: Starting FSWatcher
+
+[2023-03-11T13:26:58.654Z] Waiting for code changes...
