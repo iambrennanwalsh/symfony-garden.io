@@ -1,105 +1,125 @@
-kind: Project
-name: symfony-garden
-defaultEnvironment: local
-dotIgnoreFiles: [.gitignore]
+apiVersion: garden.io/v1
 
-varfile: env.yaml
+kind: Project
+name: Symfony Garden
 
 environments:
   - name: local
+
+defaultEnvironment: local
 
 providers:
   - name: local-kubernetes
     environments: [local]
     namespace: symfony-garden
-    defaultHostname: symfony.local
 
+dotIgnoreFile: .gitignore
+varfile: env.yaml
 ---
-kind: Module
-description: Caddy container.
+kind: Build
 type: container
 name: server
-dockerfile: ./Dockerfile
+description: Caddy server.
+
 include:
   - ./Dockerfile
   - ./server
   - ./app/public
-build:
-  dependencies:
-    - name: app
-  targetImage: server
-services:
-  - name: server
-    devMode:
-      sync:
-        - source: ./server/Caddyfile
-          target: /etc/caddy/Caddyfile
-          mode: one-way
-    volumes:
-      - name: caddy-data
-        containerPath: /data
-      - name: caddy-config
-        containerPath: /config
-    ports:
-      - name: http
-        containerPort: 80
-        servicePort: 80
-    ingresses:
-      - path: /
-        port: http
-        hostname: todone.garden
 
+spec:
+  dockerfile: ./Dockerfile
+  targetStage: server
 ---
-kind: Module
-description: Postgres container.
+kind: Deploy
+type: container
+name: server
+description: Caddy server.
+build: server
+dependencies: [deploy.app]
+
+spec:
+  sync:
+    paths:
+      - source: ./server/Caddyfile
+        target: /etc/caddy/Caddyfile
+        mode: one-way
+
+  volumes:
+    - name: caddy-data
+      containerPath: /data
+    - name: caddy-config
+      containerPath: /config
+
+  ports:
+    - name: http
+      containerPort: 80
+      servicePort: 80
+
+  ingresses:
+    - path: /
+      port: http
+      hostname: ${var.hostname}
+---
+kind: Deploy
 type: container
 name: database
-image: postgres:15-alpine
-include: []
-services:
-  - name: database
-    volumes:
-      - name: database
-        containerPath: /db-data
-    ports:
-      - name: database
-        containerPort: 5432
-    env:
-      POSTGRES_PASSWORD:
-        secretRef:
-          name: postgres-password
-          key: root
-      POSTGRES_USERNAME: ${var.database.username}
-      POSTGRES_DATABASE: ${var.database.database}
+description: Postgres database.
 
+spec:
+  image: postgres:15-alpine
+
+  ports:
+    - name: database
+      containerPort: 5432
+
+  volumes:
+    - name: database
+      containerPath: /db-data
+
+  env:
+    POSTGRES_PASSWORD:
+      secretRef:
+        name: postgres-password
+        key: root
+    POSTGRES_USERNAME: ${var.database.username}
+    POSTGRES_DATABASE: ${var.database.database}
 ---
-kind: Module
-description: The app.
+kind: Build
 type: container
-dockerfile: ./Dockerfile
 name: app
+description: The application.
+
 include:
   - ./Dockerfile
   - ./app
-build:
-  dependencies:
-    - name: database
-  targetImage: app
-services:
-  - name: app
-    devMode:
-      sync:
-        - source: ./app
-          target: /srv/app
-          mode: two-way
-    ports:
-      - name: app
-        containerPort: 9000
-        servicePort: 80
-    env:
-      POSTGRES_PASSWORD:
-        secretRef:
-          name: postgres-password
-          key: root
-      POSTGRES_USERNAME: ${var.database.username}
-      POSTGRES_DATABASE: ${var.database.database}
+
+spec:
+  dockerfile: ./Dockerfile
+  targetStage: app
+---
+kind: Deploy
+type: container
+name: app
+description: The application.
+build: app
+dependencies: [deploy.database]
+
+spec:
+  sync:
+    paths:
+      - source: ./app
+        target: /srv/app
+        mode: two-way
+
+  ports:
+    - name: app
+      containerPort: 9000
+      servicePort: 80
+
+  env:
+    POSTGRES_PASSWORD:
+      secretRef:
+        name: postgres-password
+        key: root
+    POSTGRES_USERNAME: ${var.database.username}
+    POSTGRES_DATABASE: ${var.database.database}

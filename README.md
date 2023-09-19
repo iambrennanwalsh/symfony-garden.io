@@ -1,24 +1,24 @@
-# Symfony 6 Garden.io Example
+# Symfony 6 & garden.io.
 
-This is a Symfony app configured to run via garden.io.
+This demonstrates a Symfony app running on garden.io.
+
+If you dont have a local kubernetes cluster installed, [download and install Docker Desktop](https://www.docker.com/) first.
 
 ## Setup
 
-_Note: The commands below assume you're running a local Kubernetes cluster. Please adjust the commands accordingly if you're running against a remote environment (setting the `--env` parameter and the correct `--namespace` for kubectl)._
-
-Start by creating a namespace for the project and secrets to live in:
+Start by creating a namespace for your project and secrets to live in.
 
 ```sh
 kubectl create namespace symfony-garden
 ```
 
-Then create the secret for `postgres-password` in your Kubernetes cluster:
+Next define a secret called `postgres-password` which will contain your database password.
 
 ```sh
 kubectl --namespace=symfony-garden create secret generic postgres-password --from-literal=root=superdupersecret
 ```
 
-Now you can deploy the services:
+Now run the deploy command.
 
 ```sh
 garden deploy --dev
